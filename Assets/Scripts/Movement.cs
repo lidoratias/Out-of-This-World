@@ -20,7 +20,6 @@ public class Movement : MonoBehaviour
     void Update()
     {
         movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        Debug.Log(movement.x + "," + movement.y + "," + animator.GetInteger("Speed"));
         if (movement.x > 0)
             animator.SetInteger("Speed", 1);
         else if (movement.x < 0)
