@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed = 20.0f;
+    public float speed = 3.0f;
     public int damage = 20;
     public Rigidbody2D rb;
-    public Vector2 direction;
+    private Vector2 direction;
 
     // Start is called before the first frame update
     void Start()
     {
+        GameObject targetGameObject = GameObject.Find("Player");
+        Vector2 direction = targetGameObject.transform.position - transform.position;
         rb.velocity = direction * speed;
     }
 
