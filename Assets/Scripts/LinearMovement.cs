@@ -6,7 +6,7 @@ public class LinearMovement : MonoBehaviour
 {
 
     public float speed = 3.0f;
-    public Rigidbody rb;
+    public Rigidbody2D rb;
     public Vector2 movement;
 
     // Start is called before the first frame update
@@ -24,8 +24,6 @@ public class LinearMovement : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 pos = Camera.main.WorldToViewportPoint(rb.position);
-        Debug.Log(pos);
-        Debug.Log(movement);
         
         if (pos.y < 0.3f)
         {
