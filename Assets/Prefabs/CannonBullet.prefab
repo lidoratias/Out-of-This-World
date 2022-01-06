@@ -137,3 +137,4 @@ MonoBehaviour:
   speed: 15
   damage: 10
   rb: {fileID: 6415034249442583219}
+  direction: {x: -1, y: 0}
