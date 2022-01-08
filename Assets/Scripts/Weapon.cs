@@ -6,13 +6,17 @@ public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public float timer = 0f;
+    public double waitingTime = 0.2;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        timer = timer + Time.deltaTime;
+        if (Input.GetButton("Fire1") && timer > waitingTime)
         {
             Shoot();
+            timer = 0f;
         }
     }
 

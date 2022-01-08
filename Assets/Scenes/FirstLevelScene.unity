@@ -328,7 +328,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &349929012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,6 +343,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 800090652}
   bulletPrefab: {fileID: 1657174339790122834, guid: 3ba17e04d48ce5344895809c3705a3f5, type: 3}
+  timer: 0
+  waitingTime: 0.5
 --- !u!114 &349929013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,7 +370,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.21819425, y: -0.2278915}
+  m_Offset: {x: -0.329628, y: -0.15074497}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -379,7 +381,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.2401252, y: 1.7854985}
+  m_Size: {x: 2.4000854, y: 1.3569068}
   m_EdgeRadius: 0
 --- !u!1 &487061714
 GameObject:
@@ -608,7 +610,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &498175720
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -939,7 +941,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!114 &790100410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1149,7 +1151,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &1436260739
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1546,8 +1548,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027859592}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.22, y: -0.23, z: 0}
-  m_LocalScale: {x: 0.6454, y: 0.6454, z: 0.6454}
+  m_LocalPosition: {x: -0.34, y: -0.14, z: 0}
+  m_LocalScale: {x: 0.43164352, y: 0.43164352, z: 0.43164352}
   m_Children: []
   m_Father: {fileID: 349929008}
   m_RootOrder: 0
