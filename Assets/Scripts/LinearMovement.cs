@@ -6,6 +6,8 @@ public class LinearMovement : MonoBehaviour
 {
 
     public float speed = 3.0f;
+    public float minValue;
+    public float maxValue;
     public Rigidbody2D rb;
     public Vector2 movement;
 
@@ -25,12 +27,12 @@ public class LinearMovement : MonoBehaviour
     {
         Vector2 pos = Camera.main.WorldToViewportPoint(rb.position);
         
-        if (pos.y < 0.3f)
+        if (pos.y < minValue)
         {
             movement.Set(0.0f, 1.0f);
         }
         
-        if (pos.y > 0.8f)
+        if (pos.y > maxValue)
         {
             movement.Set(0.0f, -1.0f);
         }
