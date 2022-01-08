@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2560741745780377080}
   - component: {fileID: 1922492049485872287}
   - component: {fileID: 2472724434912218994}
-  - component: {fileID: 2889485582833002636}
+  - component: {fileID: 2680974535924688680}
   m_Layer: 0
   m_Name: CannonBullet
   m_TagString: Untagged
@@ -100,7 +100,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -122,7 +122,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 20.944998
---- !u!114 &2889485582833002636
+--- !u!114 &2680974535924688680
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,9 +131,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2810010385385402461}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bed459b80c97f3c488c0db437e7d2c78, type: 3}
+  m_Script: {fileID: 11500000, guid: d4ed4d2eedb790a4c984286d29c76f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  damage: 10
   rb: {fileID: 1922492049485872287}

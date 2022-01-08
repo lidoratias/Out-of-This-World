@@ -4,27 +4,41 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed = 3.0f;
-    public int damage = 20;
+    protected float speed = 3.0f;
+    protected int damage = 20;
     public Rigidbody2D rb;
-    private Vector2 direction;
+    protected Vector2 direction;
+    protected string target;
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
-        GameObject targetGameObject = GameObject.Find("Player");
-        Vector2 direction = targetGameObject.transform.position - transform.position;
-        rb.velocity = direction * speed;
+        
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        Enemy enemy = hitInfo.GetComponent<Enemy>();
-        if (enemy != null)
+        switch (target)
         {
-            enemy.takeDamage(damage);
+            case "Enemy":
+                Enemy enemy = hitInfo.GetComponent<Enemy>();
+                if (enemy != null)
+                {
+                    enemy.takeDamage(damage);
+                    Destroy(gameObject);
+                }
+                break;
+            case "Player":
+                Debug.Log("in case of player target");
+                Player player = hitInfo.GetComponent<Player>();
+                if (player != null)
+                {
+                    player.takeDamage(damage);
+                    Destroy(gameObject);
+                }
+                break;
         }
-        Destroy(gameObject);
+
     }
 
 }
