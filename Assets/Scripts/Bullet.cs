@@ -21,18 +21,17 @@ public class Bullet : MonoBehaviour
         switch (target)
         {
             case "Enemy":
-                Enemy enemy = hitInfo.GetComponent<Enemy>();
-                if (enemy != null)
+                if (hitInfo.tag == "Enemy")
                 {
+                    Enemy enemy = hitInfo.GetComponent<Enemy>();
                     enemy.takeDamage(damage);
                     Destroy(gameObject);
                 }
                 break;
             case "Player":
-                Debug.Log("in case of player target");
-                Player player = hitInfo.GetComponent<Player>();
-                if (player != null)
+                if (hitInfo.tag == "Player")
                 {
+                    Player player = hitInfo.GetComponent<Player>();
                     player.takeDamage(damage);
                     Destroy(gameObject);
                 }

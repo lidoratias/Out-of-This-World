@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1922492049485872287}
   - component: {fileID: 2472724434912218994}
   - component: {fileID: 2680974535924688680}
+  - component: {fileID: -7014769997752028408}
   m_Layer: 0
   m_Name: CannonBullet
   m_TagString: Untagged
@@ -134,4 +135,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4ed4d2eedb790a4c984286d29c76f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 20
   rb: {fileID: 1922492049485872287}
+--- !u!114 &-7014769997752028408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2810010385385402461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31d1164e768c8cf41b7b6f7201a3eb89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5

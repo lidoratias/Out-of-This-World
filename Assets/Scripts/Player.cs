@@ -5,9 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    protected int health = 10000;
-
-    //public gameObject deathEffect;
+    protected int health = 1000;
 
     public void takeDamage(int damage)
     {
@@ -23,4 +21,11 @@ public class Player : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public void Update()
+    {
+        Debug.Log(this.health);
+    }
+
+
 }

@@ -8,24 +8,18 @@ public class LinearMovement : MonoBehaviour
     public float speed = 3.0f;
     public float minValue;
     public float maxValue;
-    public Rigidbody2D rb;
     public Vector2 movement;
 
     // Start is called before the first frame update
-    void Start()
+    protected void Start()
     {
         movement = new Vector2(0.0f, 1);
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        
-    }
-
-    void FixedUpdate()
-    {
-        Vector2 pos = Camera.main.WorldToViewportPoint(rb.position);
+        Vector2 pos = Camera.main.WorldToViewportPoint(transform.position);
         
         if (pos.y < minValue)
         {
@@ -39,8 +33,8 @@ public class LinearMovement : MonoBehaviour
         moveCharacter(movement);
     }
 
-    void moveCharacter(Vector2 direction)
+    protected void moveCharacter(Vector2 direction)
     {
-        rb.velocity = this.speed * direction;
+        transform.Translate(direction * this.speed * Time.deltaTime);
     }
 }

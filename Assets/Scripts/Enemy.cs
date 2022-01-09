@@ -6,8 +6,13 @@ public class Enemy : MonoBehaviour
 {
 
     public int health = 100;
+    public int damage = 100;
+    private string target;
     
-    //public gameObject deathEffect;
+    void Start()
+    {
+        this.target = "Player";
+    }
 
     public void takeDamage(int damage)
     {
@@ -23,4 +28,15 @@ public class Enemy : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    void OnTriggerEnter2D(Collider2D hitInfo)
+    {
+        if (hitInfo.tag == "Player")
+        {
+            Player player = hitInfo.GetComponent<Player>();
+            player.takeDamage(damage);
+        }
+    }
+
+
 }
