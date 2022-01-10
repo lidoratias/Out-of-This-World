@@ -11,7 +11,6 @@ public class Enemy : MonoBehaviour
     
     void Start()
     {
-        this.target = "Player";
     }
 
     public void takeDamage(int damage)

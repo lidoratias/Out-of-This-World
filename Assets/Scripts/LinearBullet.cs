@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LinearBullet : Bullet
 {
+    public GameObject explosionEffect;
 
     protected override void Start()
     {
@@ -12,6 +13,16 @@ public class LinearBullet : Bullet
         this.direction = transform.right;
         rb.velocity = this.direction * this.speed;
     }
-    
+
+    void OnTriggerEnter2D(Collider2D hitInfo)
+    {
+        Enemy enemy = hitInfo.GetComponent<Enemy>();
+        if (enemy != null)
+        {
+            enemy.takeDamage(damage);
+            Instantiate(this.explosionEffect, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
+    }
 
 }

@@ -5,15 +5,13 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public float speed = 15.0f;
-    //public Rigidbody2D rb;
     public Vector2 movement;
     public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        //rb = this.GetComponent<Rigidbody2D>();
-        //animator = this.GetComponent<Animator>();
+        animator = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
