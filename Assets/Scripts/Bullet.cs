@@ -13,31 +13,12 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     protected virtual void Start()
     {
-        
+
     }
 
-    void OnTriggerEnter2D(Collider2D hitInfo)
+    public int getDamage()
     {
-        switch (target)
-        {
-            case "Enemy":
-                if (hitInfo.tag == "Enemy")
-                {
-                    Enemy enemy = hitInfo.GetComponent<Enemy>();
-                    enemy.takeDamage(damage);
-                    Destroy(gameObject);
-                }
-                break;
-            case "Player":
-                if (hitInfo.tag == "Player")
-                {
-                    Player player = hitInfo.GetComponent<Player>();
-                    player.takeDamage(damage);
-                    Destroy(gameObject);
-                }
-                break;
-        }
-
+        return this.damage;
     }
 
 }

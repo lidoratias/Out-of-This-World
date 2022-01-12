@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 2560741745780377080}
   - component: {fileID: 1922492049485872287}
   - component: {fileID: 2472724434912218994}
-  - component: {fileID: 2680974535924688680}
-  - component: {fileID: -7014769997752028408}
+  - component: {fileID: 3808456307540733915}
   m_Layer: 0
   m_Name: CannonBullet
-  m_TagString: Untagged
+  m_TagString: Cannon Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,7 +122,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 20.944998
---- !u!114 &2680974535924688680
+--- !u!114 &3808456307540733915
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,21 +131,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2810010385385402461}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4ed4d2eedb790a4c984286d29c76f33, type: 3}
+  m_Script: {fileID: 11500000, guid: e5cca9da2335e73479c294d481caa4f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
   rb: {fileID: 1922492049485872287}
---- !u!114 &-7014769997752028408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2810010385385402461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31d1164e768c8cf41b7b6f7201a3eb89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 5

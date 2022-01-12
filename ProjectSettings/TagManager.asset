@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Player Bullet
+  - Cannon Bullet
+  - Pirate Skull
   layers:
   - Default
   - TransparentFX

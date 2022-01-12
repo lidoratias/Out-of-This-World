@@ -30,10 +30,11 @@ public class Enemy : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if (hitInfo.tag == "Player")
+        if (hitInfo.tag == "Player Bullet")
         {
-            Player player = hitInfo.GetComponent<Player>();
-            player.takeDamage(damage);
+            PlayerLinearBullet bullet = hitInfo.GetComponent<PlayerLinearBullet>();
+            this.takeDamage(bullet.getDamage());
+            Destroy(hitInfo.gameObject);
         }
     }
 
