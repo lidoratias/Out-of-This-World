@@ -27,6 +27,24 @@ public class Movement : MonoBehaviour
 
     void moveCharacter(Vector2 direction)
     {
-        transform.Translate(direction * this.speed * Time.deltaTime);
+        Vector2 directionWithinWorld = direction;
+        Vector2 pos = Camera.main.WorldToViewportPoint(transform.position);
+        if (pos.y < 0.1 && direction.y < 0)
+        {
+            directionWithinWorld.y = 0;
+        } else if (pos.y > 1 && direction.y > 0)
+        {
+            directionWithinWorld.y = 0;
+        }
+
+        if (pos.x < 0 && direction.x < 0)
+        {
+            directionWithinWorld.x = 0;
+        }
+        else if (pos.x > 0.9 && direction.x > 0)
+        {
+            directionWithinWorld.x = 0;
+        }
+        transform.Translate(directionWithinWorld * this.speed * Time.deltaTime);
     }
 }
