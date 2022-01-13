@@ -346,7 +346,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 349929008}
-  - component: {fileID: 349929009}
   - component: {fileID: 349929010}
   - component: {fileID: 349929012}
   - component: {fileID: 349929013}
@@ -377,25 +376,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &349929009
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349929007}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dca4188fdadd5ee4bac8f2f290f43237, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &349929010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,7 +390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   movement: {x: 0, y: 0}
-  animator: {fileID: 349929009}
+  animator: {fileID: 0}
 --- !u!61 &349929011
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -465,6 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c065761b2a11284e81220c42032df0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 146843946}
 --- !u!50 &349929014
 Rigidbody2D:
   serializedVersion: 4
