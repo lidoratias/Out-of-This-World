@@ -6,6 +6,7 @@ public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+
     public float timer = 0f;
     public double waitingTime = 0.2;
 

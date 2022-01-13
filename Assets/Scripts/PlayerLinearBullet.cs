@@ -11,7 +11,8 @@ public class PlayerLinearBullet : LinearBullet
     {
         if (hitInfo.tag != "Player")
         {
-            Instantiate(explosionEffect, transform.position, transform.rotation);
+            GameObject explosionInstance = Instantiate(explosionEffect, transform.position, transform.rotation);
+            explosionInstance.transform.localScale = new Vector3(0.07f, 0.07f, 0.07f); 
         }
 
         if (hitInfo.tag == "Pirate Skull")
