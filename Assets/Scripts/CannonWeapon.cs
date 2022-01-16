@@ -10,7 +10,7 @@ public class CannonWeapon : MonoBehaviour
     public CannonString cannonString;
 
     public float timer = 0f;
-    private float waitingTime = 4;
+    public float waitingTime = 4;
 
     void Start()
     {
@@ -21,9 +21,13 @@ public class CannonWeapon : MonoBehaviour
     void Update()
     {
         timer = timer + Time.deltaTime;
+        Debug.Log(timer);
         if (timer >= waitingTime)
         {
-            waitingTime = Random.Range(4, 7);
+            if (waitingTime == 4)
+                waitingTime = 5;
+            else
+                waitingTime = 4;
             Shoot();
             timer = 0f;
         }
