@@ -8,7 +8,8 @@ public class Enemy : MonoBehaviour
     public int health = 100;
     public int damage = 100;
     private string target;
-    
+    public Animation myAnimation;
+
     void Start()
     {
     }
@@ -35,6 +36,7 @@ public class Enemy : MonoBehaviour
             PlayerLinearBullet bullet = hitInfo.GetComponent<PlayerLinearBullet>();
             this.takeDamage(bullet.getDamage());
             Destroy(hitInfo.gameObject);
+            myAnimation.Play();
         }
     }
 

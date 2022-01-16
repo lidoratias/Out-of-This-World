@@ -6,9 +6,16 @@ public class CannonWeapon : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public GameObject explosionCloud;
+    public CannonString cannonString;
 
     public float timer = 0f;
-    public int waitingTime = 3;
+    private float waitingTime = 4;
+
+    void Start()
+    {
+        this.cannonString.PlayAnimation(waitingTime);
+    }
 
     // Update is called once per frame
     void Update()
@@ -16,6 +23,7 @@ public class CannonWeapon : MonoBehaviour
         timer = timer + Time.deltaTime;
         if (timer >= waitingTime)
         {
+            waitingTime = Random.Range(4, 7);
             Shoot();
             timer = 0f;
         }
@@ -23,6 +31,8 @@ public class CannonWeapon : MonoBehaviour
 
     void Shoot()
     {
+        this.cannonString.PlayAnimation(waitingTime);
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Instantiate(explosionCloud, firePoint.position, new Quaternion(0, 0, 0, 1));
     }
 }

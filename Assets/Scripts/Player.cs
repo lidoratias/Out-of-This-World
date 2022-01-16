@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
 
     public void Update()
     {
-        Debug.Log(this.health);
+        //Debug.Log(this.health);
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)
