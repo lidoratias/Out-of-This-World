@@ -1,0 +1,420 @@
+fileFormatVersion: 2
+guid: 14f746d5d66da0947ae63e5303e7d650
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2497567831772704894
+    second: Side Ghost Spritesheet_0
+  - first:
+      213: -5801279885925197562
+    second: Side Ghost Spritesheet_1
+  - first:
+      213: 8020888145811231829
+    second: Side Ghost Spritesheet_2
+  - first:
+      213: -849129887091614205
+    second: Side Ghost Spritesheet_3
+  - first:
+      213: -477537934372646411
+    second: Side Ghost Spritesheet_4
+  - first:
+      213: 3670722537849669383
+    second: Side Ghost Spritesheet_5
+  - first:
+      213: -6234835749984049675
+    second: Side Ghost Spritesheet_6
+  - first:
+      213: 7688550137969154385
+    second: Side Ghost Spritesheet_7
+  - first:
+      213: 1554835849218392695
+    second: Side Ghost Spritesheet_8
+  - first:
+      213: -5949199070463351735
+    second: Side Ghost Spritesheet_9
+  - first:
+      213: -2519729987030858336
+    second: Side Ghost Spritesheet_10
+  - first:
+      213: -944211340160085156
+    second: Side Ghost Spritesheet_11
+  - first:
+      213: -4820084016248275224
+    second: Side Ghost Spritesheet_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Side Ghost Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5767
+        width: 1673
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fceb82a4bd65dd0800000000000000
+      internalID: -2497567831772704894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Ghost Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 5792
+        width: 1677
+        height: 1320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6095fc42ea6bd7fa0800000000000000
+      internalID: -5801279885925197562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Ghost Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 3793
+        y: 5799
+        width: 1674
+        height: 1306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554583aa54bef4f60800000000000000
+      internalID: 8020888145811231829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Ghost Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 5721
+        y: 5799
+        width: 1687
+        height: 1306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e9cb7ddd84734f0800000000000000
+      internalID: -849129887091614205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Ghost Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4118
+        width: 1673
+        height: 1309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1d1fe57c17f59f0800000000000000
+      internalID: -477537934372646411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Ghost Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 4114
+        width: 1676
+        height: 1316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707cc8923b601f230800000000000000
+      internalID: 3670722537849669383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Ghost Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 3793
+        y: 4089
+        width: 1674
+        height: 1367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f56b414be96979a0800000000000000
+      internalID: -6234835749984049675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Ghost Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 5728
+        y: 4034
+        width: 1680
+        height: 1476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1599e636d9733ba60800000000000000
+      internalID: 7688550137969154385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Ghost Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1673
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77284bc87f2e39510800000000000000
+      internalID: 1554835849218392695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Ghost Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1905
+        width: 1673
+        height: 1580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944a2f237f2307da0800000000000000
+      internalID: -5949199070463351735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Ghost Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 1825
+        width: 1676
+        height: 1742
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a540294dee180dd0800000000000000
+      internalID: -2519729987030858336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Ghost Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 3793
+        y: 1905
+        width: 1674
+        height: 1580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53dcdce9cc75e2f0800000000000000
+      internalID: -944211340160085156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Ghost Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 5728
+        y: 1962
+        width: 1680
+        height: 1468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eebbf7002f9b1db0800000000000000
+      internalID: -4820084016248275224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
