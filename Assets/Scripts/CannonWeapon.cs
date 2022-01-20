@@ -23,7 +23,6 @@ public class CannonWeapon : MonoBehaviour
     void Update()
     {
         timer = timer + Time.deltaTime;
-        //Debug.Log(timer);
         if (timer >= waitingTime)
         {
             if (waitingTime == 4)

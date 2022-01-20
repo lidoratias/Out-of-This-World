@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 2953649827132790240, guid: 0e68bbdb2f209ba4196dbe82a8dc5824, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -118,4 +118,3 @@ MonoBehaviour:
   anim: {fileID: 7284494077629605268}
   timer: 0
   waitingTime: 0.1
-  explosionAnimName: 
