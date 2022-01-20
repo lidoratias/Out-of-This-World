@@ -8,6 +8,7 @@ TagManager:
   - Player Bullet
   - Cannon Bullet
   - Pirate Skull
+  - Swords Target
   layers:
   - Default
   - TransparentFX

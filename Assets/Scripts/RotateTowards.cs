@@ -9,6 +9,6 @@ public class RotateTowards
         Vector2 direction = target.position - source.position;
         float angle = (Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg) - 30;
         Quaternion rotationTowardsTarget = Quaternion.AngleAxis(angle, Vector3.forward);
-        source.rotation = Quaternion.Lerp(source.rotation, rotationTowardsTarget, speed * Time.deltaTime);
+        source.rotation = Quaternion.Lerp(source.rotation, rotationTowardsTarget, speed);
     }
 }
