@@ -9,7 +9,8 @@ public class Barrel : MonoBehaviour
     public float rotateSpeed = 2.0f;
     float latestY;
     public GameObject explosionEffect;
-    public GameObject buulet;
+    public Sprite[] sprites;
+    private int mode = 1;
 
     // Start is called before the first frame update
     void Start()
