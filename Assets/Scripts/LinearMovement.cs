@@ -12,9 +12,7 @@ public class LinearMovement : MonoBehaviour
 
     // Start is called before the first frame update
     protected void Start()
-    {
-        movement = new Vector2(0.0f, 1);
-    }
+    {}
 
 
     void Update()

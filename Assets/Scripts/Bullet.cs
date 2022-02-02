@@ -10,15 +10,41 @@ public class Bullet : MonoBehaviour
     protected Vector2 direction;
     protected string target;
 
-    // Start is called before the first frame update
-    protected virtual void Start()
-    {
-
-    }
+    protected virtual void Start(){}
 
     public int getDamage()
     {
         return this.damage;
+    }
+
+    public void setSpeed(float speed)
+    {
+        this.speed = speed;
+    }
+
+    public void setDirection(Vector2 direction)
+    {
+        this.direction = direction;
+    }
+
+    public float getSpeed()
+    {
+        return this.speed;
+    }
+
+    public Vector2 getDirection()
+    {
+        return this.direction;
+    }
+
+    public void setVelocity(Vector2 velocity)
+    {
+        this.rb.velocity = velocity;
+    }
+
+    public Vector2 getVelocity()
+    {
+        return this.rb.velocity;
     }
 
 }

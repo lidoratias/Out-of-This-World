@@ -23,16 +23,13 @@ public class Player : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void Update()
-    {
-        //Debug.Log(this.health);
-    }
+    public void Update(){}
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         if (hitInfo.tag == "Cannon Bullet" && anim.GetBool("IsHurt") == false)
         {
-            CannonDirectedBullet bullet = hitInfo.GetComponent<CannonDirectedBullet>();
+            Bullet bullet = hitInfo.GetComponent<Bullet>();
             this.takeDamage(bullet.getDamage());
             Destroy(hitInfo.gameObject);
             anim.SetBool("IsHurt", true);
