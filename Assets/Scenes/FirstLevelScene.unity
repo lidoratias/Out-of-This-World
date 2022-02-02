@@ -1141,7 +1141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitingTime: 2
-  ghost: {fileID: 8913469802240756937, guid: a84e0f18fd5aa484892539f4a51d4c1d, type: 3}
+  ghost: {fileID: 9100342135419511516, guid: a84e0f18fd5aa484892539f4a51d4c1d, type: 3}
 --- !u!1 &774948741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,15 +1456,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442138344175, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442138344175, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Hitting Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442499521166, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_TagString
-      value: Pirate Skull
+      value: Hitting Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f281065ef71eeb54abe935b599fff220, type: 3}
@@ -1486,7 +1486,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1480243447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2042,7 +2042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2061108858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2296,11 +2296,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442138344175, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442138344175, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Hitting Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442499521166, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_TagString

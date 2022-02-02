@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8113207442138344160}
   - component: {fileID: 8113207442138344173}
-  - component: {fileID: 8113207442138344162}
+  - component: {fileID: -7467797387068022942}
   - component: {fileID: 8113207442138344172}
   m_Layer: 0
   m_Name: Skull
-  m_TagString: Untagged
+  m_TagString: Hitting Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
   waitingTime: 5
   myAnimation: {fileID: 8113207442138344172}
   burstingSkullAnim: {fileID: 7400000, guid: 0f23a92d0e16f3d46b4a955f4841da3e, type: 2}
---- !u!114 &8113207442138344162
+--- !u!114 &-7467797387068022942
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,10 +63,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8113207442138344175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c12e5534921e96d4c8649f2ef8d7bdf2, type: 3}
+  m_Script: {fileID: 11500000, guid: bb614ed67e823114c82bc46902ab0aae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
 --- !u!111 &8113207442138344172
 Animation:
   m_ObjectHideFlags: 0
@@ -183,7 +182,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 42.8, y: 41.566994}
+    oldSize: {x: 42.80032, y: 41.629997}
     newSize: {x: 42.8, y: 41.566994}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

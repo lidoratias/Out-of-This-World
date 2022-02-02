@@ -9,6 +9,7 @@ TagManager:
   - Cannon Bullet
   - Pirate Skull
   - Swords Target
+  - Hitting Enemy
   layers:
   - Default
   - TransparentFX

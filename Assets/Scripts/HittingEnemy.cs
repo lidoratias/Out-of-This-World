@@ -2,14 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PirateSkull : MonoBehaviour
+public class HittingEnemy : MonoBehaviour
 {
 
-    public int damage = 50;
+    public int damage = 10;
 
     // Start is called before the first frame update
     public int getDamage()
     {
         return this.damage;
+    }
+
+    public void setDamage(int damage)
+    {
+        this.damage = damage;
     }
 }

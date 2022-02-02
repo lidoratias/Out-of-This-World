@@ -35,11 +35,11 @@ public class Player : MonoBehaviour
             anim.SetBool("IsHurt", true);
             Invoke("SetBoolBack", 2.08f);
         }
-        else if (hitInfo.tag == "Pirate Skull" && anim.GetBool("IsHurt") == false)
+        else if (hitInfo.tag == "Hitting Enemy" && anim.GetBool("IsHurt") == false)
         {
             GameObject parent = hitInfo.gameObject.transform.parent.gameObject;
-            PirateSkull pirateSkull = parent.GetComponent<PirateSkull>();
-            this.takeDamage(pirateSkull.getDamage());
+            HittingEnemy hittingEnemy = parent.GetComponent<HittingEnemy>();
+            this.takeDamage(hittingEnemy.getDamage());
             anim.SetBool("IsHurt", true);
             Invoke("SetBoolBack", 2.08f);
         }
