@@ -40,5 +40,15 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public int getHealth()
+    {
+        return this.health;
+    }
+
+    public void setHealth(int health)
+    {
+        this.health = health;
+    }
+
 
 }
