@@ -130,7 +130,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 9100342134416822367}
   m_Bounds:
-    m_Center: {x: -0.6869916, y: 0.0020349622, z: 0.0000019073486}
+    m_Center: {x: -0.68699634, y: 0.0020352006, z: 0.0000019073486}
     m_Extent: {x: 0.9870604, y: 0.57796514, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -287,6 +287,7 @@ GameObject:
   - component: {fileID: 9100342134676812706}
   - component: {fileID: 9100342134676812708}
   - component: {fileID: 9100342134676812707}
+  - component: {fileID: 2012266921733700561}
   m_Layer: 0
   m_Name: Ghost Visuals
   m_TagString: Hitting Enemy
@@ -360,6 +361,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.75659, y: 6.684003}
   m_EdgeRadius: 0
+--- !u!114 &2012266921733700561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9100342134676812705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dbd7742e64271c448e196f6e40c64b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionEffect: {fileID: 5713044837304553183, guid: de0daf2b1c2da9346bb0b105f43ed6cc, type: 3}
+  parentGhost: {fileID: 9100342135419511516}
 --- !u!1 &9100342134728345715
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,7 +474,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 9100342135635920787}
   m_Bounds:
-    m_Center: {x: 0.0013687611, y: 0.00031995773, z: 0.0000019073486}
+    m_Center: {x: 0.0013649464, y: 0.00031995773, z: 0.0000019073486}
     m_Extent: {x: 0.9833548, y: 0.57877994, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -596,7 +611,7 @@ MonoBehaviour:
   - {fileID: 9100342133872703830}
   - {fileID: 9100342134568370761}
   m_Bounds:
-    m_Center: {x: -0.060005188, y: 0.001884222, z: 0.0000019073486}
+    m_Center: {x: -0.060001373, y: 0.0018849373, z: 0.0000019073486}
     m_Extent: {x: 2.7149997, y: 2.4481149, z: 5.684342e-14}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
