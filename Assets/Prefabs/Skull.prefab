@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8113207442138344172}
   m_Layer: 0
   m_Name: Skull
-  m_TagString: Hitting Enemy
+  m_TagString: Pirate Skull
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66,6 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb614ed67e823114c82bc46902ab0aae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 10
 --- !u!111 &8113207442138344172
 Animation:
   m_ObjectHideFlags: 0

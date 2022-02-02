@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    protected int health = 1000;
+    protected int health = 500;
     public Animator anim;
 
     public void takeDamage(int damage)
@@ -23,7 +23,9 @@ public class Player : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void Update(){}
+    public void Update()
+    {    
+    }
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
@@ -35,7 +37,8 @@ public class Player : MonoBehaviour
             anim.SetBool("IsHurt", true);
             Invoke("SetBoolBack", 2.08f);
         }
-        else if (hitInfo.tag == "Hitting Enemy" && anim.GetBool("IsHurt") == false)
+        else if ((hitInfo.tag == "Hitting Enemy" || hitInfo.tag == "Pirate Skull")
+            && anim.GetBool("IsHurt") == false)
         {
             GameObject parent = hitInfo.gameObject.transform.parent.gameObject;
             HittingEnemy hittingEnemy = parent.GetComponent<HittingEnemy>();

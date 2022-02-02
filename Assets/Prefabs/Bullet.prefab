@@ -137,3 +137,9 @@ MonoBehaviour:
   damage: 20
   rb: {fileID: 1657174339790119086}
   explosionEffect: {fileID: 7284494077629605270, guid: f5e3975f73c6b8c42aa7b6c28debd2da, type: 3}
+  ignoreTags:
+  - Player
+  - Hitting Enemy
+  destroyerTags:
+  - Pirate Skull
+  - Enemy

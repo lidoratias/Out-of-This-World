@@ -6,18 +6,28 @@ public class PlayerLinearBullet : LinearBullet
 {
 
     public GameObject explosionEffect;
+    public string[] ignoreTags;
+    public string[] destroyerTags;
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if (hitInfo.tag != "Player")
+        for (int i = 0; i < ignoreTags.Length; i++)
         {
-            GameObject explosionInstance = Instantiate(explosionEffect, transform.position, transform.rotation);
-            explosionInstance.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f); 
+            if (ignoreTags[i] == hitInfo.tag)
+            {
+                return;
+            }
         }
 
-        if (hitInfo.tag == "Pirate Skull")
+        GameObject explosionInstance = Instantiate(explosionEffect, transform.position, transform.rotation);
+        explosionInstance.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+
+        for (int i = 0; i < destroyerTags.Length; i++)
         {
-            Destroyer.destroyObject(gameObject);
+            if(destroyerTags[i] == hitInfo.tag)
+            {
+                Destroyer.destroyObject(gameObject);
+            }
         }
     }
 }

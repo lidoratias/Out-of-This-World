@@ -753,7 +753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31d1164e768c8cf41b7b6f7201a3eb89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3600
+  health: 2000
   damage: 50
   myAnimation: {fileID: 498175719}
 --- !u!1 &519420028
@@ -1418,11 +1418,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442138344175, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_TagString
-      value: Hitting Enemy
+      value: Pirate Skull
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442499521166, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_TagString
-      value: Hitting Enemy
+      value: Pirate Skull
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f281065ef71eeb54abe935b599fff220, type: 3}
@@ -2317,7 +2317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442138344175, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_TagString
-      value: Hitting Enemy
+      value: Pirate Skull
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442499521166, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_TagString

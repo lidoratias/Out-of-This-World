@@ -29,9 +29,9 @@ public class LevelHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (enemy.getHealth() <= 0)
+        if (enemy.getHealth() <= 20)
         {
-            enemy.setHealth(7200);
+            enemy.setHealth(3000);
 
             //Enters phase 2 of the level
             for (int i = 0; i < phaseOneObjects.Length; i++)
