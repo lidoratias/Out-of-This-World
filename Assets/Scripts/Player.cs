@@ -40,11 +40,21 @@ public class Player : MonoBehaviour
         else if ((hitInfo.tag == "Hitting Enemy" || hitInfo.tag == "Pirate Skull")
             && anim.GetBool("IsHurt") == false)
         {
-            GameObject parent = hitInfo.gameObject.transform.parent.gameObject;
-            HittingEnemy hittingEnemy = parent.GetComponent<HittingEnemy>();
-            this.takeDamage(hittingEnemy.getDamage());
-            anim.SetBool("IsHurt", true);
-            Invoke("SetBoolBack", 2.08f);
+            try
+            {
+                GameObject parent = hitInfo.gameObject.transform.parent.gameObject;
+                HittingEnemy hittingEnemy = parent.GetComponent<HittingEnemy>();
+                this.takeDamage(hittingEnemy.getDamage());
+                anim.SetBool("IsHurt", true);
+                Invoke("SetBoolBack", 2.08f);
+            } catch (InvalidCastException e)
+            {
+                HittingEnemy hittingEnemy = hitInfo.GetComponent<HittingEnemy>();
+                this.takeDamage(hittingEnemy.getDamage());
+                anim.SetBool("IsHurt", true);
+                Invoke("SetBoolBack", 2.08f);
+            }
+
         }
     }
 
