@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Barrel : MonoBehaviour
+public class Barrel : HittingEnemy
 {
     public Rigidbody2D rb;
     public GameObject explosionEffect;
