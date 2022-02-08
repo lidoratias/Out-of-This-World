@@ -7,7 +7,7 @@ public class SwordsSpawner : MonoBehaviour
 
     public GameObject swordPrefab;
     private float timer = 0;
-    public float waitingTime = 5.0f;
+    public float waitingTime = 0.2f;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,9 @@ public class SwordsSpawner : MonoBehaviour
         if(timer >= waitingTime)
         {
             timer = 0;
-            Instantiate(swordPrefab, transform.position, transform.rotation);
+            Vector3 spawnPos = new Vector3(Random.Range(-9.5f, 9.5f),
+                transform.position.y, transform.position.z);
+            Instantiate(swordPrefab, spawnPos, transform.rotation);
         }
     }
 }

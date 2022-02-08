@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2637813871388647562}
   - component: {fileID: 2637813871388647565}
   - component: {fileID: 2637813871388647564}
+  - component: {fileID: 6120217846767717480}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -95,11 +96,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d84e2061d3ab4a04aad343aa09f48f26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeedVector: {x: 10, y: 0, z: 0}
   swordsSprites:
   - {fileID: 21300000, guid: 0c32f265cc75a7d48baf67490a0b5023, type: 3}
   - {fileID: 21300000, guid: 5be9d2a68c0716549a864fda27f280d2, type: 3}
   - {fileID: 21300000, guid: 9340ff580a58c8646b71e00e012f8441, type: 3}
   - {fileID: 21300000, guid: 22b076a6ccc8eb143b07e833b3872587, type: 3}
   - {fileID: 21300000, guid: 6bdd4abbcaaf6544bb58e3a0e959a4fb, type: 3}
-  waitingTime: 0.5
+  rb: {fileID: 6120217846767717480}
+--- !u!50 &6120217846767717480
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2637813871388647567}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
