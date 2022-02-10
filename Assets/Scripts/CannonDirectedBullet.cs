@@ -12,7 +12,8 @@ public class CannonDirectedBullet : DirectedBullet
         if (hitInfo.tag == "Player Bullet")
         {
             Destroy(gameObject);
-        } else if(hitInfo.tag == "Player")
+        }
+        else if (hitInfo.tag == "Player")
         {
             GameObject explosionInstance = Instantiate(explosionEffect, transform.position,
                 new Quaternion(0, 0, 0, 1));

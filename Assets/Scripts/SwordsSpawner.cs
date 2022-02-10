@@ -19,12 +19,13 @@ public class SwordsSpawner : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if(timer >= waitingTime)
+        if (timer >= waitingTime)
         {
             timer = 0;
-            Vector3 spawnPos = new Vector3(Random.Range(-9.5f, 9.5f),
+            Vector3 spawnPos = new Vector3(Random.Range(-9.5f, 1.0f),
                 transform.position.y, transform.position.z);
             Instantiate(swordPrefab, spawnPos, transform.rotation);
+            waitingTime = Random.Range(1.5f, 2.5f);
         }
     }
 }

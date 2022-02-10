@@ -5,10 +5,17 @@ using UnityEngine;
 public class CannonString : MonoBehaviour
 {
 
-    public Animation shortenAnimation;
+    public Animator anim;
 
-    public void PlayAnimation(float length)
+    public void setSpeed(float waitingTime)
     {
+        anim.speed = 0.5f / waitingTime;
+    }
+
+    /*public void PlayAnimation()
+    {
+        shortenAnimation.Play("String Shorten - half a second");
+
         switch (length)
         {
             case 4.0f:
@@ -21,5 +28,5 @@ public class CannonString : MonoBehaviour
                 shortenAnimation.Play("String Shorten - 6 seconds");
                 break;
         }
-    }
+    }*/
 }

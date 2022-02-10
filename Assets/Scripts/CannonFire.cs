@@ -5,18 +5,15 @@ using UnityEngine;
 public class CannonFire : MonoBehaviour
 {
 
-    public Animation fireAnimation;
+    public Animator anim;
 
-    public void PlayAnimation(float length)
+    public void setSpeed(float waitingTime)
     {
-        switch (length)
-        {
-            case 4.0f:
-                fireAnimation.Play("Moving Cannon Fire - 4 Seconds");
-                break;
-            case 5.0f:
-                fireAnimation.Play("Moving Cannon Fire - 5 Seconds");
-                break;
-        }
+        anim.speed = 0.5f / waitingTime;
     }
+
+    /*public void PlayAnimation()
+    {
+        fireAnimation.Play("Moving Cannon Fire - half a second");
+    }*/
 }

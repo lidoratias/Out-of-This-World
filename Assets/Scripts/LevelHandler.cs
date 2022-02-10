@@ -11,6 +11,7 @@ public class LevelHandler : MonoBehaviour
 
     public GameObject[] phaseOneObjects;
     public GameObject[] phaseTwoObjects;
+    public GameObject[] phaseThreeObjects;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,11 @@ public class LevelHandler : MonoBehaviour
         for (int i = 0; i < phaseTwoObjects.Length; i++)
         {
             phaseTwoObjects[i].SetActive(false);
+        }
+
+        for (int i = 0; i < phaseThreeObjects.Length; i++)
+        {
+            phaseThreeObjects[i].SetActive(false);
         }
     }
 
@@ -42,6 +48,19 @@ public class LevelHandler : MonoBehaviour
             for (int i = 0; i < phaseTwoObjects.Length; i++)
             {
                 phaseTwoObjects[i].SetActive(true);
+            }
+
+            if (enemy.getHealth() <= 20)
+            {
+                for (int i = 0; i < phaseTwoObjects.Length; i++)
+                {
+                    phaseTwoObjects[i].SetActive(false);
+                }
+
+                for (int i = 0; i < phaseThreeObjects.Length; i++)
+                {
+                    phaseThreeObjects[i].SetActive(true);
+                }
             }
         }
     }

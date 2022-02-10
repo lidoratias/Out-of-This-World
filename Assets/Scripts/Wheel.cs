@@ -6,9 +6,10 @@ public class Wheel : MonoBehaviour
 {
 
     private bool rotateRight = true;
+    public float pace;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (rotateRight)
         {
@@ -20,14 +21,19 @@ public class Wheel : MonoBehaviour
         }
     }
 
+    public void setPace(float pace)
+    {
+        this.pace = pace;
+    }
+
     void rotateWheelRight()
     {
-        transform.Rotate(0, 0, -0.2f, Space.Self);
+        transform.Rotate(0, 0, -pace, Space.Self);
     }
 
     void rotateWheelLeft()
     {
-        transform.Rotate(0, 0, 0.2f, Space.Self);
+        transform.Rotate(0, 0, pace, Space.Self);
     }
 
     public void setRotateRight(bool rotateRight)

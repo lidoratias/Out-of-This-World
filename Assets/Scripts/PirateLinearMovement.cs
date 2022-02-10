@@ -5,7 +5,7 @@ using UnityEngine;
 public class PirateLinearMovement : LinearMovement
 {
     public float timer = 0f;
-    public int waitingTime = 3;
+    private float waitingTime = 5.0f;
     public Animation myAnimation;
     public AnimationClip burstingSkullAnim;
 
@@ -32,5 +32,10 @@ public class PirateLinearMovement : LinearMovement
             myAnimation.Play();
             timer = 0f;
         }
+    }
+
+    public void setWaitingTime(float waitingTime)
+    {
+        this.waitingTime = waitingTime;
     }
 }
