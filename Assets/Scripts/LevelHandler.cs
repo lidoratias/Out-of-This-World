@@ -9,9 +9,9 @@ public class LevelHandler : MonoBehaviour
     private int phase = 1;
     public Enemy enemy;
 
-    public GameObject[] phaseOneObjects;
-    public GameObject[] phaseTwoObjects;
-    public GameObject[] phaseThreeObjects;
+    public ActivatedGameObject[] phaseOneObjects;
+    public ActivatedGameObject[] phaseTwoObjects;
+    public ActivatedGameObject[] phaseThreeObjects;
 
     // Start is called before the first frame update
     void Start()
@@ -35,33 +35,38 @@ public class LevelHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (enemy.getHealth() <= 20)
+        if (enemy.getHealth() <= 20 && phase == 1)
         {
-            enemy.setHealth(3000);
+            enemy.setHealth(1000);
+            phase = 2;
 
-            //Enters phase 2 of the level
             for (int i = 0; i < phaseOneObjects.Length; i++)
             {
-                phaseOneObjects[i].SetActive(false);
+                phaseOneObjects[i].phaseOut();
             }
 
             for (int i = 0; i < phaseTwoObjects.Length; i++)
             {
-                phaseTwoObjects[i].SetActive(true);
+                phaseTwoObjects[i].phaseIn();
             }
 
-            if (enemy.getHealth() <= 20)
+        }
+
+        if (enemy.getHealth() <= 20 && phase == 2)
+        {
+            enemy.setHealth(1000);
+            phase = 3;
+
+            for (int i = 0; i < phaseTwoObjects.Length; i++)
             {
-                for (int i = 0; i < phaseTwoObjects.Length; i++)
-                {
-                    phaseTwoObjects[i].SetActive(false);
-                }
-
-                for (int i = 0; i < phaseThreeObjects.Length; i++)
-                {
-                    phaseThreeObjects[i].SetActive(true);
-                }
+                phaseTwoObjects[i].phaseOut();
             }
+
+            for (int i = 0; i < phaseThreeObjects.Length; i++)
+            {
+                phaseThreeObjects[i].phaseIn();
+            }
+
         }
     }
 }

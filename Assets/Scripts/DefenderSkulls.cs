@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DefenderSkulls : MonoBehaviour
+public class DefenderSkulls : ActivatedGameObject
 {
 
     public PirateLinearMovement skullOne;

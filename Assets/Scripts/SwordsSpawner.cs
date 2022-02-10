@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwordsSpawner : MonoBehaviour
+public class SwordsSpawner : ActivatedGameObject
 {
 
     public GameObject swordPrefab;

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GhostSpawner : MonoBehaviour
+public class GhostSpawner : ActivatedGameObject
 {
     public float waitingTime;
     private float timer;
@@ -24,6 +24,7 @@ public class GhostSpawner : MonoBehaviour
             Vector3 instancePos = new Vector3(transform.position.x,
                 Random.Range(1.5f, -3.7f), transform.position.z);
             Instantiate(ghost, instancePos, new Quaternion(0, 0, 0, 1));
+            waitingTime = Random.Range(4.0f, 6.0f);
         }
     }
 }

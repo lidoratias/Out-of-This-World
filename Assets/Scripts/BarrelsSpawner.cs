@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BarrelsSpawner : MonoBehaviour
+public class BarrelsSpawner : ActivatedGameObject
 {
 
     public float waitingTime;
