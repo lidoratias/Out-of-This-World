@@ -9,33 +9,55 @@ public class PirateLinearMovement : LinearMovement
     public Animation myAnimation;
     public AnimationClip burstingSkullAnim;
 
+    private bool isPhasedOut = false;
+    private Vector2 phasingOutDirection = new Vector2(1, 0);
+    public float phasingOutSpeed;
+
     void Update()
     {
-        timer = timer + Time.deltaTime;
-        Vector2 pos = Camera.main.WorldToViewportPoint(transform.position);
+        if (!isPhasedOut)
+        {
+            timer = timer + Time.deltaTime;
+            Vector2 pos = Camera.main.WorldToViewportPoint(transform.position);
 
-        if (pos.y < minValue)
-        {
-            movement.Set(0.0f, 1.0f);
-        }
+            if (pos.y < minValue)
+            {
+                movement.Set(0.0f, 1.0f);
+            }
 
-        if (pos.y > maxValue)
-        {
-            movement.Set(0.0f, -1.0f);
-        }
-        if (timer < waitingTime && myAnimation.isPlaying == false)
-        {
-            moveCharacter(movement);
+            if (pos.y > maxValue)
+            {
+                movement.Set(0.0f, -1.0f);
+            }
+            if (timer < waitingTime && myAnimation.isPlaying == false)
+            {
+                moveCharacter(movement);
+            }
+            else
+            {
+                myAnimation.clip = burstingSkullAnim;
+                myAnimation.Play();
+                timer = 0f;
+            }
         } else
         {
-            myAnimation.clip = burstingSkullAnim;
-            myAnimation.Play();
-            timer = 0f;
+            timer = timer + Time.deltaTime;
+            transform.Translate(phasingOutDirection * phasingOutSpeed * Time.deltaTime);
+            if (timer >= 5.0f)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
     public void setWaitingTime(float waitingTime)
     {
         this.waitingTime = waitingTime;
+    }
+
+    public void phaseOut()
+    {
+        this.isPhasedOut = true;
+        this.timer = 0;
     }
 }

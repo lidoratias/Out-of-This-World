@@ -10,16 +10,18 @@ public class CannonSet : ActivatedGameObject
     public CannonString cannonString;
     public CannonFire cannonFire;
 
-    private bool phasingOut = false;
     private Vector2 pos;
-    private Vector2 phasingOutDirection = new Vector2(-5, 0);
+    private Vector2 phasingOutDirection = new Vector2(1, 0);
+
+    public float phasingOutSpeed;
+    private float timer;
 
     // Update is called once per frame
     void Update()
     {
         pos = Camera.main.WorldToViewportPoint(transform.position);
 
-        if (!phasingOut)
+        if (!this.isPhasingOut)
         {
             if (pos.x >= 0.5)
             {
@@ -31,12 +33,19 @@ public class CannonSet : ActivatedGameObject
             }
         } else
         {
-            transform.Translate(phasingOutDirection * Time.deltaTime);
+            transform.Translate(phasingOutDirection * phasingOutSpeed * Time.deltaTime);
+            timer += Time.deltaTime;
+            if (timer >= 5.0f)
+            {
+                Destroyer.Destroy(gameObject);
+            }
         }
     }
 
-    public void setPhasingOut(bool phasingOut)
+    public override void phaseOut()
     {
-        this.phasingOut = phasingOut;
+        this.isPhasingOut = true;
+        this.cannonWeapon.phaseOut();
+        timer = 0;
     }
 }

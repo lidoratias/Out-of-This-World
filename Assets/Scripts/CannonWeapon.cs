@@ -12,6 +12,7 @@ public class CannonWeapon : MonoBehaviour
 
     public float timer = 0f;
     public float waitingTime = 0.5f;
+    private bool isPhasingOut = false;
 
     void Start()
     {
@@ -22,11 +23,14 @@ public class CannonWeapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer = timer + Time.deltaTime;
-        if (timer >= waitingTime)
+        if (!isPhasingOut)
         {
-            Shoot();
-            timer = 0f;
+            timer = timer + Time.deltaTime;
+            if (timer >= waitingTime)
+            {
+                Shoot();
+                timer = 0f;
+            }
         }
     }
 
@@ -34,5 +38,10 @@ public class CannonWeapon : MonoBehaviour
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Instantiate(explosionCloud, firePoint.position, new Quaternion(0, 0, 0, 1));
+    }
+
+    public void phaseOut()
+    {
+        this.isPhasingOut = true;
     }
 }

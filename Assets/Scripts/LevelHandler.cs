@@ -37,7 +37,7 @@ public class LevelHandler : MonoBehaviour
     {
         if (enemy.getHealth() <= 20 && phase == 1)
         {
-            enemy.setHealth(1000);
+            enemy.setHealth(1500);
             phase = 2;
 
             for (int i = 0; i < phaseOneObjects.Length; i++)
@@ -54,7 +54,7 @@ public class LevelHandler : MonoBehaviour
 
         if (enemy.getHealth() <= 20 && phase == 2)
         {
-            enemy.setHealth(1000);
+            enemy.setHealth(1500);
             phase = 3;
 
             for (int i = 0; i < phaseTwoObjects.Length; i++)

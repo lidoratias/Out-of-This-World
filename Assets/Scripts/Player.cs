@@ -40,7 +40,8 @@ public class Player : MonoBehaviour
         else if ((hitInfo.tag == "Hitting Enemy" || hitInfo.tag == "Pirate Skull")
             && anim.GetBool("IsHurt") == false)
         {
-            if (hitInfo.gameObject.transform.parent != null)
+            if (hitInfo.gameObject.transform.parent != null
+                && hitInfo.gameObject.transform.parent.GetComponent<HittingEnemy>() != null)
             {
                 GameObject parent = hitInfo.gameObject.transform.parent.gameObject;
                 HittingEnemy hittingEnemy = parent.GetComponent<HittingEnemy>();

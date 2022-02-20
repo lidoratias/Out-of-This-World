@@ -28,4 +28,14 @@ public class SwordsSpawner : ActivatedGameObject
             waitingTime = Random.Range(1.5f, 2.5f);
         }
     }
+
+    public override void phaseIn()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public override void phaseOut()
+    {
+        gameObject.SetActive(false);
+    }
 }

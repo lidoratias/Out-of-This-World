@@ -27,4 +27,14 @@ public class GhostSpawner : ActivatedGameObject
             waitingTime = Random.Range(4.0f, 6.0f);
         }
     }
+
+    public override void phaseIn()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public override void phaseOut()
+    {
+        gameObject.SetActive(false);
+    }
 }

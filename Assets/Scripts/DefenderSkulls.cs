@@ -33,4 +33,10 @@ public class DefenderSkulls : ActivatedGameObject
         skullOne.setWaitingTime(generatedWaitingTime);
         skullTwo.setWaitingTime(generatedWaitingTime);
     }
+
+    public override void phaseOut() {
+        this.setIsPhasingOut(true);
+        skullOne.phaseOut();
+        skullTwo.phaseOut();
+    }
 }

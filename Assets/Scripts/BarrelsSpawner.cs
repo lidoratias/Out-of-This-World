@@ -27,4 +27,14 @@ public class BarrelsSpawner : ActivatedGameObject
             Instantiate(barrel, instancePos, new Quaternion(0, 0, 0, 1));
         }
     }
+
+    public override void phaseIn()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public override void phaseOut()
+    {
+        gameObject.SetActive(false);
+    }
 }
