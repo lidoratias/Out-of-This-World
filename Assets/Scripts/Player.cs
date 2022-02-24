@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if (hitInfo.tag == "Cannon Bullet" && anim.GetBool("IsHurt") == false)
+        if (hitInfo.tag == "Bullet" && anim.GetBool("IsHurt") == false)
         {
             Bullet bullet = hitInfo.GetComponent<Bullet>();
             this.takeDamage(bullet.getDamage());
@@ -37,8 +37,7 @@ public class Player : MonoBehaviour
             anim.SetBool("IsHurt", true);
             Invoke("SetBoolBack", 2.08f);
         }
-        else if ((hitInfo.tag == "Hitting Enemy" || hitInfo.tag == "Pirate Skull")
-            && anim.GetBool("IsHurt") == false)
+        else if (hitInfo.tag == "Hitting Enemy" && anim.GetBool("IsHurt") == false)
         {
             if (hitInfo.gameObject.transform.parent != null
                 && hitInfo.gameObject.transform.parent.GetComponent<HittingEnemy>() != null)

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8113207442138344172}
   m_Layer: 0
   m_Name: Skull
-  m_TagString: Pirate Skull
+  m_TagString: Hitting Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,9 +51,9 @@ MonoBehaviour:
   maxValue: 0.9
   movement: {x: 0, y: 0}
   timer: 0
-  waitingTime: 5
   myAnimation: {fileID: 8113207442138344172}
   burstingSkullAnim: {fileID: 7400000, guid: 0f23a92d0e16f3d46b4a955f4841da3e, type: 2}
+  phasingOutSpeed: 0
 --- !u!114 &-7467797387068022942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 8113207442499521165}
   m_Layer: 0
   m_Name: skull sprite
-  m_TagString: Pirate Skull
+  m_TagString: Hitting Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

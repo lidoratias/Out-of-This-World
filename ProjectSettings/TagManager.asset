@@ -6,10 +6,10 @@ TagManager:
   tags:
   - Enemy
   - Player Bullet
-  - Cannon Bullet
   - Pirate Skull
   - Swords Target
   - Hitting Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX

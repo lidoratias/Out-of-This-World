@@ -9,6 +9,18 @@ public class PlayerLinearBullet : LinearBullet
     public string[] ignoreTags;
     public string[] destroyerTags;
 
+    private float waitingTime = 3.0f;
+    private float timer = 0;
+
+    void Update()
+    {
+        timer += Time.deltaTime;
+        if (timer >= waitingTime)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         for (int i = 0; i < ignoreTags.Length; i++)
