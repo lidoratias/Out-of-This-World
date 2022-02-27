@@ -41,7 +41,10 @@ public class Enemy : MonoBehaviour
             PlayerLinearBullet bullet = hitInfo.GetComponent<PlayerLinearBullet>();
             this.takeDamage(bullet.getDamage());
             Destroy(hitInfo.gameObject);
-            myAnimation.Play();
+            if (myAnimation != null)
+            {
+                myAnimation.Play();
+            }
         }
     }
 
