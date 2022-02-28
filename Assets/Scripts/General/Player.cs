@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 
     protected int health = 500;
     public Animator anim;
+    private ArrayList hurtingObjectsTags = new ArrayList();
 
     public void takeDamage(int damage)
     {
@@ -23,13 +24,17 @@ public class Player : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void Update()
-    {    
+    public void Start()
+    {
+        hurtingObjectsTags.Add("Bullet");
+        hurtingObjectsTags.Add("Hitting Enemy");
+        hurtingObjectsTags.Add("BlockingHittingEnemy");
+        hurtingObjectsTags.Add("IgnorableBullet");
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if (hitInfo.tag == "Bullet" && anim.GetBool("IsHurt") == false)
+        /*if (hurtingObjectsTags.Contains(hitInfo.tag) && anim.GetBool("IsHurt") == false)
         {
             Bullet bullet = hitInfo.GetComponent<Bullet>();
             this.takeDamage(bullet.getDamage());
@@ -37,7 +42,7 @@ public class Player : MonoBehaviour
             anim.SetBool("IsHurt", true);
             Invoke("SetBoolBack", 2.08f);
         }
-        else if (hitInfo.tag == "Hitting Enemy" && anim.GetBool("IsHurt") == false)
+        else*/ if (hurtingObjectsTags.Contains(hitInfo.tag) && anim.GetBool("IsHurt") == false)
         {
             if (hitInfo.gameObject.transform.parent != null
                 && hitInfo.gameObject.transform.parent.GetComponent<HittingEnemy>() != null)

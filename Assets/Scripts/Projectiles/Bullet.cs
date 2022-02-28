@@ -2,20 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Bullet : HittingEnemy
 {
-    protected float speed = 3.0f;
-    public int damage = 20;
+    public float speed = 3.0f;
+    //public int damage = 20;
     public Rigidbody2D rb;
-    protected Vector2 direction;
-    protected string target;
+    public Vector2 direction;
+    protected ArrayList targets = new ArrayList();
 
     protected virtual void Start(){}
 
-    public int getDamage()
+    void Update()
+    {
+        if (Mathf.Abs(transform.position.x) > 12 || Mathf.Abs(transform.position.y) > 6)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public ArrayList getTargets()
+    {
+        return targets;
+    }
+
+    public void setTargets(string[] targets)
+    {
+        for (int i = 0; i < targets.Length; i++)
+        {
+            this.targets.Add(targets[i]);
+        }
+    }
+
+    /*public int getDamage()
     {
         return this.damage;
-    }
+    }*/
 
     public void setSpeed(float speed)
     {
@@ -47,4 +68,8 @@ public class Bullet : MonoBehaviour
         return this.rb.velocity;
     }
 
+    public void AddForce(Vector3 force)
+    {
+        this.rb.AddForce(force);
+    }
 }

@@ -15,8 +15,8 @@ public class PufferfishSpawner : MonoBehaviour
     int[] locationOrder = { 0, 1, 2, 3 };
     
     private float timer;
-    private float waitingTimeBetweenSpawns = 0.5f;
-    private float waitingTimeBetweenAppears = 1.0f;
+    //private float waitingTimeBetweenSpawns = 0.5f;
+    //private float waitingTimeBetweenAppears = 1.0f;
     int idxToInstantiate = 0;
 
     // Start is called before the first frame update

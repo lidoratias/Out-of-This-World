@@ -5,7 +5,7 @@ using UnityEngine;
 public class CannonWeapon : MonoBehaviour
 {
     public Transform firePoint;
-    public GameObject bulletPrefab;
+    public CannonDirectedBullet bulletPrefab;
     public GameObject explosionCloud;
     public CannonString cannonString;
     public CannonFire cannonFire;
@@ -36,7 +36,9 @@ public class CannonWeapon : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        CannonDirectedBullet bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        string[] bulletTargets = { "Player" };
+        bullet.setTargets(bulletTargets);
         Instantiate(explosionCloud, firePoint.position, new Quaternion(0, 0, 0, 1));
     }
 

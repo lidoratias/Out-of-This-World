@@ -5,7 +5,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
-    public GameObject bulletPrefab;
+    public PlayerLinearBullet bulletPrefab;
 
     public float timer = 0f;
     public double waitingTime = 0.2;
@@ -23,6 +23,8 @@ public class Weapon : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        PlayerLinearBullet bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        string[] bulletTargets = { "Player"};
+        bullet.setTargets(bulletTargets);
     }
 }

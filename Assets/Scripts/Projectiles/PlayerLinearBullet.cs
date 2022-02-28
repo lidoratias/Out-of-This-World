@@ -9,7 +9,7 @@ public class PlayerLinearBullet : LinearBullet
     public string[] ignoreTags;
     public string[] destroyerTags;
 
-    private float waitingTime = 3.0f;
+    /*private float waitingTime = 3.0f;
     private float timer = 0;
 
     void Update()
@@ -19,7 +19,7 @@ public class PlayerLinearBullet : LinearBullet
         {
             Destroy(gameObject);
         }
-    }
+    }*/
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {

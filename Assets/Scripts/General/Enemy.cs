@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public int damage = 100;
     private string target;
     public Animation myAnimation;
+    public string flickerAnimName;
 
     void Start()
     {
@@ -43,7 +44,7 @@ public class Enemy : MonoBehaviour
             Destroy(hitInfo.gameObject);
             if (myAnimation != null)
             {
-                myAnimation.Play();
+                myAnimation.Play(flickerAnimName);
             }
         }
     }

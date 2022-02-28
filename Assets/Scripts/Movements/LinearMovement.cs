@@ -9,7 +9,6 @@ public class LinearMovement : MonoBehaviour
     public float minValue;
     public float maxValue;
     public Vector2 movement;
-    private Vector2 pos;
 
     // Start is called before the first frame update
     protected void Start()
@@ -18,8 +17,7 @@ public class LinearMovement : MonoBehaviour
 
     void Update()
     {
-        pos = Camera.main.WorldToViewportPoint(transform.position);
-
+        moveCharacter(movement);
         if (movement.x != 0)
         {
             checkX();
@@ -27,17 +25,25 @@ public class LinearMovement : MonoBehaviour
         {
             checkY();
         }
-        moveCharacter(movement);
     }
 
     protected void moveCharacter(Vector2 direction)
     {
-        transform.Translate(direction * this.speed * Time.deltaTime);
+        if (direction.x != 0)
+        {
+            transform.position = new Vector2(
+                transform.position.x + (direction.x * speed * Time.deltaTime),
+                transform.position.y);
+        } else if (direction.y != 0)
+        {
+            transform.position = new Vector2(transform.position.x,
+                transform.position.y + (direction.y * speed * Time.deltaTime));
+        }
     }
 
     void checkX()
     {
-        if (pos.x <= minValue || pos.x >= maxValue)
+        if (transform.position.x <= minValue || transform.position.x >= maxValue)
         {
             movement *= -1;
         }
@@ -45,7 +51,7 @@ public class LinearMovement : MonoBehaviour
 
     void checkY()
     {
-        if (pos.y <= minValue || pos.y >= maxValue)
+        if (transform.position.y <= minValue || transform.position.y >= maxValue)
         {
             movement *= -1;
         }

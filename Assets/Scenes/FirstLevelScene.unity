@@ -213,7 +213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 305891672}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6134286, y: 0.88486004, z: 60.94666}
+  m_LocalPosition: {x: 0.6134286, y: 0.88486004, z: 0}
   m_LocalScale: {x: 0.032417953, y: 0.032417953, z: 0.032417953}
   m_Children: []
   m_Father: {fileID: 1259950155}
@@ -407,7 +407,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498175714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8, y: -0.2, z: 0}
+  m_LocalPosition: {x: 8, y: 0.86, z: 0}
   m_LocalScale: {x: 0.55854774, y: 0.55854774, z: 0.55854774}
   m_Children:
   - {fileID: 1562286854}
@@ -428,8 +428,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  minValue: 0.3
-  maxValue: 0.8
+  minValue: -3
+  maxValue: 3.3
   movement: {x: 0, y: 1}
 --- !u!111 &498175719
 Animation:
@@ -488,6 +488,7 @@ MonoBehaviour:
   health: 1000
   damage: 50
   myAnimation: {fileID: 498175719}
+  flickerAnimName: Flickering Treasure Chest
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,8 +1359,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  minValue: 0
-  maxValue: 0.5
+  minValue: -9
+  maxValue: 0
   movement: {x: 1, y: 0}
 --- !u!4 &1259950155
 Transform:
@@ -1369,7 +1370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259950153}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.32, y: -5.0634594, z: -40.94666}
+  m_LocalPosition: {x: -5.32, y: -5.0634594, z: 1.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 305891673}
@@ -1459,7 +1460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442138344175, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_TagString
-      value: Hitting Enemy
+      value: BlockingHittingEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442499521165, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_AutoTiling
@@ -1467,7 +1468,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442499521166, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_TagString
-      value: Hitting Enemy
+      value: BlockingHittingEnemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f281065ef71eeb54abe935b599fff220, type: 3}
@@ -1595,7 +1596,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480243446}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.6796279, y: 1.5207593, z: 60.94666}
+  m_LocalPosition: {x: 0.6796279, y: 1.5207593, z: 0}
   m_LocalScale: {x: 0.06318384, y: 0.06318384, z: 0.06318384}
   m_Children:
   - {fileID: 1188373931}
@@ -1617,7 +1618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 2042321342}
-  bulletPrefab: {fileID: 2810010385385402461, guid: ba20c4155880c91499e2b951fef22f14, type: 3}
+  bulletPrefab: {fileID: 3808456307540733915, guid: ba20c4155880c91499e2b951fef22f14, type: 3}
   explosionCloud: {fileID: 3307492831062922142, guid: 77ec8189e3c7d5449b4719a1b2e1daeb, type: 3}
   cannonString: {fileID: 1188373934}
   cannonFire: {fileID: 1948955724}
@@ -2236,7 +2237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2363053005422940537, guid: 6540e623947a6df4c999de0f5531563e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.41
+      value: -9.08
       objectReference: {fileID: 0}
     - target: {fileID: 2363053005422940537, guid: 6540e623947a6df4c999de0f5531563e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2274,6 +2275,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2363053005422940541, guid: 6540e623947a6df4c999de0f5531563e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: -8568477072428507815, guid: 3ba17e04d48ce5344895809c3705a3f5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6540e623947a6df4c999de0f5531563e, type: 3}
 --- !u!1001 &8113207441099619194
@@ -2341,7 +2346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442138344175, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_TagString
-      value: Hitting Enemy
+      value: BlockingHittingEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442499521165, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_AutoTiling
@@ -2349,7 +2354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442499521166, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_TagString
-      value: Hitting Enemy
+      value: BlockingHittingEnemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f281065ef71eeb54abe935b599fff220, type: 3}

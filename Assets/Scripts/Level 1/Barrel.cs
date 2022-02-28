@@ -78,6 +78,12 @@ public class Barrel : HittingEnemy
         thirdBullet.setVelocity(thirdBullet.getDirection() * thirdBullet.getSpeed());
         fourthBullet.setVelocity(fourthBullet.getDirection() * fourthBullet.getSpeed());
 
+        string[] bulletTargets = { "Player" };
+        firstBullet.setTargets(bulletTargets);
+        secondBullet.setTargets(bulletTargets);
+        thirdBullet.setTargets(bulletTargets);
+        fourthBullet.setTargets(bulletTargets);
+
         Destroy(gameObject);
     }
 }

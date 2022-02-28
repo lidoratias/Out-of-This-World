@@ -5,18 +5,13 @@ using UnityEngine;
 public class LaserBeam : HittingEnemy
 {
 
-    private float timer = 0;
-    private float waitingTime = 1.5f;
+    protected float timer = 0;
+    protected float waitingTime = 1.5f;
 
-    private bool isActivated = false;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
+    protected bool isActivated = false;
 
     // Update is called once per frame
-    void Update()
+    override protected void Update()
     {
         if (isActivated)
         {
@@ -30,14 +25,14 @@ public class LaserBeam : HittingEnemy
         }
     }
 
-    public void phaseIn()
+    public virtual void phaseIn()
     {
         timer = 0;
         isActivated = true;
         gameObject.SetActive(true);
     }
 
-    public void phaseOut()
+    public virtual void phaseOut()
     {
         gameObject.SetActive(false);
     }

@@ -252,7 +252,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   movement: {x: 0, y: 0}
-  animator: {fileID: 0}
 --- !u!114 &2363053005422940541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,7 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 2363053004502615381}
-  bulletPrefab: {fileID: 1657174339790122834, guid: 3ba17e04d48ce5344895809c3705a3f5, type: 3}
+  bulletPrefab: {fileID: -8568477072428507815, guid: 3ba17e04d48ce5344895809c3705a3f5, type: 3}
   timer: 0
   waitingTime: 0.2
 --- !u!114 &2363053005422940540

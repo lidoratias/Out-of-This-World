@@ -6,13 +6,6 @@ public class Movement : MonoBehaviour
 {
     public float speed = 15.0f;
     public Vector2 movement;
-    public Animator animator;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        animator = this.GetComponent<Animator>();
-    }
 
     // Update is called once per frame
     void Update()

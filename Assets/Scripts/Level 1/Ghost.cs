@@ -6,6 +6,12 @@ public class Ghost : MonoBehaviour
 {
     public GameObject explosionEffect;
     public GameObject parentGhost;
+    private float timer = 0;
+
+    void Update()
+    {
+        timer += Time.deltaTime;
+    }
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
@@ -16,7 +22,10 @@ public class Ghost : MonoBehaviour
             GameObject explosionInstance = Instantiate(explosionEffect, explosionPosition,
                 new Quaternion(0, 0, 0, 1));
             explosionInstance.transform.localScale = new Vector3(0.07f, 0.07f, 0.07f);
-            Destroy(parentGhost);
+            if (timer >= 0.5)
+            {
+                Destroy(parentGhost);
+            }
         }
     }
 }

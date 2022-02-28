@@ -8,12 +8,11 @@ public class BarrelLinearBullet : LinearBullet
 
     protected override void Start()
     {
-        this.target = "Player";
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if (hitInfo.tag == "Player")
+        if (this.targets.Contains(hitInfo.tag))
         {
             GameObject explosionInstance = Instantiate(explosionEffect, transform.position,
                 new Quaternion(0, 0, 0, 1));
