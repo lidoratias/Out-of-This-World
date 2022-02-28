@@ -320,7 +320,7 @@ MonoBehaviour:
   anim: {fileID: 1194384098}
   waitingTime: 0.5
   firePoint: {fileID: 1922794466}
-  bulletPrefab: {fileID: 2160535497588896059, guid: 76aa0f0228a01f446ae048350a1ff70c, type: 3}
+  bulletPrefab: {fileID: 7578740996379955260, guid: 76aa0f0228a01f446ae048350a1ff70c, type: 3}
   top: {fileID: 1142731978}
   bottom: {fileID: 732484002}
 --- !u!114 &1194384100

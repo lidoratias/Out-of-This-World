@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1117071861334514999}
   - component: {fileID: 8632782854732276904}
-  - component: {fileID: 2160535497588896059}
   - component: {fileID: 1391104158947955769}
+  - component: {fileID: 7578740996379955260}
   - component: {fileID: 2273686113948276905}
   m_Layer: 0
   m_Name: Witch Bullet
-  m_TagString: Bullet
+  m_TagString: IgnorableBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,22 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2160535497588896059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8371910708537864042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6465bbc5ece63b479644413bafe16f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.55
-  damage: 20
-  rb: {fileID: 1391104158947955769}
-  direction: {x: 0, y: 0}
 --- !u!50 &1391104158947955769
 Rigidbody2D:
   serializedVersion: 4
@@ -122,6 +106,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7578740996379955260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8371910708537864042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b57f15f425e99154899d9f9056f5bda9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
+  speed: 0.55
+  rb: {fileID: 1391104158947955769}
+  direction: {x: 0, y: 0}
 --- !u!58 &2273686113948276905
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -132,7 +132,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
