@@ -8,15 +8,18 @@ public class WitchHat : MonoBehaviour
     public Animation anim;
 
     private float timer;
-    public float waitingTime;
+    private float waitingTime;
 
-    private float shootingTimer;
-    private float shootingWaitingTime = 0.25f;
+    private float turningTimer;
+    private float waitTillTurn;
+
+    //private float shootingTimer;
+    //private float shootingWaitingTime = 0.25f;
     
     private Vector2 target;
 
     public Transform firePoint;
-    public Bullet bulletPrefab;
+    public BurstingLaserBeam laserPrefab;
 
     public WitchHatPart top;
     public WitchHatPart bottom;
@@ -25,22 +28,29 @@ public class WitchHat : MonoBehaviour
     void Start()
     {
         target = new Vector2(-10, Random.Range(-7.0f, 3.5f));
+        waitingTime = 2.0f;
+        waitTillTurn = Random.Range(4.0f, 10.0f);
     }
 
     // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
+        turningTimer += Time.deltaTime;
+
+        if (turningTimer >= waitTillTurn)
+        {
+            gameObject.GetComponent<EllipticalMovement>().turnDirection();
+            waitTillTurn = Random.Range(4.0f, 10.0f);
+            turningTimer = 0;
+        }
+
         if (timer >= waitingTime)
         {
+            waitingTime = Random.Range(6.5f, 14.0f);
             anim.Play("Witch Hat Shot");
-            shootingTimer += Time.deltaTime;
-            if (shootingTimer >= shootingWaitingTime)
-            {
-                Shoot();
-                shootingTimer = 0;
-                timer = 0;
-            }
+            timer = 0;
+            Invoke("Shoot", 0.25f);
         }
     }
 
@@ -64,10 +74,18 @@ public class WitchHat : MonoBehaviour
     {
         Vector2 direction = new Vector2(target.x - transform.position.x,
             target.y - transform.position.y);
-        Bullet bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        bullet.setDirection(direction);
+        BurstingLaserBeam laser = Instantiate(laserPrefab, firePoint.position, 
+            firePoint.rotation);
+        laser.transform.parent = this.firePoint;
+        Invoke("drawbackHat", laser.getLifeTime() + laser.getDrawbackLength());
+        /*bullet.setDirection(direction);
         string[] bulletTargets = { "Player" };
         bullet.setTargets(bulletTargets);
-        target = new Vector2(-10, Random.Range(-7.0f, 3.5f));
+        target = new Vector2(-10, Random.Range(-7.0f, 3.5f));*/
+    }
+
+    void drawbackHat()
+    {
+        anim.Play("Witch Hat Drawback");
     }
 }

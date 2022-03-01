@@ -301,6 +301,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: a1efe5076ab2bbb4396b4aed3bbe7a35, type: 2}
   - {fileID: 7400000, guid: 60a0300e569b8d5489ba34852decd07a, type: 2}
+  - {fileID: 7400000, guid: ba0e9aa486f321e4597810a265c3cdc3, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -318,9 +319,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1194384098}
-  waitingTime: 0.5
   firePoint: {fileID: 1922794466}
-  bulletPrefab: {fileID: 7578740996379955260, guid: 76aa0f0228a01f446ae048350a1ff70c, type: 3}
+  laserPrefab: {fileID: 2958015985041617849, guid: ac103302e46f58c4ebbe85e008dc4a17, type: 3}
   top: {fileID: 1142731978}
   bottom: {fileID: 732484002}
 --- !u!114 &1194384100

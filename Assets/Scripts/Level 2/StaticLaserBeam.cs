@@ -6,10 +6,16 @@ public class StaticLaserBeam : LaserBeam
 {
 
     public Animation anim;
-    private int phase = 0;
+
+    public string burstAnimName;
+    public string drawbackAnimName;
+    public string flickerAnimName;
+
+    protected int phase = 0;
+    protected float lifeTime = 5.0f;
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
         this.waitingTime = 2.0f;
         phaseIn();
@@ -22,19 +28,18 @@ public class StaticLaserBeam : LaserBeam
         if (timer >= waitingTime && phase == 0)
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = true;
-            anim.Play("Bursting Red Laser Beam");
+            anim.Play(burstAnimName);
             phase = 1;
             timer = 0;
-            waitingTime = 5;
         }
 
-        if (timer >= waitingTime && phase == 1)
+        if (timer >= lifeTime && phase == 1)
         {
-            anim.Play("Destroy Red Laser Beam");
+            anim.Play(drawbackAnimName);
             phase = 2;
         }
 
-        if (timer >= waitingTime + 0.5f && phase == 2)
+        if (timer >= lifeTime + 0.5f && phase == 2)
         {
             Destroy(gameObject);
         }
@@ -51,5 +56,15 @@ public class StaticLaserBeam : LaserBeam
     public override void phaseOut()
     {
         gameObject.SetActive(false);
+    }
+
+    public float getLifeTime()
+    {
+        return this.lifeTime;
+    }
+
+    public float getDrawbackLength()
+    {
+        return 0.5f;
     }
 }

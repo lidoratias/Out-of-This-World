@@ -7,6 +7,8 @@ public class HittingEnemy : MonoBehaviour
 
     public int damage = 10;
 
+    protected virtual void Start() { }
+
     protected virtual void Update() { }
 
     // Start is called before the first frame update
