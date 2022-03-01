@@ -10,9 +10,6 @@ public class WitchHat : MonoBehaviour
     private float timer;
     private float waitingTime;
 
-    private float turningTimer;
-    private float waitTillTurn;
-
     //private float shootingTimer;
     //private float shootingWaitingTime = 0.25f;
     
@@ -24,12 +21,14 @@ public class WitchHat : MonoBehaviour
     public WitchHatPart top;
     public WitchHatPart bottom;
 
+    private float turningTimer = 0;
+    private float waitTillTurn = 0.4f;
+
     // Start is called before the first frame update
     void Start()
     {
         target = new Vector2(-10, Random.Range(-7.0f, 3.5f));
         waitingTime = 2.0f;
-        waitTillTurn = Random.Range(4.0f, 10.0f);
     }
 
     // Update is called once per frame
@@ -38,13 +37,18 @@ public class WitchHat : MonoBehaviour
         timer += Time.deltaTime;
         turningTimer += Time.deltaTime;
 
-        if (turningTimer >= waitTillTurn)
+        if (Mathf.Abs(Mathf.Abs(transform.position.y) - 2.9f) <= 0.1f 
+            && turningTimer >= waitTillTurn)
         {
-            gameObject.GetComponent<EllipticalMovement>().turnDirection();
-            waitTillTurn = Random.Range(4.0f, 10.0f);
+            int generatedInt = Random.Range(0, 3);
+            if (generatedInt == 1)
+            {
+                gameObject.GetComponent<EllipticalMovement>().turnDirection();
+            }
             turningTimer = 0;
         }
 
+        //TODO ADD A FEW MORE SHOOTING TYPES - REGULAR BULLETS AND ROTATING BULLETS.
         if (timer >= waitingTime)
         {
             waitingTime = Random.Range(6.5f, 14.0f);
