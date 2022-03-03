@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3808456307540733915}
   m_Layer: 0
   m_Name: CannonBullet
-  m_TagString: Bullet
+  m_TagString: IgnorableBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,5 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+  speed: 3
   rb: {fileID: 1922492049485872287}
+  direction: {x: 0, y: 0}
   explosionEffect: {fileID: 4131917201181709206, guid: 95a3a4c72877bf9439ed9bd91ff32622, type: 3}

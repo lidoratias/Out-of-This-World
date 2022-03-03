@@ -427,10 +427,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b05477f4a3d34274591ef395d4caa1c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  minValue: -3
-  maxValue: 3.3
+  speed: 4
   movement: {x: 0, y: 1}
+  minXValue: 0
+  maxXValue: 0
+  minYValue: -3
+  maxYValue: 3
 --- !u!111 &498175719
 Animation:
   m_ObjectHideFlags: 0
@@ -1358,10 +1360,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b05477f4a3d34274591ef395d4caa1c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  minValue: -9
-  maxValue: 0
+  speed: 2
   movement: {x: 1, y: 0}
+  minXValue: -10
+  maxXValue: 0
+  minYValue: 0
+  maxYValue: 0
 --- !u!4 &1259950155
 Transform:
   m_ObjectHideFlags: 0
@@ -1412,7 +1416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442138344160, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7823224
+      value: -3.7
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442138344160, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1445,6 +1449,18 @@ PrefabInstance:
     - target: {fileID: 8113207442138344160, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113207442138344173, guid: f281065ef71eeb54abe935b599fff220, type: 3}
+      propertyPath: maxYValue
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113207442138344173, guid: f281065ef71eeb54abe935b599fff220, type: 3}
+      propertyPath: minYValue
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113207442138344173, guid: f281065ef71eeb54abe935b599fff220, type: 3}
+      propertyPath: movement.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442138344173, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: phasingOutSpeed
@@ -2298,7 +2314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442138344160, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.5476775
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442138344160, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2331,6 +2347,18 @@ PrefabInstance:
     - target: {fileID: 8113207442138344160, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113207442138344173, guid: f281065ef71eeb54abe935b599fff220, type: 3}
+      propertyPath: maxYValue
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113207442138344173, guid: f281065ef71eeb54abe935b599fff220, type: 3}
+      propertyPath: minYValue
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113207442138344173, guid: f281065ef71eeb54abe935b599fff220, type: 3}
+      propertyPath: movement.y
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8113207442138344173, guid: f281065ef71eeb54abe935b599fff220, type: 3}
       propertyPath: phasingOutSpeed

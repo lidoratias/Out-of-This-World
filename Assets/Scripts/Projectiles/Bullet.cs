@@ -10,9 +10,9 @@ public class Bullet : HittingEnemy
     public Vector2 direction;
     protected ArrayList targets = new ArrayList();
 
-    protected virtual void Start(){}
+    override protected void Start(){}
 
-    void Update()
+    override protected void Update()
     {
         if (Mathf.Abs(transform.position.x) > 12 || Mathf.Abs(transform.position.y) > 6)
         {

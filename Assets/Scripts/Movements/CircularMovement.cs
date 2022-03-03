@@ -18,7 +18,7 @@ public class CircularMovement : MonoBehaviour
     {
         posX = centerOfRotation.position.x + Mathf.Cos(angle) * rotationRadius;
         posY = centerOfRotation.position.y + Mathf.Sin(angle) * rotationRadius;
-        transform.position = new Vector2(posX, posY);
+        transform.position = new Vector3(posX, posY, transform.position.z);
         angle = angle + Time.deltaTime * angularSpeed;
 
         if (angle >= 360)

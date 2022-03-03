@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PirateLinearMovement : LinearMovement
 {
-    public float timer = 0f;
+    private float timer = 0f;
     private float waitingTime = 5.0f;
     public Animation myAnimation;
     public AnimationClip burstingSkullAnim;
@@ -20,12 +20,12 @@ public class PirateLinearMovement : LinearMovement
             timer = timer + Time.deltaTime;
             Vector2 pos = Camera.main.WorldToViewportPoint(transform.position);
 
-            if (pos.y < minValue)
+            if (pos.y < minYValue)
             {
                 movement.Set(0.0f, 1.0f);
             }
 
-            if (pos.y > maxValue)
+            if (pos.y > maxYValue)
             {
                 movement.Set(0.0f, -1.0f);
             }

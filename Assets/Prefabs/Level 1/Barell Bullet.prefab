@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 1349116908102170537}
   - component: {fileID: 1349116908102170536}
   - component: {fileID: 1349116908102170583}
-  - component: {fileID: 1349116908102170582}
   - component: {fileID: 1349116908102170581}
+  - component: {fileID: 2692615018716975440}
   m_Layer: 0
   m_Name: Barell Bullet
-  m_TagString: Cannon Bullet
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,21 +101,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 20.945002
---- !u!114 &1349116908102170582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349116908102170580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 675c6208d82cd5540ba26049c99a3ee2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 20
-  rb: {fileID: 1349116908102170581}
-  explosionEffect: {fileID: 2701105221010671739, guid: de5157b3ece619c49a97ca36337fc383, type: 3}
 --- !u!50 &1349116908102170581
 Rigidbody2D:
   serializedVersion: 4
@@ -137,3 +122,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2692615018716975440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349116908102170580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6465bbc5ece63b479644413bafe16f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  speed: 3
+  rb: {fileID: 1349116908102170581}
+  direction: {x: 0, y: 0}

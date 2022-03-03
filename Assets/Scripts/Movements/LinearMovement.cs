@@ -2,19 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LinearMovement : MonoBehaviour
+public class LinearMovement : LimitedMovement
 {
-
-    public float speed = 3.0f;
-    public float minValue;
-    public float maxValue;
-    public Vector2 movement;
-
-    // Start is called before the first frame update
-    protected void Start()
-    {}
-
-
     void Update()
     {
         moveCharacter(movement);
@@ -27,33 +16,18 @@ public class LinearMovement : MonoBehaviour
         }
     }
 
-    protected void moveCharacter(Vector2 direction)
+    override protected void moveCharacter(Vector2 direction)
     {
         if (direction.x != 0)
         {
-            transform.position = new Vector2(
+            transform.position = new Vector3(
                 transform.position.x + (direction.x * speed * Time.deltaTime),
-                transform.position.y);
+                transform.position.y, transform.position.z);
         } else if (direction.y != 0)
         {
-            transform.position = new Vector2(transform.position.x,
-                transform.position.y + (direction.y * speed * Time.deltaTime));
-        }
-    }
-
-    void checkX()
-    {
-        if (transform.position.x <= minValue || transform.position.x >= maxValue)
-        {
-            movement *= -1;
-        }
-    }
-
-    void checkY()
-    {
-        if (transform.position.y <= minValue || transform.position.y >= maxValue)
-        {
-            movement *= -1;
+            transform.position = new Vector3(transform.position.x,
+                transform.position.y + (direction.y * speed * Time.deltaTime),
+                transform.position.z);
         }
     }
 }

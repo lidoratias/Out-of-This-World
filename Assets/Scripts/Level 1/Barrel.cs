@@ -16,7 +16,7 @@ public class Barrel : HittingEnemy
     public float speed = 4.0f;
 
     // Start is called before the first frame update
-    void Start()
+    override protected void Start()
     {
         GetComponent<SpriteRenderer>().enabled = false;
         mode = Random.Range(0, 2);
@@ -27,7 +27,7 @@ public class Barrel : HittingEnemy
     }
 
     // Update is called once per frame
-    void Update()
+    override protected void Update()
     {
         gameObject.transform.Rotate(0, 0, rotateSpeed);
         if (latestY > transform.position.y)
