@@ -661,9 +661,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  minValue: -1000
-  maxValue: 1000
   movement: {x: -2, y: 0}
+  minXValue: -1000
+  maxXValue: 1000
+  minYValue: 0
+  maxYValue: 0
 --- !u!114 &9100342135419511517
 MonoBehaviour:
   m_ObjectHideFlags: 0

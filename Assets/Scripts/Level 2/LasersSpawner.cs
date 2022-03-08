@@ -9,12 +9,6 @@ public class LasersSpawner : ActivatedGameObject
     private float timer = 0;
     private float waitingTime = 10.0f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         timer += Time.deltaTime;

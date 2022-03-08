@@ -5,7 +5,10 @@ using UnityEngine;
 public class TimedSpawner : ActivatedGameObject
 {
 
-    public GameObject spawnedObject;
+    public GameObject[] spawnedObjects;
+    public int[] chancesForEachObject;
+    private int sumOfChances = 0;
+
     private float timer = 0;
     public float waitingTime = 0.2f;
 
@@ -20,6 +23,11 @@ public class TimedSpawner : ActivatedGameObject
     void Start()
     {
         spawnPos = new Vector3(0, 0, 0);
+
+        for (int i = 0; i < chancesForEachObject.Length; i++)
+        {
+            sumOfChances += chancesForEachObject[i];
+        }
     }
 
     // Update is called once per frame
@@ -37,6 +45,19 @@ public class TimedSpawner : ActivatedGameObject
             {
                 spawnPos = new Vector3(transform.position.x,
                     Random.Range(spawnPointRange[0], spawnPointRange[1]), transform.position.z);
+            }
+
+            int randomIndex = Random.Range(1, sumOfChances + 1);
+            int collectedSum = 0;
+            GameObject spawnedObject = null;
+            for (int i = 0; i < chancesForEachObject.Length; i++)
+            {
+                collectedSum += chancesForEachObject[i];
+                if (randomIndex <= collectedSum)
+                {
+                    spawnedObject = spawnedObjects[i];
+                    break;
+                }
             }
             Instantiate(spawnedObject, spawnPos, transform.rotation);
             waitingTime = Random.Range(waitingTimeRange[0], waitingTimeRange[1]);

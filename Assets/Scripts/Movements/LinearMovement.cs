@@ -20,14 +20,46 @@ public class LinearMovement : LimitedMovement
     {
         if (direction.x != 0)
         {
-            transform.position = new Vector3(
-                transform.position.x + (direction.x * speed * Time.deltaTime),
-                transform.position.y, transform.position.z);
+            if (transform.position.x + (direction.x * speed * Time.deltaTime) < minXValue)
+            {
+                transform.position = new Vector3(
+                    minXValue,
+                    transform.position.y, transform.position.z);
+            } else if (transform.position.x + (direction.x * speed * Time.deltaTime)
+                > maxXValue)
+            {
+                transform.position = new Vector3(
+                    maxXValue,
+                    transform.position.y, transform.position.z);
+            }
+            else
+            {
+                transform.position = new Vector3(
+                    transform.position.x + (direction.x * speed * Time.deltaTime),
+                    transform.position.y, transform.position.z);
+            }
+
         } else if (direction.y != 0)
         {
-            transform.position = new Vector3(transform.position.x,
-                transform.position.y + (direction.y * speed * Time.deltaTime),
-                transform.position.z);
+            if (transform.position.y + (direction.y * speed * Time.deltaTime) < minYValue)
+            {
+                transform.position = new Vector3(transform.position.x,
+                    minYValue,
+                    transform.position.z);
+            } else if (transform.position.y + (direction.y * speed * Time.deltaTime) 
+                > maxYValue)
+            {
+                transform.position = new Vector3(transform.position.x,
+                    maxYValue,
+                    transform.position.z);
+            }
+            else
+            {
+                transform.position = new Vector3(transform.position.x,
+                    transform.position.y + (direction.y * speed * Time.deltaTime),
+                    transform.position.z);
+            }
+
         }
     }
 }

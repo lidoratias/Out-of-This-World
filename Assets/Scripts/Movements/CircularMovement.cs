@@ -9,12 +9,12 @@ public class CircularMovement : MonoBehaviour
 
     public float rotationRadius = 2f, angularSpeed = 2f;
 
-    float posX, posY;
+    protected float posX, posY;
 
     public float angle;
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         posX = centerOfRotation.position.x + Mathf.Cos(angle) * rotationRadius;
         posY = centerOfRotation.position.y + Mathf.Sin(angle) * rotationRadius;
@@ -25,6 +25,5 @@ public class CircularMovement : MonoBehaviour
         {
             angle = 0;
         }
-
     }
 }

@@ -17,6 +17,9 @@ public class WitchHat : MonoBehaviour
 
     public Transform firePoint;
     public BurstingLaserBeam laserPrefab;
+    public HittingEnemy starPrefab;
+
+    public LevelHandler levelHandler;
 
     public WitchHatPart top;
     public WitchHatPart bottom;
@@ -51,7 +54,13 @@ public class WitchHat : MonoBehaviour
         //TODO ADD A FEW MORE SHOOTING TYPES - REGULAR BULLETS AND ROTATING BULLETS.
         if (timer >= waitingTime)
         {
-            waitingTime = Random.Range(6.5f, 14.0f);
+            if (levelHandler.getPhase() == 1)
+            {
+                waitingTime = Random.Range(6.5f, 14.0f);
+            } else if (levelHandler.getPhase() == 2)
+            {
+                waitingTime = Random.Range(1.3f, 2.8f);
+            }
             anim.Play("Witch Hat Shot");
             timer = 0;
             Invoke("Shoot", 0.25f);
@@ -78,10 +87,17 @@ public class WitchHat : MonoBehaviour
     {
         Vector2 direction = new Vector2(target.x - transform.position.x,
             target.y - transform.position.y);
-        BurstingLaserBeam laser = Instantiate(laserPrefab, firePoint.position, 
-            firePoint.rotation);
-        laser.transform.parent = this.firePoint;
-        Invoke("drawbackHat", laser.getLifeTime() + laser.getDrawbackLength());
+        if (levelHandler.getPhase() == 1)
+        {
+            BurstingLaserBeam laser = Instantiate(laserPrefab, firePoint.position,
+                firePoint.rotation);
+            laser.transform.parent = this.firePoint;
+            Invoke("drawbackHat", laser.getLifeTime() + laser.getDrawbackLength());
+        } else if (levelHandler.getPhase() == 2)
+        {
+            Instantiate(starPrefab, firePoint.position, firePoint.rotation);
+            drawbackHat();
+        }
         /*bullet.setDirection(direction);
         string[] bulletTargets = { "Player" };
         bullet.setTargets(bulletTargets);
