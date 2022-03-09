@@ -8,6 +8,14 @@ public class Player : MonoBehaviour
     protected int health = 500;
     public Animator anim;
     private ArrayList hurtingObjectsTags = new ArrayList();
+    private bool isFlickering = false;
+
+    private float timer = 0;
+    //public float timeBetweenFlickers;
+
+    public float flickeringWaitingTime;
+
+    public FlickeringObject flickeringObject;
 
     public void takeDamage(int damage)
     {
@@ -32,17 +40,38 @@ public class Player : MonoBehaviour
         hurtingObjectsTags.Add("IgnorableBullet");
     }
 
+    void Update()
+    {
+        if (isFlickering)
+        {
+            timer += Time.deltaTime;
+        }
+
+        if (isFlickering && timer <= flickeringWaitingTime)
+        {
+            if (!flickeringObject.getIsOn())
+            {
+                unflicker();
+            }
+            else
+            {
+                flicker();
+            }
+        }
+
+        if (timer > flickeringWaitingTime)
+        {
+            timer = 0;
+            flickeringObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f,
+                1.0f);
+            flickeringObject.setIsOn(true);
+            isFlickering = false;
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        /*if (hurtingObjectsTags.Contains(hitInfo.tag) && anim.GetBool("IsHurt") == false)
-        {
-            Bullet bullet = hitInfo.GetComponent<Bullet>();
-            this.takeDamage(bullet.getDamage());
-            Destroy(hitInfo.gameObject);
-            anim.SetBool("IsHurt", true);
-            Invoke("SetBoolBack", 2.08f);
-        }
-        else*/ if (hurtingObjectsTags.Contains(hitInfo.tag) && anim.GetBool("IsHurt") == false)
+        if (hurtingObjectsTags.Contains(hitInfo.tag) && anim.GetBool("IsHurt") == false)
         {
             if (hitInfo.gameObject.transform.parent != null
                 && hitInfo.gameObject.transform.parent.GetComponent<HittingEnemy>() != null)
@@ -50,22 +79,56 @@ public class Player : MonoBehaviour
                 GameObject parent = hitInfo.gameObject.transform.parent.gameObject;
                 HittingEnemy hittingEnemy = parent.GetComponent<HittingEnemy>();
                 this.takeDamage(hittingEnemy.getDamage());
-                anim.SetBool("IsHurt", true);
-                Invoke("SetBoolBack", 2.08f);
+                isFlickering = true;
+                //anim.SetBool("IsHurt", true);
+                //Invoke("SetBoolBack", 2.08f);
             } else
             {
                 HittingEnemy hittingEnemy = hitInfo.GetComponent<HittingEnemy>();
                 this.takeDamage(hittingEnemy.getDamage());
-                anim.SetBool("IsHurt", true);
-                Invoke("SetBoolBack", 2.08f);
+                isFlickering = true;
+                //anim.SetBool("IsHurt", true);
+                //Invoke("SetBoolBack", 2.08f);
             }
 
         }
     }
 
-    public void SetBoolBack()
+    public void flicker()
+    {
+        Color c = flickeringObject.GetComponent<SpriteRenderer>().color;
+        if (c.a - 0.005f > 0.2f)
+        {
+            flickeringObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f,
+                c.a - 0.005f);
+        }
+        else
+        {
+            flickeringObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f,
+                0.2f);
+            flickeringObject.setIsOn(false);
+        }
+    }
+
+    public void unflicker()
+    {
+        Color c = flickeringObject.GetComponent<SpriteRenderer>().color;
+        if (c.a + 0.005f < 1.0f)
+        {
+            flickeringObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f,
+                c.a + 0.005f);
+        }
+        else
+        {
+            flickeringObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f,
+                1.0f);
+            flickeringObject.setIsOn(true);
+        }
+    }
+
+    /*public void SetBoolBack()
     {
         anim.SetBool("IsHurt", false);
-    }
+    }*/
 
 }

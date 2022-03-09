@@ -46,6 +46,7 @@ public class CannonSet : ActivatedGameObject
     {
         this.isPhasingOut = true;
         this.cannonWeapon.phaseOut();
+        GetComponent<LinearMovement>().enabled = false;
         timer = 0;
     }
 }

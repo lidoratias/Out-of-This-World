@@ -21,8 +21,8 @@ public class WitchHat : MonoBehaviour
 
     public LevelHandler levelHandler;
 
-    public WitchHatPart top;
-    public WitchHatPart bottom;
+    public FlickeringObject top;
+    public FlickeringObject bottom;
 
     private float turningTimer = 0;
     private float waitTillTurn = 0.4f;

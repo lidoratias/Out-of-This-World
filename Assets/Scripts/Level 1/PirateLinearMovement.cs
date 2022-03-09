@@ -18,16 +18,18 @@ public class PirateLinearMovement : LinearMovement
         if (!isPhasedOut)
         {
             timer = timer + Time.deltaTime;
-            Vector2 pos = Camera.main.WorldToViewportPoint(transform.position);
+            //Vector2 pos = Camera.main.WorldToViewportPoint(transform.position);
+            //Debug.Log(pos.x);
+            //Debug.Log(pos.y);
 
-            if (pos.y < minYValue)
+            if (transform.position.y < minYValue)
             {
-                movement.Set(0.0f, 1.0f);
+                movement *= -1;
             }
 
-            if (pos.y > maxYValue)
+            if (transform.position.y > maxYValue)
             {
-                movement.Set(0.0f, -1.0f);
+                movement *= -1;
             }
             if (timer < waitingTime && myAnimation.isPlaying == false)
             {
