@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if (hurtingObjectsTags.Contains(hitInfo.tag) && anim.GetBool("IsHurt") == false)
+        if (hurtingObjectsTags.Contains(hitInfo.tag) && !isFlickering)
         {
             if (hitInfo.gameObject.transform.parent != null
                 && hitInfo.gameObject.transform.parent.GetComponent<HittingEnemy>() != null)
@@ -80,15 +80,12 @@ public class Player : MonoBehaviour
                 HittingEnemy hittingEnemy = parent.GetComponent<HittingEnemy>();
                 this.takeDamage(hittingEnemy.getDamage());
                 isFlickering = true;
-                //anim.SetBool("IsHurt", true);
-                //Invoke("SetBoolBack", 2.08f);
+
             } else
             {
                 HittingEnemy hittingEnemy = hitInfo.GetComponent<HittingEnemy>();
                 this.takeDamage(hittingEnemy.getDamage());
                 isFlickering = true;
-                //anim.SetBool("IsHurt", true);
-                //Invoke("SetBoolBack", 2.08f);
             }
 
         }
@@ -125,10 +122,4 @@ public class Player : MonoBehaviour
             flickeringObject.setIsOn(true);
         }
     }
-
-    /*public void SetBoolBack()
-    {
-        anim.SetBool("IsHurt", false);
-    }*/
-
 }
