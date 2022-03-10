@@ -28,4 +28,44 @@ public class LimitedMovement : BasicMovement
             movement *= -1;
         }
     }
+
+    public float getMinXValue()
+    {
+        return this.minXValue;
+    }
+
+    public float getMaxXValue()
+    {
+        return this.maxXValue;
+    }
+
+    public float getMinYValue()
+    {
+        return this.minYValue;
+    }
+
+    public float getMaxYValue()
+    {
+        return this.maxYValue;
+    }
+
+    public void setMinXValue(float min)
+    {
+        this.minXValue = min;
+    }
+
+    public void setMaxXValue(float max)
+    {
+        this.maxXValue = max;
+    }
+
+    public void setMinYValue(float min)
+    {
+        this.minYValue = min;
+    }
+
+    public void setMaxYValue(float max)
+    {
+        this.maxYValue = max;
+    }
 }

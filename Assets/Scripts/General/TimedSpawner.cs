@@ -10,7 +10,7 @@ public class TimedSpawner : ActivatedGameObject
     private int sumOfChances = 0;
 
     private float timer = 0;
-    public float waitingTime = 0.2f;
+    private float waitingTime = 0.2f;
 
     public float[] waitingTimeRange;
     public float[] spawnPointRange;

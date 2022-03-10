@@ -59,7 +59,7 @@ public class WitchHat : MonoBehaviour
                 waitingTime = Random.Range(6.5f, 14.0f);
             } else if (levelHandler.getPhase() == 2)
             {
-                waitingTime = Random.Range(1.3f, 2.8f);
+                waitingTime = Random.Range(2.0f, 4.0f);
             }
             anim.Play("Witch Hat Shot");
             timer = 0;

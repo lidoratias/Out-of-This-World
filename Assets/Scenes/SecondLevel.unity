@@ -123,60 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &38509556
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 38509557}
-  - component: {fileID: 38509558}
-  m_Layer: 0
-  m_Name: StarsSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &38509557
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 38509556}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.18, y: 0.95, z: -7.74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &38509558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 38509556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31efa0ceb19607c49a49eb3e87f2857f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnedObjects:
-  - {fileID: 3966694829657320947, guid: 12f14d4ef1daea64cbcd769d996f15ea, type: 3}
-  chancesForEachObject: 01000000
-  waitingTime: 0.2
-  waitingTimeRange:
-  - 2.2
-  - 3.7
-  spawnPointRange:
-  - -3.27
-  - 3.27
-  axis: 121
 --- !u!1 &59801936
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +166,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &65383438
 GameObject:
@@ -238,7 +184,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &65383439
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -302,7 +248,7 @@ Transform:
   m_LocalScale: {x: 0.3001687, y: 0.3001687, z: 0.3001687}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &272452395
 GameObject:
@@ -459,7 +405,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &478603011
 MonoBehaviour:
@@ -477,7 +423,7 @@ MonoBehaviour:
   phasesList:
   - {fileID: 59801937}
   - {fileID: 1065643190}
-  enemyHealthsList: dc050000dc050000
+  enemyHealthsList: 64000000dc050000
 --- !u!1 &732483998 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6555883641424919785, guid: bd1f8cbe00fcb544686d082d27869e9f, type: 3}
@@ -593,7 +539,7 @@ Transform:
   m_LocalScale: {x: 0.030145498, y: 0.030145498, z: 0.030145498}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &969201572
 GameObject:
@@ -623,7 +569,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1065643189
 GameObject:
@@ -668,7 +614,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1142731974 stripped
 GameObject:
@@ -698,7 +644,7 @@ GameObject:
   - component: {fileID: 1145927337}
   - component: {fileID: 1145927336}
   m_Layer: 0
-  m_Name: CirclingStarsSpawner
+  m_Name: StarsSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -718,8 +664,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnedObjects:
   - {fileID: 8758105449998185655, guid: ee2dfa984ebe1aa4eb37bda599958ae6, type: 3}
-  chancesForEachObject: 01000000
-  waitingTime: 0.2
+  - {fileID: 8187311369772642746, guid: 4f9d946982c30db40911121a9a798c6d, type: 3}
+  - {fileID: 8187311369772642746, guid: 32009fd397f95ea4f965dd1618fe4d4d, type: 3}
+  chancesForEachObject: 010000000100000001000000
   waitingTimeRange:
   - 7.7
   - 12.4
@@ -739,7 +686,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1194384097 stripped
 GameObject:

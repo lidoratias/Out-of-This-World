@@ -268,7 +268,7 @@ MonoBehaviour:
   radiusMinMax:
   - 0.6
   - 3
-  radiusChangeRate: 0.005
+  radiusChangeRate: 0.0025
 --- !u!1 &8758105449790412754
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,7 +537,7 @@ MonoBehaviour:
   radiusMinMax:
   - 0.6
   - 3
-  radiusChangeRate: 0.005
+  radiusChangeRate: 0.0025
 --- !u!1 &8758105449998185655
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,4 +841,4 @@ MonoBehaviour:
   radiusMinMax:
   - 0.6
   - 3
-  radiusChangeRate: 0.005
+  radiusChangeRate: 0.0025

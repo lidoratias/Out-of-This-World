@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3966694829657320950}
   - component: {fileID: 5359983962203707922}
   m_Layer: 0
-  m_Name: Star
+  m_Name: StarSinusMove
   m_TagString: Hitting Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
