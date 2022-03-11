@@ -9,15 +9,13 @@ public class WitchHat : MonoBehaviour
 
     private float timer;
     private float waitingTime;
-
-    //private float shootingTimer;
-    //private float shootingWaitingTime = 0.25f;
     
     private Vector2 target;
 
     public Transform firePoint;
     public BurstingLaserBeam laserPrefab;
-    public HittingEnemy starPrefab;
+    public GameObject sinsusStar;
+    public GameObject straightStar;
 
     public LevelHandler levelHandler;
 
@@ -95,13 +93,18 @@ public class WitchHat : MonoBehaviour
             Invoke("drawbackHat", laser.getLifeTime() + laser.getDrawbackLength());
         } else if (levelHandler.getPhase() == 2)
         {
-            Instantiate(starPrefab, firePoint.position, firePoint.rotation);
+            int typeOfStar = Random.Range(0, 7);
+            if (typeOfStar == 0)
+            {
+                Instantiate(sinsusStar, firePoint.position, firePoint.rotation);
+            } else if (typeOfStar > 0)
+            {
+                GameObject currentStar = Instantiate(straightStar, firePoint.position, firePoint.rotation);
+                Wheel wheel = currentStar.AddComponent<Wheel>() as Wheel;
+                wheel.setPace(5);
+            }
             drawbackHat();
         }
-        /*bullet.setDirection(direction);
-        string[] bulletTargets = { "Player" };
-        bullet.setTargets(bulletTargets);
-        target = new Vector2(-10, Random.Range(-7.0f, 3.5f));*/
     }
 
     void drawbackHat()

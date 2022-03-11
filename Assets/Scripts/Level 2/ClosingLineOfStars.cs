@@ -7,27 +7,60 @@ public class ClosingLineOfStars : MonoBehaviour
     public Vector3 startingPos;
     public GameObject starPrefab;
 
-    public GameObject[] instantiatedObjects;
+    private GameObject[] instantiatedObjects;
     private int idx = 0;
 
     public char spawnAxis;
-    
+
     public Vector2 movement;
-    
-    public int numOfObjects;
-    public float spaceBetweenSpawns;
+
     public int numOfEmptyIndexes;
+    public int numOfEffectedIndexes;
+    public int numOfObjects;
+
+    public float spaceBetweenSpawns;
+    public float speed;
+    private float timer;
+    private float waitingTime;
+
+    private int[] effectedIndexes;
+    public string[] effects;
+    public Sprite[] effectsSprites;
+    public Sprite regularSprite;
+
+    private bool isEffected = false;
+
     // Start is called before the first frame update
     void Start()
     {
+        waitingTime = Random.Range(0.7f, 1.5f);
+
+        effectedIndexes = new int[numOfEffectedIndexes];
         instantiatedObjects = new GameObject[numOfObjects];
 
         Vector3 currentPos = startingPos;
-        float[] emptyIndexes = new float[numOfEmptyIndexes];
+        int[] emptyIndexes = new int[numOfEmptyIndexes];
         emptyIndexes[0] = Random.Range(0, numOfObjects - numOfEmptyIndexes);
         for (int i = 1; i < emptyIndexes.Length; i++)
         {
             emptyIndexes[i] = emptyIndexes[0] + i;
+        }
+
+        List<int> legalIdxesForEffectObjects = new List<int>();
+
+        for (int i = 0; i < numOfObjects; i++)
+        {
+            if (System.Array.IndexOf(emptyIndexes, i) == -1)
+            {
+                legalIdxesForEffectObjects.Add(i);
+            }
+        }
+
+        for (int i = 0; i < numOfEffectedIndexes; i++)
+        {
+            int curIdx = legalIdxesForEffectObjects[Random.Range(0, legalIdxesForEffectObjects.Count)];
+            legalIdxesForEffectObjects.Remove(curIdx);
+            effectedIndexes[i] = curIdx;
         }
 
         for (int i = 0; i < numOfObjects; i++)
@@ -44,14 +77,31 @@ public class ClosingLineOfStars : MonoBehaviour
             {
                 currentPos = new Vector3(currentPos.x, currentPos.y + spaceBetweenSpawns, currentPos.z);
             }
+            idx++;
+        }
+    }
+
+    void Update()
+    {
+        timer += Time.deltaTime;
+        if (timer >= waitingTime && !isEffected)
+        {
+            for (int i = 0; i < effectedIndexes.Length; i++)
+            {
+                Star star = instantiatedObjects[effectedIndexes[i]].GetComponent<Star>();
+                (instantiatedObjects[effectedIndexes[i]].GetComponent(star.getEffect()) as MonoBehaviour).enabled = true;
+            }
+            timer = 0;
+            isEffected = true;
         }
     }
 
     void InstantiateObject(Vector3 currentPos)
     {
-        GameObject star = Instantiate(starPrefab, currentPos, transform.rotation);
-        LinearMovement linearMovement = star.AddComponent<LinearMovement>() as LinearMovement;
-        linearMovement.setSpeed(4);
+        GameObject newObject = Instantiate(starPrefab, currentPos, transform.rotation);
+        newObject.GetComponent<SpriteRenderer>().sprite = regularSprite;
+        LinearMovement linearMovement = newObject.AddComponent<LinearMovement>() as LinearMovement;
+        linearMovement.setSpeed(speed);
         linearMovement.setMovement(movement);
         
         if (movement.x != 0)
@@ -63,8 +113,35 @@ public class ClosingLineOfStars : MonoBehaviour
             linearMovement.setMaxYValue(1000);
             linearMovement.setMinYValue(-1000);
         }
-        star.transform.SetParent(gameObject.transform);
-        instantiatedObjects[idx] = star;
-        idx++;
+        newObject.transform.SetParent(gameObject.transform);
+
+        if (System.Array.IndexOf(effectedIndexes, idx) > -1)
+        {
+            Star star = newObject.GetComponent<Star>();
+            int effectIdx = Random.Range(0, effects.Length);
+            
+            if (effects[effectIdx] == "burst")
+            {
+                star.setEffect("BurstEffect");
+                newObject.AddComponent<BurstEffect>();
+            }
+            else if (effects[effectIdx] == "split")
+            {
+                SplitEffect se = newObject.AddComponent<SplitEffect>();
+                Vector2[] movements = { new Vector2(0, 1), new Vector2(0, -1) };
+                float[] speeds = { 7.0f, 7.0f };
+                se.setMovements(movements);
+                se.setSpeeds(speeds);
+                GameObject splitPrefab = starPrefab;
+                se.setSprite(effectsSprites[effectIdx]);
+                se.setPrefab(splitPrefab);
+                se.setSourceObject(newObject);
+                star.setEffect("SplitEffect");
+            }
+            newObject.GetComponent<SpriteRenderer>().sprite
+                = effectsSprites[effectIdx];
+        }
+
+        instantiatedObjects[idx] = newObject;
     }
 }

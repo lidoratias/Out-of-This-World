@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 3966694829657320951}
   - component: {fileID: 3966694829657320950}
   - component: {fileID: 5359983962203707922}
-  - component: {fileID: 8665241086508267795}
-  - component: {fileID: 8131251138183619711}
+  - component: {fileID: 5108698371714773916}
   m_Layer: 0
-  m_Name: StarRotate
+  m_Name: StarStraightMove
   m_TagString: Hitting Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 9aaaf4a3ab84d434cb318fb4e16fd5ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d2c4a3f4ad4e7143945c1a52c3f05ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -233,7 +232,7 @@ TrailRenderer:
   m_MinVertexDistance: 0.5
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!114 &8665241086508267795
+--- !u!114 &5108698371714773916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -242,19 +241,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3966694829657320947}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9c923c47bb6e3e4a9cc7b34c409589c, type: 3}
+  m_Script: {fileID: 11500000, guid: b05477f4a3d34274591ef395d4caa1c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pace: 4
---- !u!114 &8131251138183619711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3966694829657320947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c49c7d09226c6cb4daf668099aa58c6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  speed: 7
+  movement: {x: -1, y: 0}
+  minXValue: -1000
+  maxXValue: 1000
+  minYValue: 0
+  maxYValue: 0

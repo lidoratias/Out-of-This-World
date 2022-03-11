@@ -45,9 +45,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingPos: {x: -9.35, y: 6.5, z: 23}
   starPrefab: {fileID: 3966694829657320947, guid: 7780cae9c5b86f04d95a0fc89742cba5, type: 3}
-  instantiatedObjects: []
   spawnAxis: 120
   movement: {x: 0, y: -1}
+  numOfEmptyIndexes: 2
+  numOfEffectedIndexes: 2
   numOfObjects: 9
   spaceBetweenSpawns: 1.5
-  numOfEmptyIndexes: 2
+  speed: 3
+  effects:
+  - burst
+  - split
+  effectsSprites:
+  - {fileID: 21300000, guid: 0a3bb27fcd9918e4fbbcef3134d39e9f, type: 3}
+  - {fileID: 21300000, guid: 9aaaf4a3ab84d434cb318fb4e16fd5ab, type: 3}
+  regularSprite: {fileID: 21300000, guid: 7d2c4a3f4ad4e7143945c1a52c3f05ca, type: 3}

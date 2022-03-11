@@ -12,6 +12,10 @@ public class LevelHandler : MonoBehaviour
     public ActivatedGameObjectsHolder[] phasesList;
     public int[] enemyHealthsList;
 
+    public float[] waitingTimesBetweenPhases;
+    private float timer = 0;
+    private bool isBetweenPhases = false;
+
     void Start()
     {
         enemy.setHealth(enemyHealthsList[0]);
@@ -35,6 +39,11 @@ public class LevelHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isBetweenPhases)
+        {
+            timer += Time.deltaTime;
+        }
+
         if (enemy.getHealth() <= 20)
         {
             if (phase == phasesList.Length)
@@ -43,6 +52,7 @@ public class LevelHandler : MonoBehaviour
             }
             else
             {
+                isBetweenPhases = true;
                 phase++;
                 enemy.setHealth(enemyHealthsList[phase - 1]);
 
@@ -51,12 +61,16 @@ public class LevelHandler : MonoBehaviour
                 {
                     currentPhaseObjects[i].phaseOut();
                 }
+            }
+        }
 
-                currentPhaseObjects = phasesList[phase - 1].getObjectsArray();
-                for (int i = 0; i < currentPhaseObjects.Length; i++)
-                {
-                    currentPhaseObjects[i].phaseIn();
-                }
+        if (phase > 1 && timer >= waitingTimesBetweenPhases[phase - 2])
+        {
+            ActivatedGameObject[] currentPhaseObjects =
+                phasesList[phase - 1].getObjectsArray();
+            for (int i = 0; i < currentPhaseObjects.Length; i++)
+            {
+                currentPhaseObjects[i].phaseIn();
             }
         }
     }

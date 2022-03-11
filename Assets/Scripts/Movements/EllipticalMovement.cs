@@ -13,6 +13,8 @@ public class EllipticalMovement : MonoBehaviour
 
     float posX, posY;
 
+    public float factor;
+
     public float angle;
 
     // Update is called once per frame
@@ -21,10 +23,10 @@ public class EllipticalMovement : MonoBehaviour
         if (isHorizontal)
         {
             posX = centerOfRotation.position.x + Mathf.Cos(angle) * rotationRadius;
-            posY = centerOfRotation.position.y + Mathf.Sin(angle) * rotationRadius / 2;
+            posY = centerOfRotation.position.y + Mathf.Sin(angle) * rotationRadius / factor;
         } else
         {
-            posX = centerOfRotation.position.x + Mathf.Cos(angle) * rotationRadius / 2;
+            posX = centerOfRotation.position.x + Mathf.Cos(angle) * rotationRadius / factor;
             posY = centerOfRotation.position.y + Mathf.Sin(angle) * rotationRadius;
         }
 
