@@ -55,4 +55,19 @@ public class EllipticalMovement : MonoBehaviour
             positiveDirection = true;
         }
     }
+
+    public void setIsHorizontal(bool isHorizontal)
+    {
+        this.isHorizontal = isHorizontal;
+    }
+
+    public void setRadius(float radius)
+    {
+        this.rotationRadius = radius;
+    }
+
+    public void setSpeed(float speed)
+    {
+        this.angularSpeed = speed;
+    }
 }

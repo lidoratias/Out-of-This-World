@@ -7,17 +7,19 @@ public class Enemy : MonoBehaviour
 
     public int health = 100;
     public int damage = 100;
+
+    protected int phase = 1;
+
     private string target;
     public Animation myAnimation;
     public string flickerAnimName;
 
-    void Start()
+    public virtual void Start()
     {
     }
 
-    public void Update()
+    public virtual void Update()
     {
-        //Debug.Log(health);
     }
 
     public void takeDamage(int damage)
@@ -57,6 +59,11 @@ public class Enemy : MonoBehaviour
     public void setHealth(int health)
     {
         this.health = health;
+    }
+
+    public void setPhase(int phase)
+    {
+        this.phase = phase;
     }
 
 

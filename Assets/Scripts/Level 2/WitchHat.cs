@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WitchHat : MonoBehaviour
+public class WitchHat : Enemy
 {
 
     public Animation anim;
@@ -10,12 +10,13 @@ public class WitchHat : MonoBehaviour
     private float timer;
     private float waitingTime;
     
-    private Vector2 target;
+    //private Vector2 target;
 
     public Transform firePoint;
     public BurstingLaserBeam laserPrefab;
     public GameObject sinsusStar;
     public GameObject straightStar;
+    public EllipticalMovement em;
 
     public LevelHandler levelHandler;
 
@@ -26,17 +27,27 @@ public class WitchHat : MonoBehaviour
     private float waitTillTurn = 0.4f;
 
     // Start is called before the first frame update
-    void Start()
+    public override void Start()
     {
-        target = new Vector2(-10, Random.Range(-7.0f, 3.5f));
+        //target = new Vector2(-10, Random.Range(-7.0f, 3.5f));
         waitingTime = 2.0f;
+        this.health = 2500;
+        this.damage = 100;
     }
 
     // Update is called once per frame
-    void Update()
+    public override void Update()
     {
-        timer += Time.deltaTime;
-        turningTimer += Time.deltaTime;
+        if (this.phase < 3)
+        {
+            timer += Time.deltaTime;
+            turningTimer += Time.deltaTime;
+        } else if (this.phase == 3)
+        {
+            em.setIsHorizontal(true);
+            em.setRadius(6.0f);
+            em.setSpeed(3.0f);
+        }
 
         if (Mathf.Abs(Mathf.Abs(transform.position.y) - 2.9f) <= 0.1f 
             && turningTimer >= waitTillTurn)
@@ -69,6 +80,9 @@ public class WitchHat : MonoBehaviour
     {
         if (hitInfo.tag == "Player Bullet")
         {
+            PlayerLinearBullet bullet = hitInfo.GetComponent<PlayerLinearBullet>();
+            this.takeDamage(bullet.getDamage());
+            Destroy(hitInfo.gameObject);
             top.flicker();
             bottom.flicker();
             Invoke("unflickerHatParts", 0.1f);
@@ -83,8 +97,8 @@ public class WitchHat : MonoBehaviour
 
     void Shoot()
     {
-        Vector2 direction = new Vector2(target.x - transform.position.x,
-            target.y - transform.position.y);
+        /*Vector2 direction = new Vector2(target.x - transform.position.x,
+            target.y - transform.position.y);*/
         if (levelHandler.getPhase() == 1)
         {
             BurstingLaserBeam laser = Instantiate(laserPrefab, firePoint.position,
@@ -93,7 +107,7 @@ public class WitchHat : MonoBehaviour
             Invoke("drawbackHat", laser.getLifeTime() + laser.getDrawbackLength());
         } else if (levelHandler.getPhase() == 2)
         {
-            int typeOfStar = Random.Range(0, 7);
+            int typeOfStar = Random.Range(0, 2);
             if (typeOfStar == 0)
             {
                 Instantiate(sinsusStar, firePoint.position, firePoint.rotation);

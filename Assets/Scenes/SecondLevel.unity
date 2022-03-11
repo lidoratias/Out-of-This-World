@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bat
       objectReference: {fileID: 0}
+    - target: {fileID: -904136405871704060, guid: 33def91467910884ba030148fc75088f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3508685474996495587, guid: 33def91467910884ba030148fc75088f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -540,11 +544,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf522143807063e4eb571af525ef2489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1194384100}
+  enemy: {fileID: 1194384099}
   phasesList:
   - {fileID: 59801937}
   - {fileID: 1065643190}
-  enemyHealthsList: c4090000800c0000
+  enemyHealthsList: c4090000480d0000
   waitingTimesBetweenPhases:
   - 5
   - 5
@@ -565,36 +569,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32d5dbd87df439845aba5cdd5556f553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &969201572
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 969201573}
-  m_Layer: 0
-  m_Name: MiddlePot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &969201573
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969201572}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.34, y: -1.45, z: 5.656375}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1065643189
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,30 +721,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deef1345920b258429cb8ddf8840a3c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 2500
+  damage: 100
+  myAnimation: {fileID: 0}
+  flickerAnimName: 
   anim: {fileID: 1194384098}
   firePoint: {fileID: 1922794466}
   laserPrefab: {fileID: 2958015985041617849, guid: ac103302e46f58c4ebbe85e008dc4a17, type: 3}
   sinsusStar: {fileID: 3966694829657320947, guid: 12f14d4ef1daea64cbcd769d996f15ea, type: 3}
   straightStar: {fileID: 3966694829657320947, guid: ec85d4ccf5b1c64409707d322560d601, type: 3}
+  em: {fileID: 1194384101}
   levelHandler: {fileID: 478603011}
   top: {fileID: 1142731978}
   bottom: {fileID: 732484002}
---- !u!114 &1194384100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1194384097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31d1164e768c8cf41b7b6f7201a3eb89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 2500
-  damage: 100
-  myAnimation: {fileID: 0}
-  flickerAnimName: 
 --- !u!114 &1194384101
 MonoBehaviour:
   m_ObjectHideFlags: 0

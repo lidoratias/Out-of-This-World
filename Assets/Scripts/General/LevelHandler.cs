@@ -18,6 +18,7 @@ public class LevelHandler : MonoBehaviour
 
     void Start()
     {
+        enemy.setPhase(this.phase);
         enemy.setHealth(enemyHealthsList[0]);
         ActivatedGameObject[] currentPhaseObjects = phasesList[0].getObjectsArray();
 
@@ -54,6 +55,7 @@ public class LevelHandler : MonoBehaviour
             {
                 isBetweenPhases = true;
                 phase++;
+                enemy.setPhase(phase);
                 enemy.setHealth(enemyHealthsList[phase - 1]);
 
                 ActivatedGameObject[] currentPhaseObjects = phasesList[phase - 2].getObjectsArray();
