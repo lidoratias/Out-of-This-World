@@ -41,7 +41,9 @@ public class LinearMovement : LimitedMovement
                     transform.position.y, transform.position.z);
             }
 
-        } else if (direction.y != 0)
+        }
+        
+        if (direction.y != 0)
         {
             if (transform.position.y + (direction.y * speed * Time.deltaTime) < minYValue)
             {

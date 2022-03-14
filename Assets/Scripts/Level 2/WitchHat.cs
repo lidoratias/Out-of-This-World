@@ -13,6 +13,9 @@ public class WitchHat : Enemy
     //private Vector2 target;
 
     public Transform firePoint;
+    public Transform centerOfRotation;
+    public Transform phaseThreeInitTarget;
+
     public BurstingLaserBeam laserPrefab;
     public GameObject sinsusStar;
     public GameObject straightStar;
@@ -31,33 +34,29 @@ public class WitchHat : Enemy
     {
         //target = new Vector2(-10, Random.Range(-7.0f, 3.5f));
         waitingTime = 2.0f;
-        this.health = 2500;
+        this.health = 100;
         this.damage = 100;
     }
 
     // Update is called once per frame
     public override void Update()
     {
-        if (this.phase < 3)
+        if (this.phase < 4)
         {
             timer += Time.deltaTime;
             turningTimer += Time.deltaTime;
-        } else if (this.phase == 3)
-        {
-            em.setIsHorizontal(true);
-            em.setRadius(6.0f);
-            em.setSpeed(3.0f);
-        }
 
-        if (Mathf.Abs(Mathf.Abs(transform.position.y) - 2.9f) <= 0.1f 
-            && turningTimer >= waitTillTurn)
-        {
-            int generatedInt = Random.Range(0, 3);
-            if (generatedInt == 1)
+            if (Mathf.Abs(Mathf.Abs(transform.position.y) - 2.9f) <= 0.1f
+                && turningTimer >= waitTillTurn)
             {
-                gameObject.GetComponent<EllipticalMovement>().turnDirection();
+                int generatedInt = Random.Range(0, 3);
+                if (generatedInt == 1)
+                {
+                    gameObject.GetComponent<EllipticalMovement>().turnDirection();
+                }
+                turningTimer = 0;
             }
-            turningTimer = 0;
+
         }
 
         //TODO ADD A FEW MORE SHOOTING TYPES - REGULAR BULLETS AND ROTATING BULLETS.
@@ -69,6 +68,9 @@ public class WitchHat : Enemy
             } else if (levelHandler.getPhase() == 2)
             {
                 waitingTime = Random.Range(2.0f, 4.0f);
+            } else if (levelHandler.getPhase() == 3)
+            {
+                waitingTime = Random.Range(2.0f, 3.0f);
             }
             anim.Play("Witch Hat Shot");
             timer = 0;
@@ -97,8 +99,7 @@ public class WitchHat : Enemy
 
     void Shoot()
     {
-        /*Vector2 direction = new Vector2(target.x - transform.position.x,
-            target.y - transform.position.y);*/
+
         if (levelHandler.getPhase() == 1)
         {
             BurstingLaserBeam laser = Instantiate(laserPrefab, firePoint.position,

@@ -70,4 +70,11 @@ public class EllipticalMovement : MonoBehaviour
     {
         this.angularSpeed = speed;
     }
+
+    public void setMovingCenter(float speed)
+    {
+        this.centerOfRotation.GetComponent<LinearMovement>().enabled = true;
+        LinearMovement lm = this.centerOfRotation.GetComponent<LinearMovement>();
+        lm.setSpeed(speed);
+    }
 }

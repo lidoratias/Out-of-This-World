@@ -6,7 +6,7 @@ public class DirectedBullet : Bullet
 {
     protected override void Start()
     {
-        this.speed = 1.0f;
+        //this.speed = 1.0f;
         GameObject targetGameObject = GameObject.Find("Player");
         this.direction = targetGameObject.transform.position - transform.position;
         rb.velocity = this.direction * this.speed;
