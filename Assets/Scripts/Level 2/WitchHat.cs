@@ -14,11 +14,11 @@ public class WitchHat : Enemy
 
     public Transform firePoint;
     public Transform centerOfRotation;
-    public Transform phaseThreeInitTarget;
 
     public BurstingLaserBeam laserPrefab;
     public GameObject sinsusStar;
     public GameObject straightStar;
+    public Bullet bulletPrefab;
     public EllipticalMovement em;
 
     public LevelHandler levelHandler;
@@ -28,6 +28,8 @@ public class WitchHat : Enemy
 
     private float turningTimer = 0;
     private float waitTillTurn = 0.4f;
+
+    public float bulletsStartingAngle;
 
     // Start is called before the first frame update
     public override void Start()
@@ -67,7 +69,7 @@ public class WitchHat : Enemy
                 waitingTime = Random.Range(6.5f, 14.0f);
             } else if (levelHandler.getPhase() == 2)
             {
-                waitingTime = Random.Range(2.0f, 4.0f);
+                waitingTime = Random.Range(1.2f, 2.8f);
             } else if (levelHandler.getPhase() == 3)
             {
                 waitingTime = Random.Range(2.0f, 3.0f);
@@ -119,6 +121,15 @@ public class WitchHat : Enemy
                 wheel.setPace(5);
             }
             drawbackHat();
+        } else if (levelHandler.getPhase() == 3)
+        {
+            int numOfBullets = Random.Range(5, 8);
+            float spacingInAngles = (bulletsStartingAngle * 2) / numOfBullets;
+            for (int i = 0; i < numOfBullets; i++)
+            {
+                Quaternion rotation = Quaternion.Euler(0, 0, bulletsStartingAngle + (spacingInAngles * i));
+                Bullet bullet = Instantiate(bulletPrefab, firePoint.position, rotation);
+            }
         }
     }
 

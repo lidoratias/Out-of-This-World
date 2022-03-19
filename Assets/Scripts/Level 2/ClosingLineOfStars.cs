@@ -33,7 +33,7 @@ public class ClosingLineOfStars : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        waitingTime = Random.Range(1.3f, 1.8f);
+        waitingTime = Random.Range(0.9f, 1.2f);
 
         effectedIndexes = new int[numOfEffectedIndexes];
         instantiatedObjects = new GameObject[numOfObjects];
