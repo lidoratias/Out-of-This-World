@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Wheel : MonoBehaviour
 {
-
+    [SerializeField]
     private bool rotateRight = true;
     public float pace;
 

@@ -5,7 +5,6 @@ using UnityEngine;
 public class Bullet : HittingEnemy
 {
     public float speed = 3.0f;
-    //public int damage = 20;
     public Rigidbody2D rb;
     public Vector2 direction;
     protected ArrayList targets = new ArrayList();
@@ -41,11 +40,13 @@ public class Bullet : HittingEnemy
     public void setSpeed(float speed)
     {
         this.speed = speed;
+        rb.velocity = this.direction * this.speed;
     }
 
     public void setDirection(Vector2 direction)
     {
         this.direction = direction;
+        rb.velocity = this.direction * this.speed;
     }
 
     public float getSpeed()

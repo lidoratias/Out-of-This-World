@@ -18,7 +18,7 @@ public class WitchHat : Enemy
     public BurstingLaserBeam laserPrefab;
     public GameObject sinsusStar;
     public GameObject straightStar;
-    public Bullet bulletPrefab;
+    public Bullet[] potionPrefabs;
     public EllipticalMovement em;
 
     public LevelHandler levelHandler;
@@ -101,7 +101,6 @@ public class WitchHat : Enemy
 
     void Shoot()
     {
-
         if (levelHandler.getPhase() == 1)
         {
             BurstingLaserBeam laser = Instantiate(laserPrefab, firePoint.position,
@@ -123,13 +122,9 @@ public class WitchHat : Enemy
             drawbackHat();
         } else if (levelHandler.getPhase() == 3)
         {
-            int numOfBullets = Random.Range(5, 8);
-            float spacingInAngles = (bulletsStartingAngle * 2) / numOfBullets;
-            for (int i = 0; i < numOfBullets; i++)
-            {
-                Quaternion rotation = Quaternion.Euler(0, 0, bulletsStartingAngle + (spacingInAngles * i));
-                Bullet bullet = Instantiate(bulletPrefab, firePoint.position, rotation);
-            }
+            int potionIdx = Random.Range(0, 3);
+            Bullet bullet = Instantiate(potionPrefabs[potionIdx], firePoint.position, firePoint.rotation);
+            drawbackHat();
         }
     }
 

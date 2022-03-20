@@ -344,6 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c923c47bb6e3e4a9cc7b34c409589c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotateRight: 1
   pace: 1
 --- !u!95 &305891676
 Animator:
@@ -788,6 +789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c923c47bb6e3e4a9cc7b34c409589c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotateRight: 1
   pace: 0.8
 --- !u!212 &645590327
 SpriteRenderer:
@@ -1101,6 +1103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c923c47bb6e3e4a9cc7b34c409589c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotateRight: 1
   pace: 0.8
 --- !u!95 &782018286
 Animator:
@@ -2129,7 +2132,11 @@ MonoBehaviour:
   - {fileID: 2029914276}
   - {fileID: 402201223}
   - {fileID: 109258599}
-  enemyHealthsList: 64000000dc050000dc050000
+  enemyHealthsList: 6400000064000000dc050000
+  waitingTimesBetweenPhases:
+  - 0
+  - 0
+  - 0
 --- !u!4 &1954384102
 Transform:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ public class LevelHandler : MonoBehaviour
     public float[] waitingTimesBetweenPhases;
     private float timer = 0;
     private bool isBetweenPhases = false;
+    private bool isPhaseDone = false;
 
     void Start()
     {
@@ -53,6 +54,7 @@ public class LevelHandler : MonoBehaviour
             }
             else
             {
+                isPhaseDone = true;
                 isBetweenPhases = true;
                 phase++;
                 enemy.setPhase(phase);
@@ -66,7 +68,7 @@ public class LevelHandler : MonoBehaviour
             }
         }
 
-        if (phase > 1 && timer >= waitingTimesBetweenPhases[phase - 2])
+        if (phase > 1 && timer >= waitingTimesBetweenPhases[phase - 2] && isPhaseDone)
         {
             ActivatedGameObject[] currentPhaseObjects =
                 phasesList[phase - 1].getObjectsArray();
@@ -74,6 +76,7 @@ public class LevelHandler : MonoBehaviour
             {
                 currentPhaseObjects[i].phaseIn();
             }
+            isPhaseDone = false;
         }
     }
 

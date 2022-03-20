@@ -9,6 +9,7 @@ public class LaserSkull : ActivatedGameObject
     public float phasingInSpeed = 1.0f;
 
     public LaserBeam[] laserBeams;
+    private bool areLasersActive = false;
 
     // Start is called before the first frame update
     void Start()
@@ -24,13 +25,15 @@ public class LaserSkull : ActivatedGameObject
             if (transform.position.x > -1.3)
             {
                 transform.Translate(phasingInDirection * phasingInSpeed * Time.deltaTime);
-                if (transform.position.x <= -1.3)
+                if (transform.position.x <= -1.3 && !areLasersActive)
                 {
                     for (int i = 0; i < laserBeams.Length; i++)
                     {
                         laserBeams[i].phaseIn();
                     }
                     gameObject.GetComponent<CircularMovement>().enabled = true;
+                    this.isPhasingIn = false;
+                    this.areLasersActive = true;
                 }
             }
         }
