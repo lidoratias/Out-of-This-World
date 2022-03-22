@@ -1098,6 +1098,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1217261656}
+  - component: {fileID: 1217261657}
   m_Layer: 0
   m_Name: HeartsSpawner
   m_TagString: Untagged
@@ -1113,12 +1114,34 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217261655}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.32, y: -6.25, z: -6.158839}
+  m_LocalPosition: {x: 0.32, y: -6.25, z: -26.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1217261657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217261655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31efa0ceb19607c49a49eb3e87f2857f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnedObjects:
+  - {fileID: 1457011582430008176, guid: 7ab3d2cb865f09b4cb0a9258c6becd57, type: 3}
+  chancesForEachObject: 01000000
+  waitingTimeRange:
+  - 2
+  - 3
+  spawnPointRange:
+  - 0
+  - 4
+  axis: 120
 --- !u!1 &1427226401
 GameObject:
   m_ObjectHideFlags: 0
