@@ -5,7 +5,7 @@ using UnityEngine;
 public class Potion : LinearBullet
 {
     public Sprite[] sprites;
-    public GameObject[] effects;
+    public ActivatedGameObjectsHolder[] effects;
 
     private int potionIdx;
     // Start is called before the first frame update
@@ -32,7 +32,7 @@ public class Potion : LinearBullet
             (potionIdx == 2 && transform.position.x < -10.1f) )
         {
             //Play Animation and play shattered glass sound
-            effects[potionIdx].SetActive(true);
+            effects[potionIdx].ActivateAll();
             Destroy(gameObject);
         }
     }

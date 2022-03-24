@@ -1,0 +1,471 @@
+fileFormatVersion: 2
+guid: 2629634bc424e474b879785164b02d54
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7598187591786395559
+    second: 3D Heart Spritesheet_0
+  - first:
+      213: 7413276160210667310
+    second: 3D Heart Spritesheet_1
+  - first:
+      213: -4592903492311428679
+    second: 3D Heart Spritesheet_2
+  - first:
+      213: -3376019739206701890
+    second: 3D Heart Spritesheet_3
+  - first:
+      213: 2129727565398545948
+    second: 3D Heart Spritesheet_4
+  - first:
+      213: -7865781383644393945
+    second: 3D Heart Spritesheet_5
+  - first:
+      213: 4748967267412949543
+    second: 3D Heart Spritesheet_6
+  - first:
+      213: 4298380203006249081
+    second: 3D Heart Spritesheet_7
+  - first:
+      213: -2294265821312903107
+    second: 3D Heart Spritesheet_8
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 7982
+        width: 2375
+        height: 1986
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a775399b5f227960800000000000000
+      internalID: 7598187591786395559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 2814
+        y: 7982
+        width: 2277
+        height: 1986
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e278a37f36f31e660800000000000000
+      internalID: 7413276160210667310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 5665
+        y: 7982
+        width: 1834
+        height: 1986
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b15025ab9ab240c0800000000000000
+      internalID: -4592903492311428679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 8340
+        y: 7982
+        width: 1111
+        height: 1986
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebca0e12fe7f521d0800000000000000
+      internalID: -3376019739206701890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 5400
+        width: 208
+        height: 1980
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1610fbdfef4e8d10800000000000000
+      internalID: 2129727565398545948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 3172
+        y: 5572
+        width: 1112
+        height: 1993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ecefa918127d290800000000000000
+      internalID: -7865781383644393945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 5401
+        y: 5474
+        width: 1831
+        height: 1993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a3b109198b7e140800000000000000
+      internalID: 4748967267412949543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 7757
+        y: 5474
+        width: 2275
+        height: 1993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97842c5550ae6ab30800000000000000
+      internalID: 4298380203006249081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2540
+        width: 2373
+        height: 1993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38135c14612920e0800000000000000
+      internalID: -2294265821312903107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 2540
+        width: 2278
+        height: 1993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98837c779674d8b60800000000000000
+      internalID: 7749929052081174665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 5552
+        y: 2540
+        width: 1832
+        height: 1993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac155b4465852950800000000000000
+      internalID: 6423687109320973476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 8237
+        y: 2540
+        width: 1101
+        height: 1993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2131a980924a18c0800000000000000
+      internalID: -4027833728177721044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 39
+        width: 210
+        height: 1984
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10abb4bbfac0dba20800000000000000
+      internalID: 3079631669092399617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 3172
+        y: 0
+        width: 1111
+        height: 2021
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fce293a940117a20800000000000000
+      internalID: 3058243530424249584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 5401
+        y: 0
+        width: 1831
+        height: 2030
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea53d5874cf159410800000000000000
+      internalID: 1483126580981872046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3D Heart Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 7650
+        y: 0
+        width: 2277
+        height: 1991
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647e831ff0a839b10800000000000000
+      internalID: 1987083661676701510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

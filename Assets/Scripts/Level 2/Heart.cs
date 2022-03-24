@@ -5,7 +5,6 @@ using UnityEngine;
 public class Heart : HittingEnemy
 {
     public Animation anim;
-    //public AnimationClip heartBeatClip;
     public LinearMovement linearMovement;
     private float targetY;
     private int numOfBeats;
@@ -13,7 +12,7 @@ public class Heart : HittingEnemy
 
     void Awake()
     {
-        targetY = Random.Range(-3.5f, 5.5f);
+        targetY = Random.Range(-2.5f, 5.5f);
         numOfBeats = Random.Range(2, 6);
     }
     // Update is called once per frame
