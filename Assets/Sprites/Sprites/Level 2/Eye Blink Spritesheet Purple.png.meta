@@ -1,0 +1,396 @@
+fileFormatVersion: 2
+guid: 32f29cef375bbce4a9d8a626b4eeba48
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4571762404410385650
+    second: Eye Blink Spritesheet Purple_0
+  - first:
+      213: -4995353787379498861
+    second: Eye Blink Spritesheet Purple_1
+  - first:
+      213: -493509176924924124
+    second: Eye Blink Spritesheet Purple_2
+  - first:
+      213: 1189538029316885382
+    second: Eye Blink Spritesheet Purple_3
+  - first:
+      213: 3285737169176173039
+    second: Eye Blink Spritesheet Purple_4
+  - first:
+      213: 1886493885859956532
+    second: Eye Blink Spritesheet Purple_5
+  - first:
+      213: -3982255083800011500
+    second: Eye Blink Spritesheet Purple_6
+  - first:
+      213: 3219897499657068667
+    second: Eye Blink Spritesheet Purple_7
+  - first:
+      213: 5661877490405428424
+    second: Eye Blink Spritesheet Purple_8
+  - first:
+      213: 364532478868661074
+    second: Eye Blink Spritesheet Purple_9
+  - first:
+      213: 2293234710441732243
+    second: Eye Blink Spritesheet Purple_10
+  - first:
+      213: -1141792868968723304
+    second: Eye Blink Spritesheet Purple_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Purple_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1195
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b12afb056dd80c0800000000000000
+      internalID: -4571762404410385650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Purple_1
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 0
+        width: 1187
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390c7d76230fcaab0800000000000000
+      internalID: -4995353787379498861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Purple_2
+      rect:
+        serializedVersion: 2
+        x: 2469
+        y: 0
+        width: 1187
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4279effa404b629f0800000000000000
+      internalID: -493509176924924124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Purple_3
+      rect:
+        serializedVersion: 2
+        x: 3705
+        y: 0
+        width: 1186
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b40440986128010800000000000000
+      internalID: 1189538029316885382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Purple_4
+      rect:
+        serializedVersion: 2
+        x: 4942
+        y: 0
+        width: 1184
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe91b0afb88499d20800000000000000
+      internalID: 3285737169176173039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Purple_5
+      rect:
+        serializedVersion: 2
+        x: 6176
+        y: 0
+        width: 1187
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43701a1b13c2e2a10800000000000000
+      internalID: 1886493885859956532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Purple_6
+      rect:
+        serializedVersion: 2
+        x: 7412
+        y: 0
+        width: 1186
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d5b15a9103cb8c0800000000000000
+      internalID: -3982255083800011500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Purple_7
+      rect:
+        serializedVersion: 2
+        x: 8648
+        y: 0
+        width: 1184
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b706a3857bf5fac20800000000000000
+      internalID: 3219897499657068667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Purple_8
+      rect:
+        serializedVersion: 2
+        x: 9884
+        y: 0
+        width: 1183
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc45616497039e40800000000000000
+      internalID: 5661877490405428424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Purple_9
+      rect:
+        serializedVersion: 2
+        x: 11124
+        y: 0
+        width: 1183
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2532f00bb541f0500800000000000000
+      internalID: 364532478868661074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Purple_10
+      rect:
+        serializedVersion: 2
+        x: 12362
+        y: 0
+        width: 1183
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398a97ea1d433df10800000000000000
+      internalID: 2293234710441732243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Purple_11
+      rect:
+        serializedVersion: 2
+        x: 13610
+        y: 0
+        width: 1185
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c8b066f698720f0800000000000000
+      internalID: -1141792868968723304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0f71130d6c1bc0e4fa32f4da16b31a15
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,396 @@
+fileFormatVersion: 2
+guid: 4aa49bd8629112a42979c3ab1de1f6ad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2828586529226106562
+    second: Eye Blink Spritesheet Green_0
+  - first:
+      213: 5967996967399928629
+    second: Eye Blink Spritesheet Green_1
+  - first:
+      213: -8044378179061326027
+    second: Eye Blink Spritesheet Green_2
+  - first:
+      213: 3792784503326356825
+    second: Eye Blink Spritesheet Green_3
+  - first:
+      213: 7378891548237548690
+    second: Eye Blink Spritesheet Green_4
+  - first:
+      213: -718852883075313530
+    second: Eye Blink Spritesheet Green_5
+  - first:
+      213: -365923345719787589
+    second: Eye Blink Spritesheet Green_6
+  - first:
+      213: -1150030768756949000
+    second: Eye Blink Spritesheet Green_7
+  - first:
+      213: 2419773893015122895
+    second: Eye Blink Spritesheet Green_8
+  - first:
+      213: -7878910499561210883
+    second: Eye Blink Spritesheet Green_9
+  - first:
+      213: 1863809434651835716
+    second: Eye Blink Spritesheet Green_10
+  - first:
+      213: -5342577086814141150
+    second: Eye Blink Spritesheet Green_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Green_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1185
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c62afa3678214720800000000000000
+      internalID: 2828586529226106562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Green_1
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 0
+        width: 1186
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5333b7e3f9592d250800000000000000
+      internalID: 5967996967399928629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Green_2
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 0
+        width: 1187
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f5526caa0ac5090800000000000000
+      internalID: -8044378179061326027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Green_3
+      rect:
+        serializedVersion: 2
+        x: 3705
+        y: 0
+        width: 1185
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955bf56296da2a430800000000000000
+      internalID: 3792784503326356825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Green_4
+      rect:
+        serializedVersion: 2
+        x: 4940
+        y: 0
+        width: 1186
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29cc4d0a4c6176660800000000000000
+      internalID: 7378891548237548690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Green_5
+      rect:
+        serializedVersion: 2
+        x: 6178
+        y: 0
+        width: 1185
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680d78a8c1f1606f0800000000000000
+      internalID: -718852883075313530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Green_6
+      rect:
+        serializedVersion: 2
+        x: 7411
+        y: 0
+        width: 1189
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf7953e7aafbeaf0800000000000000
+      internalID: -365923345719787589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Green_7
+      rect:
+        serializedVersion: 2
+        x: 8649
+        y: 0
+        width: 1183
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fff873eb154a00f0800000000000000
+      internalID: -1150030768756949000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Green_8
+      rect:
+        serializedVersion: 2
+        x: 9883
+        y: 0
+        width: 1185
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc33ee10983c49120800000000000000
+      internalID: 2419773893015122895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Green_9
+      rect:
+        serializedVersion: 2
+        x: 11122
+        y: 0
+        width: 1184
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfbfe8815ac78a290800000000000000
+      internalID: -7878910499561210883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Green_10
+      rect:
+        serializedVersion: 2
+        x: 12361
+        y: 0
+        width: 1185
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44db1715ec49dd910800000000000000
+      internalID: 1863809434651835716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye Blink Spritesheet Green_11
+      rect:
+        serializedVersion: 2
+        x: 13611
+        y: 0
+        width: 1184
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2254d4b127a5bd5b0800000000000000
+      internalID: -5342577086814141150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
