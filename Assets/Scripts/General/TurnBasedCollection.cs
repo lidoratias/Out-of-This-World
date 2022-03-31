@@ -28,7 +28,9 @@ public class TurnBasedCollection : MonoBehaviour, Observer
         int maxRange = numsForOrder.Count;
         for (int i = 0; i < maxRange; i++)
         {
-            order.Add(numsForOrder[Random.Range(0, numsForOrder.Count)]);
+            int generatedIdx = numsForOrder[Random.Range(0, numsForOrder.Count)];
+            order.Add(generatedIdx);
+            numsForOrder.Remove(generatedIdx);
         }
 
     }
@@ -43,7 +45,7 @@ public class TurnBasedCollection : MonoBehaviour, Observer
         else if (!alreadyCalled)
         {
             //In Turn
-            operatableGameObjects[currentOrderIdx].Operate();
+            operatableGameObjects[order[currentOrderIdx]].Operate();
             alreadyCalled = true;
         }
     }
