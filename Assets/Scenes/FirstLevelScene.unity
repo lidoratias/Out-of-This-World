@@ -2132,7 +2132,7 @@ MonoBehaviour:
   - {fileID: 2029914276}
   - {fileID: 402201223}
   - {fileID: 109258599}
-  enemyHealthsList: 6400000064000000dc050000
+  enemyHealthsList: dc050000dc050000dc050000
   waitingTimesBetweenPhases:
   - 0
   - 0

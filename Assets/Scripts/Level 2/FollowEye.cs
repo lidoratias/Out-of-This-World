@@ -13,7 +13,8 @@ public class FollowEye : TargetedLinearOperatableObject
         if (!alreadyBlinked)
         {
             alreadyBlinked = true;
-            anim.SetBool("blink", true);
+            anim.Play("Blinking Eye Blue");
+            //anim.SetBool("blink", true);
             Invoke("Unblink", anim.GetCurrentAnimatorClipInfo(0)[0].clip.length);
         } else
         {
@@ -23,7 +24,7 @@ public class FollowEye : TargetedLinearOperatableObject
 
     void Unblink()
     {
-        anim.SetBool("blink", false);
+        //anim.SetBool("blink", false);
         Invoke("Activate", 0.7f);
     }
 }
