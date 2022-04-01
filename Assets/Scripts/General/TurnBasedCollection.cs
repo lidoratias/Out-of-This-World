@@ -7,13 +7,13 @@ public class TurnBasedCollection : MonoBehaviour, Observer
 
     public OperatableObject[] operatableGameObjects;
 
-    private List<int> order = new List<int>();
-    private int currentOrderIdx = 0;
+    protected List<int> order = new List<int>();
+    protected int currentOrderIdx = 0;
 
-    private float turnsTimer;
+    protected float turnsTimer;
     public float waitingTimeBetweenTurns;
 
-    private bool alreadyCalled = false;
+    protected bool alreadyCalled = false;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +36,7 @@ public class TurnBasedCollection : MonoBehaviour, Observer
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         if (turnsTimer < waitingTimeBetweenTurns)
         {

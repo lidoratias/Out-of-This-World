@@ -7,15 +7,15 @@ public class TimedSpawner : ActivatedGameObject
 
     public GameObject[] spawnedObjects;
     public int[] chancesForEachObject;
-    private int sumOfChances = 0;
+    protected int sumOfChances = 0;
 
-    private float timer = 0;
-    private float waitingTime = 0.2f;
+    protected float timer = 0;
+    protected float waitingTime = 0.2f;
 
     public float[] waitingTimeRange;
     public float[] spawnPointRange;
 
-    Vector3 spawnPos;
+    protected Vector3 spawnPos;
 
     public char axis;
 
@@ -31,7 +31,7 @@ public class TimedSpawner : ActivatedGameObject
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         timer += Time.deltaTime;
         if (timer >= waitingTime)

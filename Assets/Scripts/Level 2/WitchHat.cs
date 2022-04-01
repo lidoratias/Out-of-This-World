@@ -18,8 +18,14 @@ public class WitchHat : Enemy
     public BurstingLaserBeam laserPrefab;
     public GameObject sinsusStar;
     public GameObject straightStar;
-    public Bullet[] potionPrefabs;
     public EllipticalMovement em;
+
+    public Potion potionPrefab;
+    private List<int> potionIdxes = new List<int>();
+    public float potionEffectLength;
+    private float potionTimer = 0;
+    private Potion potionInstance;
+    private bool potionLaunched = false;
 
     public LevelHandler levelHandler;
 
@@ -34,9 +40,14 @@ public class WitchHat : Enemy
     // Start is called before the first frame update
     public override void Start()
     {
+        for (int i = 0; i < 2; i++)
+        {
+            potionIdxes.Add(i);
+        }
+
         //target = new Vector2(-10, Random.Range(-7.0f, 3.5f));
         waitingTime = 2.0f;
-        this.health = 100;
+        //this.health = 100;
         this.damage = 100;
     }
 
@@ -61,6 +72,20 @@ public class WitchHat : Enemy
 
         }
 
+        if (this.potionInstance != null)
+        {
+            potionLaunched = true;
+        } else if (potionLaunched)
+        {
+            potionTimer += Time.deltaTime;
+            if (potionTimer > potionEffectLength)
+            {
+                this.potionInstance.cancelEffect();
+                potionTimer = 0;
+                potionLaunched = false;
+            }
+        }
+
         //TODO ADD A FEW MORE SHOOTING TYPES - REGULAR BULLETS AND ROTATING BULLETS.
         if (timer >= waitingTime)
         {
@@ -72,7 +97,8 @@ public class WitchHat : Enemy
                 waitingTime = Random.Range(1.2f, 2.8f);
             } else if (levelHandler.getPhase() == 3)
             {
-                waitingTime = Random.Range(2.0f, 3.0f);
+                // +8 to let the effect fade away
+                waitingTime = potionEffectLength + 8;
             }
             anim.Play("Witch Hat Shot");
             timer = 0;
@@ -120,10 +146,12 @@ public class WitchHat : Enemy
                 wheel.setPace(5);
             }
             drawbackHat();
-        } else if (levelHandler.getPhase() == 3)
-        {
-            int potionIdx = Random.Range(0, 3);
-            Bullet bullet = Instantiate(potionPrefabs[potionIdx], firePoint.position, firePoint.rotation);
+        } else if (levelHandler.getPhase() == 3 && potionIdxes.Count != 0)
+        {   
+            this.potionInstance = Instantiate(potionPrefab, firePoint.position, firePoint.rotation);
+            int potionIdx = potionIdxes[Random.Range(0, potionIdxes.Count)];
+            potionIdxes.Remove(potionIdx);
+            this.potionInstance.setPotionIdx(potionIdx);
             drawbackHat();
         }
     }

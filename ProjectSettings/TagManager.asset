@@ -12,6 +12,7 @@ TagManager:
   - Cannon Bullet
   - BlockingHittingEnemy
   - IgnorableBullet
+  - Eyes
   layers:
   - Default
   - TransparentFX

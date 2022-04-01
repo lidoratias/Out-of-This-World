@@ -6,14 +6,14 @@ public class TimedFollow : BasicMovement
 {
 
     public string targetTag;
-    private GameObject target;
-    private Vector3 currentTargetPos;
+    protected GameObject target;
+    protected Vector3 currentTargetPos;
 
-    private bool currentTargetPosUpdated = false;
+    protected bool currentTargetPosUpdated = false;
 
     public float timeBetweenSteps;
     public float distanceDelta;
-    private float timer = 0;
+    protected float timer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class TimedFollow : BasicMovement
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         if (timer < timeBetweenSteps)
         {
