@@ -40,10 +40,7 @@ public class WitchHat : Enemy
     // Start is called before the first frame update
     public override void Start()
     {
-        for (int i = 0; i < 2; i++)
-        {
-            potionIdxes.Add(i);
-        }
+        fillPotions();
 
         //target = new Vector2(-10, Random.Range(-7.0f, 3.5f));
         waitingTime = 2.0f;
@@ -119,6 +116,14 @@ public class WitchHat : Enemy
         }
     }
 
+    void fillPotions()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            potionIdxes.Add(i);
+        }
+    }
+
     void unflickerHatParts()
     {
         top.unflicker();
@@ -146,8 +151,12 @@ public class WitchHat : Enemy
                 wheel.setPace(5);
             }
             drawbackHat();
-        } else if (levelHandler.getPhase() == 3 && potionIdxes.Count != 0)
+        } else if (levelHandler.getPhase() == 3)
         {   
+            if (potionIdxes.Count == 0)
+            {
+                fillPotions();
+            }
             this.potionInstance = Instantiate(potionPrefab, firePoint.position, firePoint.rotation);
             int potionIdx = potionIdxes[Random.Range(0, potionIdxes.Count)];
             potionIdxes.Remove(potionIdx);

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeartsSpawner : TimedSpawner
+public class DropsSpawner : TimedSpawner
 {
 
     private bool isActivated = false;

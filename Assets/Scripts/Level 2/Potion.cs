@@ -5,7 +5,6 @@ using UnityEngine;
 public class Potion : LinearBullet
 {
     public Sprite[] sprites;
-    //public ActivatedGameObjectsHolder[] effects;
 
     private int potionIdx;
     private float potionEffectsLength = 40;
@@ -13,6 +12,7 @@ public class Potion : LinearBullet
     FollowHeart hf;
     HeartsSpawner hs;
     EyesCollection eyes;
+    DropsSpawner ds;
 
     protected override void Start()
     {
@@ -24,6 +24,10 @@ public class Potion : LinearBullet
         if (potionIdx == 1)
         {
             GetComponent<Rigidbody2D>().gravityScale = 0;
+            this.speed = 20;
+        } else if (potionIdx == 2)
+        {
+            GetComponent<Rigidbody2D>().gravityScale = -1;
         }
         this.speed = Random.Range(5, 13);
         rb.velocity = this.direction * this.speed;
@@ -51,10 +55,13 @@ public class Potion : LinearBullet
                     break;
                 case 1:
                     //Play Animation and play shattered glass sound
-                    //effects[potionIdx].ActivateAll();
                     eyes = (EyesCollection)Object.FindObjectOfType(typeof(EyesCollection));
                     eyes.setIsActivated(true);
                     Destroy(gameObject);
+                    break;
+                case 2:
+                    ds = (DropsSpawner)Object.FindObjectOfType(typeof(DropsSpawner));
+                    ds.setIsActivated(true);
                     break;
             }
         }
@@ -74,6 +81,9 @@ public class Potion : LinearBullet
         } else if (potionIdx == 1)
         {
             eyes.setIsActivated(false);
+        } else if(potionIdx == 2)
+        {
+            ds.setIsActivated(false);
         }
     }
 

@@ -23,7 +23,7 @@ public class LinearOperatableObject : OperatableObject
         lm.enabled = true;
     }
 
-    protected void Disactivate()
+    protected virtual void Disactivate()
     {
         lm.enabled = false;
     }

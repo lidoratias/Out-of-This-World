@@ -23,7 +23,7 @@ public class EyesCollection : TurnBasedCollection
             else if (!isInPlace)
             {
                 transform.position = Vector3.MoveTowards(transform.position, target.position,
-                    0.009f);
+                    0.015f);
             }
 
             if (isInPlace)
@@ -50,7 +50,7 @@ public class EyesCollection : TurnBasedCollection
         {
             //The Object is being shutdown
             lm.setMovement(new Vector2(0, 1));
-            lm.setSpeed(10);
+            lm.setSpeed(20);
         }
     }
 }

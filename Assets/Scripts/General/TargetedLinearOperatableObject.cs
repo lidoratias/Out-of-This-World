@@ -5,8 +5,7 @@ using UnityEngine;
 public class TargetedLinearOperatableObject : LinearOperatableObject
 {
     public Transform target;
-    private Vector2 targetCapturedPos;
-
+    private Vector3 targetCapturedPos;
 
     public override void Operate()
     {
@@ -15,10 +14,10 @@ public class TargetedLinearOperatableObject : LinearOperatableObject
 
     protected override void Activate()
     {
-        Vector2 directionTowardsTarget = new Vector2(target.position.x - gameObject.transform.position.x,
-            target.position.y - transform.position.y);
+        //Vector2 directionTowardsTarget = new Vector2(target.position.x - gameObject.transform.position.x,
+        //    target.position.y - transform.position.y);
         targetCapturedPos = target.position;
-        lm.setMovement(directionTowardsTarget);
+        //lm.setMovement(directionTowardsTarget);
         lm.enabled = true;
     }
 
@@ -30,6 +29,11 @@ public class TargetedLinearOperatableObject : LinearOperatableObject
         {
             Disactivate();
             notifyObservers();
+        } else if (lm.enabled == true)
+        {
+            Vector3 newPos = Vector3.MoveTowards(transform.position, targetCapturedPos,
+                speed);
+            this.transform.position = newPos;
         }
     }
 

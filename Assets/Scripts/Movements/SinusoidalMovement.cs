@@ -5,9 +5,6 @@ using UnityEngine;
 public class SinusoidalMovement : BasicMovement
 {
     [SerializeField]
-    private int signOfMovement;
-
-    [SerializeField]
     float frequency = 20f;
 
     [SerializeField]

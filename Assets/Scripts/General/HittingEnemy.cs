@@ -21,4 +21,9 @@ public class HittingEnemy : MonoBehaviour
     {
         this.damage = damage;
     }
+
+    public void setSprite(Sprite sprite)
+    {
+        GetComponent<SpriteRenderer>().sprite = sprite;
+    }
 }

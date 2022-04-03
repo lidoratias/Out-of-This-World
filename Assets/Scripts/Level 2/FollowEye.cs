@@ -27,4 +27,9 @@ public class FollowEye : TargetedLinearOperatableObject
         //anim.SetBool("blink", false);
         Invoke("Activate", 0.7f);
     }
+
+    protected override void Disactivate()
+    {
+        lm.enabled = false;
+    }
 }

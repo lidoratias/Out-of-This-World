@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class SplitEffect : Effect
 {
-    private GameObject splitPrefab;
-    private GameObject source;
-    private Sprite sprite;
+    public GameObject splitPrefab;
+    public GameObject source;
+    public Sprite sprite;
 
-    private Vector2[] movements;
-    private float[] speeds;
+    public Vector2[] movements;
+    public float[] speeds;
     
     //private List<GameObject> splits = new List<GameObject>();
     // Start is called before the first frame update
@@ -23,7 +23,7 @@ public class SplitEffect : Effect
         for (int i = 0; i < movements.Length; i++)
         {
             GameObject curSplit = Instantiate(splitPrefab,
-                transform.position, transform.rotation);
+                source.transform.position, transform.rotation);
             curSplit.GetComponent<SpriteRenderer>().sprite = sprite;
             if (movements[i].x != 0 || movements[i].y != 0)
             {
