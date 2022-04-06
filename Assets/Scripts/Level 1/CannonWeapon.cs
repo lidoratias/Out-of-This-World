@@ -6,7 +6,10 @@ public class CannonWeapon : MonoBehaviour
 {
     public Transform firePoint;
     public CannonDirectedBullet bulletPrefab;
+
     public GameObject explosionCloud;
+    public Vector3 explosionSize;
+
     public CannonString cannonString;
     public CannonFire cannonFire;
 
@@ -39,7 +42,8 @@ public class CannonWeapon : MonoBehaviour
         CannonDirectedBullet bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         string[] bulletTargets = { "Player" };
         bullet.setTargets(bulletTargets);
-        Instantiate(explosionCloud, firePoint.position, new Quaternion(0, 0, 0, 1));
+        GameObject explosionCloudInstance = Instantiate(explosionCloud, firePoint.position, new Quaternion(0, 0, 0, 1));
+        explosionCloudInstance.transform.localScale = explosionSize;
     }
 
     public void phaseOut()

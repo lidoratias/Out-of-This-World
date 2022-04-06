@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class ExplosionHandler : MonoBehaviour
 {
-
-    public Animator anim;
-
     private float timer = 0;
     public float waitingTime = 0.1f;
 

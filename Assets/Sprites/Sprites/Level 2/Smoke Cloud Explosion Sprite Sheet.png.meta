@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: 09b84a9108ffc1d4798b8b830012868d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4777022107385173407
+    second: Smoke Cloud Explosion Sprite Sheet_0
+  - first:
+      213: -4777373587068703321
+    second: Smoke Cloud Explosion Sprite Sheet_1
+  - first:
+      213: -8756650251355788377
+    second: Smoke Cloud Explosion Sprite Sheet_2
+  - first:
+      213: -1497034717776784132
+    second: Smoke Cloud Explosion Sprite Sheet_3
+  - first:
+      213: 855913235434045573
+    second: Smoke Cloud Explosion Sprite Sheet_4
+  - first:
+      213: 3436813792130204348
+    second: Smoke Cloud Explosion Sprite Sheet_5
+  - first:
+      213: -3887832500988106173
+    second: Smoke Cloud Explosion Sprite Sheet_6
+  - first:
+      213: 163920322666533508
+    second: Smoke Cloud Explosion Sprite Sheet_9
+  - first:
+      213: 7544776960996877422
+    second: Smoke Cloud Explosion Sprite Sheet_13
+  - first:
+      213: -1279396581977169281
+    second: Smoke Cloud Explosion Sprite Sheet_32
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Smoke Cloud Explosion Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 2383
+        width: 296
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a6e1df3bb94bdb0800000000000000
+      internalID: -4777022107385173407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Cloud Explosion Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 2265
+        width: 476
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adaf6fb80c53bdb0800000000000000
+      internalID: -4777373587068703321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Cloud Explosion Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 2074
+        width: 959
+        height: 947
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab6a99bdf02a7680800000000000000
+      internalID: -8756650251355788377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Cloud Explosion Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3433
+        y: 1796
+        width: 1173
+        height: 1225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4dc761bd6793be0800000000000000
+      internalID: -1497034717776784132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Cloud Explosion Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 4869
+        y: 1770
+        width: 1222
+        height: 1251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5800a948d80d0eb00800000000000000
+      internalID: 855913235434045573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Cloud Explosion Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 1334
+        height: 1348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb285175fe302bf20800000000000000
+      internalID: 3436813792130204348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Cloud Explosion Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 4
+        width: 1452
+        height: 1401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34aa26060f4ab0ac0800000000000000
+      internalID: -3887832500988106173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Cloud Explosion Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 5001
+        y: 0
+        width: 1320
+        height: 1297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482910c3aac564200800000000000000
+      internalID: 163920322666533508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Cloud Explosion Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 6580
+        y: 54
+        width: 1219
+        height: 1193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6425cd0cae64b860800000000000000
+      internalID: 7544776960996877422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Cloud Explosion Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 3431
+        y: 0
+        width: 1320
+        height: 1297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72e664569bae3ee0800000000000000
+      internalID: -1279396581977169281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

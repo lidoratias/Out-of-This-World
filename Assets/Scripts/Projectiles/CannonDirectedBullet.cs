@@ -5,6 +5,7 @@ using UnityEngine;
 public class CannonDirectedBullet : DirectedBullet
 {
     public GameObject explosionEffect;
+    public Vector3 explosionSize;
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
@@ -12,7 +13,7 @@ public class CannonDirectedBullet : DirectedBullet
         {
             GameObject explosionInstance = Instantiate(explosionEffect, transform.position,
                 new Quaternion(0, 0, 0, 1));
-            explosionInstance.transform.localScale = new Vector3(0.07f, 0.07f, 0.07f);
+            explosionInstance.transform.localScale = explosionSize;
             Destroy(gameObject);
         }
     }

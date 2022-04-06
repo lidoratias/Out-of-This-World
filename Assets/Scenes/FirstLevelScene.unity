@@ -1763,7 +1763,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 2042321342}
   bulletPrefab: {fileID: 3808456307540733915, guid: ba20c4155880c91499e2b951fef22f14, type: 3}
-  explosionCloud: {fileID: 3307492831062922142, guid: 77ec8189e3c7d5449b4719a1b2e1daeb, type: 3}
+  explosionCloud: {fileID: 129915464702268179, guid: c5c3aa5a389769841b3af85960644bdb, type: 3}
+  explosionSize: {x: 0.2, y: 0.2, z: 0.2}
   cannonString: {fileID: 1188373934}
   cannonFire: {fileID: 1948955724}
   timer: 0
