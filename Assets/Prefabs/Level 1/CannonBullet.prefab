@@ -139,4 +139,4 @@ MonoBehaviour:
   rb: {fileID: 1922492049485872287}
   direction: {x: 0, y: 0}
   explosionEffect: {fileID: 1061068139386254392, guid: f969a0513d513cb4ab168a0571d214cc, type: 3}
-  explosionSize: {x: 0.2, y: 0.2, z: 0.2}
+  explosionSize: {x: 0.13, y: 0.13, z: 0.13}

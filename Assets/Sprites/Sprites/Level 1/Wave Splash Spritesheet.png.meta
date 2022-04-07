@@ -1,0 +1,477 @@
+fileFormatVersion: 2
+guid: 2ff49c236adfe8643ba910021e011247
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2725470660986874285
+    second: Wave Splash Spritesheet_0
+  - first:
+      213: 6168187276344637841
+    second: Wave Splash Spritesheet_1
+  - first:
+      213: 9109815774010346614
+    second: Wave Splash Spritesheet_2
+  - first:
+      213: -714548529163915785
+    second: Wave Splash Spritesheet_3
+  - first:
+      213: 7939341186048336406
+    second: Wave Splash Spritesheet_4
+  - first:
+      213: -1898517263740481647
+    second: Wave Splash Spritesheet_5
+  - first:
+      213: -3055450803601556160
+    second: Wave Splash Spritesheet_6
+  - first:
+      213: -4571020504033364080
+    second: Wave Splash Spritesheet_7
+  - first:
+      213: 6026870292142465945
+    second: Wave Splash Spritesheet_21
+  - first:
+      213: 7571681889305354120
+    second: Wave Splash Spritesheet_22
+  - first:
+      213: -132294871791063693
+    second: Wave Splash Spritesheet_23
+  - first:
+      213: 3730876714346388144
+    second: Wave Splash Spritesheet_26
+  - first:
+      213: 5851066457204071301
+    second: Wave Splash Spritesheet_8
+  - first:
+      213: -5780024850537610327
+    second: Wave Splash Spritesheet_24
+  - first:
+      213: 157174941302130819
+    second: Wave Splash Spritesheet_25
+  - first:
+      213: -4989593339343884900
+    second: Wave Splash Spritesheet_34
+  - first:
+      213: -7464053135083910833
+    second: Wave Splash Spritesheet_35
+  - first:
+      213: -7040311845695755005
+    second: Wave Splash Spritesheet_72
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wave Splash Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2447
+        width: 1347
+        height: 1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da92fd14021d2d520800000000000000
+      internalID: 2725470660986874285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wave Splash Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 2447
+        width: 1328
+        height: 1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1993b9ab5adc99550800000000000000
+      internalID: 6168187276344637841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wave Splash Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 3295
+        y: 2447
+        width: 1334
+        height: 1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c032b3e219c6e70800000000000000
+      internalID: 9109815774010346614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wave Splash Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 4965
+        y: 2447
+        width: 1347
+        height: 1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd286806e96516f0800000000000000
+      internalID: -714548529163915785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wave Splash Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 6566
+        y: 2447
+        width: 1214
+        height: 1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6122a098eb43e2e60800000000000000
+      internalID: 7939341186048336406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wave Splash Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 891
+        width: 775
+        height: 1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993a186599eb3a350800000000000000
+      internalID: 6026870292142465945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wave Splash Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 890
+        width: 771
+        height: 1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fdd44df84041960800000000000000
+      internalID: 7571681889305354120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wave Splash Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 2323
+        y: 913
+        width: 779
+        height: 1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37da949d38ef92ef0800000000000000
+      internalID: -132294871791063693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wave Splash Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 18
+        width: 1106
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba946bca9cb6c330800000000000000
+      internalID: 3730876714346388144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wave Splash Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 6117
+        y: 1427
+        width: 1039
+        height: 549
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b1ada41f9233150800000000000000
+      internalID: 5851066457204071301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wave Splash Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 3415
+        y: 940
+        width: 891
+        height: 1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a386c6b50a39cfa0800000000000000
+      internalID: -5780024850537610327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wave Splash Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 4590
+        y: 997
+        width: 1139
+        height: 1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38808efb6c56e2200800000000000000
+      internalID: 157174941302130819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wave Splash Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 0
+        width: 1212
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9da0ca3b4761cab0800000000000000
+      internalID: -4989593339343884900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wave Splash Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 3835
+        y: 0
+        width: 1244
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49ceaa483b5a6890800000000000000
+      internalID: -7464053135083910833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wave Splash Spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 5779
+        y: 0
+        width: 1459
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d64517da9cb4e90800000000000000
+      internalID: -7040311845695755005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -17,10 +17,16 @@ public class CannonWeapon : MonoBehaviour
     public float waitingTime = 0.5f;
     private bool isPhasingOut = false;
 
+    public GameObject eye;
+    private Animator eyeAnimator;
+    public string eyeBlinkAnimName;
+
     void Start()
     {
         this.cannonString.setSpeed(waitingTime);
         this.cannonFire.setSpeed(waitingTime);
+
+        eyeAnimator = eye.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -44,6 +50,8 @@ public class CannonWeapon : MonoBehaviour
         bullet.setTargets(bulletTargets);
         GameObject explosionCloudInstance = Instantiate(explosionCloud, firePoint.position, new Quaternion(0, 0, 0, 1));
         explosionCloudInstance.transform.localScale = explosionSize;
+
+        eyeAnimator.Play(eyeBlinkAnimName);
     }
 
     public void phaseOut()

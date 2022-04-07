@@ -6,6 +6,7 @@ public class Barrel : HittingEnemy
 {
     public Rigidbody2D rb;
     public GameObject explosionEffect;
+    public Vector3 explosionSize;
     public Sprite[] sprites;
     public Bullet bullet;
 
@@ -40,7 +41,7 @@ public class Barrel : HittingEnemy
     void Explode() {
         GameObject explosionInstance = Instantiate(explosionEffect, transform.position,
             new Quaternion(0, 0, 0, 1));
-        explosionInstance.transform.localScale = new Vector3(0.07f, 0.07f, 0.07f);
+        explosionInstance.transform.localScale = explosionSize;
 
         Bullet firstBullet = Instantiate(bullet, transform.position, new Quaternion(0, 0, 0, 1));
         Bullet secondBullet = Instantiate(bullet, transform.position, new Quaternion(0, 0, 0, 1));
