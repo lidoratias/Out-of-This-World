@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 473d4f5ed0675af4cb85875c7a694edd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 880613854052186335
+    second: Green Drop Splash Spritesheet_8
+  - first:
+      213: -5161077019229204500
+    second: Green Drop Splash Spritesheet_12
+  - first:
+      213: 6723284248281747754
+    second: Green Drop Splash Spritesheet_15
+  - first:
+      213: -3009851093347913156
+    second: Green Drop Splash Spritesheet_20
+  - first:
+      213: -7413665232415076382
+    second: Green Drop Splash Spritesheet_28
+  - first:
+      213: 2326317591000838318
+    second: Green Drop Splash Spritesheet_29
+  - first:
+      213: 7958023789530423289
+    second: Green Drop Splash Spritesheet_34
+  - first:
+      213: -60506206011609160
+    second: Green Drop Splash Spritesheet_36
+  - first:
+      213: -786932034195864456
+    second: Green Drop Splash Spritesheet_39
+  - first:
+      213: 110699837225808665
+    second: Green Drop Splash Spritesheet_40
+  - first:
+      213: 8751488792427788316
+    second: Green Drop Splash Spritesheet_41
+  - first:
+      213: 4010391476744432452
+    second: Green Drop Splash Spritesheet_42
+  - first:
+      213: 342261211960409443
+    second: Green Drop Splash Spritesheet_43
+  - first:
+      213: 1762401128217465873
+    second: Green Drop Splash Spritesheet_44
+  - first:
+      213: 4755245047542350971
+    second: Green Drop Splash Spritesheet_45
+  - first:
+      213: 7996819228039656904
+    second: Green Drop Splash Spritesheet_46
+  - first:
+      213: 7684622350199690755
+    second: Green Drop Splash Spritesheet_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Green Drop Splash Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 6228
+        y: 0
+        width: 791
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8711372a1983c00800000000000000
+      internalID: 880613854052186335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Drop Splash Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 0
+        width: 863
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef496aabcb2068b0800000000000000
+      internalID: -5161077019229204500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Drop Splash Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 2777
+        y: 0
+        width: 1183
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2110def667ed4d50800000000000000
+      internalID: 6723284248281747754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Drop Splash Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 0
+        width: 668
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c323d22a06cda36d0800000000000000
+      internalID: -3009851093347913156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Drop Splash Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 569
+        height: 704
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0f85e068db84020800000000000000
+      internalID: 2326317591000838318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Drop Splash Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 4075
+        y: 0
+        width: 1053
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff91112974907e60800000000000000
+      internalID: 7958023789530423289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Drop Splash Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 5296
+        y: 0
+        width: 763
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfa8fb1de9092ff0800000000000000
+      internalID: -60506206011609160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Drop Splash Spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 7151
+        y: 2
+        width: 704
+        height: 703
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3061ea8005345aa60800000000000000
+      internalID: 7684622350199690755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

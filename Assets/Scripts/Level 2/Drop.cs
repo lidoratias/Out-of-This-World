@@ -7,6 +7,7 @@ public class Drop : LinearBullet
 
     public Sprite[] sprites;
     public Sprite[] splitSprites;
+    public GameObject[] splashes;
     private int dropIdx;
 
     public LinearBullet splitPrefab;
@@ -28,8 +29,9 @@ public class Drop : LinearBullet
 
     void checkLocation()
     {
-        if (transform.position.y < -4.7f)
+        if (transform.position.y < -4.19f)
         {
+            Instantiate(splashes[dropIdx], transform.position, transform.rotation);
             Vector2[] movements;
             LinearBullet curSplit = null;
             switch (dropIdx)

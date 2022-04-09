@@ -135,6 +135,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9c2f9bcf28e84094c82e13d730333711, type: 3}
   - {fileID: 21300000, guid: 94b2d82abe791cd4b8416747657e39dd, type: 3}
   - {fileID: 21300000, guid: ed8a3854bcf93eb43baac3549c62bbf7, type: 3}
+  splashes:
+  - {fileID: 6030697987545570393, guid: 528b0e810d5c7bd4fbf9593c8ae53dde, type: 3}
+  - {fileID: 1256481277746958118, guid: e9549a4f7b9887f4aa237bf14bf4fdfb, type: 3}
+  - {fileID: 8860141014344426381, guid: d49c0e306646aed4bbf1e3699f6515fd, type: 3}
+  - {fileID: 8423965791264088492, guid: 30f237435ca60b149b97c908aa18750d, type: 3}
+  - {fileID: 8468809800469496403, guid: 425ea5b286f0e2b478d0a6416eb44879, type: 3}
   splitPrefab: {fileID: 2692615018716975440, guid: eeedd12d2a0b14f448e8243c9b16cad7, type: 3}
   sinusSplitPrefab: {fileID: -421974148713119841, guid: 34026734fbd8ba446af99722589f250d, type: 3}
 --- !u!61 &7938710767583458905

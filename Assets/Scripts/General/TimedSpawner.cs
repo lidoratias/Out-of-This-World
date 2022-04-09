@@ -45,6 +45,10 @@ public class TimedSpawner : ActivatedGameObject
             {
                 spawnPos = new Vector3(transform.position.x,
                     Random.Range(spawnPointRange[0], spawnPointRange[1]), transform.position.z);
+            } else if (axis == 'b') // B for both
+            {
+                spawnPos = new Vector3(Random.Range(spawnPointRange[0], spawnPointRange[1]),
+                    Random.Range(spawnPointRange[2], spawnPointRange[3]), transform.position.z);
             }
 
             int randomIndex = Random.Range(1, sumOfChances + 1);

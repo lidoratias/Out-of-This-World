@@ -258,7 +258,6 @@ GameObject:
   m_Component:
   - component: {fileID: 180915049}
   - component: {fileID: 180915050}
-  - component: {fileID: 180915051}
   m_Layer: 0
   m_Name: Waves Splashes Spawner
   m_TagString: Untagged
@@ -299,27 +298,11 @@ MonoBehaviour:
   - 1
   - 2
   spawnPointRange:
+  - -9
+  - 5
   - -1.1
   - 1.35
-  axis: 121
---- !u!114 &180915051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180915048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b05477f4a3d34274591ef395d4caa1c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  movement: {x: 1, y: 0}
-  minXValue: -9
-  maxXValue: 5
-  minYValue: 0
-  maxYValue: 0
+  axis: 98
 --- !u!1 &305891672
 GameObject:
   m_ObjectHideFlags: 0
