@@ -63,6 +63,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -412,6 +413,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Side Ghost Spritesheet_11: -944211340160085156
+      Side Ghost Spritesheet_1: -5801279885925197562
+      Side Ghost Spritesheet_8: 1554835849218392695
+      Side Ghost Spritesheet_2: 8020888145811231829
+      Side Ghost Spritesheet_9: -5949199070463351735
+      Side Ghost Spritesheet_0: -2497567831772704894
+      Side Ghost Spritesheet_4: -477537934372646411
+      Side Ghost Spritesheet_12: -4820084016248275224
+      Side Ghost Spritesheet_10: -2519729987030858336
+      Side Ghost Spritesheet_6: -6234835749984049675
+      Side Ghost Spritesheet_5: 3670722537849669383
+      Side Ghost Spritesheet_3: -849129887091614205
+      Side Ghost Spritesheet_7: 7688550137969154385
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

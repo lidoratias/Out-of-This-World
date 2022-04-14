@@ -78,6 +78,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -469,6 +470,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Wave Splash Spritesheet_2: 9109815774010346614
+      Wave Splash Spritesheet_21: 6026870292142465945
+      Wave Splash Spritesheet_25: 157174941302130819
+      Wave Splash Spritesheet_72: -7040311845695755005
+      Wave Splash Spritesheet_22: 7571681889305354120
+      Wave Splash Spritesheet_34: -4989593339343884900
+      Wave Splash Spritesheet_8: 5851066457204071301
+      Wave Splash Spritesheet_24: -5780024850537610327
+      Wave Splash Spritesheet_35: -7464053135083910833
+      Wave Splash Spritesheet_1: 6168187276344637841
+      Wave Splash Spritesheet_23: -132294871791063693
+      Wave Splash Spritesheet_4: 7939341186048336406
+      Wave Splash Spritesheet_0: 2725470660986874285
+      Wave Splash Spritesheet_26: 3730876714346388144
+      Wave Splash Spritesheet_3: -714548529163915785
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

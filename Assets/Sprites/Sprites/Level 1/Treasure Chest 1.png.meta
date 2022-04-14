@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -244,6 +245,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Treasure Chest 1: 5230128829838182568
+      Treasure Chest 2: 5452989573156541792
+      Treasure Chest 5: -5529112298756218392
+      Treasure Chest 6: 4192089510075077603
+      Treasure Chest 4: -5971773022158649320
+      Treasure Chest 3: -9199511995875214255
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

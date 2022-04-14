@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -292,6 +293,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Drop Splash Spritesheet_34: 8448121669157245960
+      Drop Splash Spritesheet_8: 4002470091380443419
+      Drop Splash Spritesheet_29: 4745233744470669996
+      Drop Splash Spritesheet_20: 5065267706892348663
+      Drop Splash Spritesheet_47: 4552914446148805455
+      Drop Splash Spritesheet_12: -5246822297218938086
+      Drop Splash Spritesheet_36: 8811370358217338252
+      Drop Splash Spritesheet_15: 5773725887707613605
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

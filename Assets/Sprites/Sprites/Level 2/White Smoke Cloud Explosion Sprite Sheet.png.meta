@@ -54,6 +54,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -340,6 +341,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      White Smoke Cloud Explosion Sprite Sheet_5: -3989759893080385172
+      White Smoke Cloud Explosion Sprite Sheet_2: 3152552105404112784
+      White Smoke Cloud Explosion Sprite Sheet_9: 2308046800256903230
+      White Smoke Cloud Explosion Sprite Sheet_0: 9104855098533437225
+      White Smoke Cloud Explosion Sprite Sheet_3: 4148816921029873868
+      White Smoke Cloud Explosion Sprite Sheet_4: -9102571428431730264
+      White Smoke Cloud Explosion Sprite Sheet_6: -268628818762793171
+      White Smoke Cloud Explosion Sprite Sheet_8: -7123974642061047297
+      White Smoke Cloud Explosion Sprite Sheet_1: -7031427440003654216
+      White Smoke Cloud Explosion Sprite Sheet_13: -2186010453380439707
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -292,6 +293,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Orange Drop Splash Spritesheet_47: 5615627394600882659
+      Orange Drop Splash Spritesheet_8: -3936426171521435789
+      Orange Drop Splash Spritesheet_15: -6337098425834821623
+      Orange Drop Splash Spritesheet_12: 1560298019123058368
+      Orange Drop Splash Spritesheet_20: 8629376447490525141
+      Orange Drop Splash Spritesheet_34: -1770740068619717054
+      Orange Drop Splash Spritesheet_36: 2441404349506703423
+      Orange Drop Splash Spritesheet_29: -5414030869497290960
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

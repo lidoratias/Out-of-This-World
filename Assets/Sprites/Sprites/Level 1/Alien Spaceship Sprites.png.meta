@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -244,6 +245,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Alien Spaceship Sprites_3: 694237734483219493
+      Alien Spaceship Sprites_4: 7649230161164371798
+      Alien Spaceship Sprites_1: -5777114504301398383
+      Alien Spaceship Sprites_0: -5113905479999649204
+      Alien Spaceship Sprites_2: -5579162428832048623
+      Alien Spaceship Sprites_5: -8750676479777413644
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

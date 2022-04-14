@@ -69,6 +69,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -397,6 +398,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Eye Blink Spritesheet_10: 1910714324517692263
+      Eye Blink Spritesheet_9: 7025015451179133548
+      Eye Blink Spritesheet_0: 1330312295809659170
+      Eye Blink Spritesheet_1: -1050222813956768643
+      Eye Blink Spritesheet_6: -3189994001097504804
+      Eye Blink Spritesheet_4: -7820634562443428374
+      Eye Blink Spritesheet_5: -2929955654557011278
+      Eye Blink Spritesheet_11: -9171636124267777815
+      Eye Blink Spritesheet_8: -1137121358532236032
+      Eye Blink Spritesheet_2: -8843235580435961467
+      Eye Blink Spritesheet_3: -2611074014456693344
+      Eye Blink Spritesheet_7: 8709314099303739774
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

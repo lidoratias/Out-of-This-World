@@ -75,6 +75,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -319,6 +320,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Green Drop Splash Spritesheet_12: -5161077019229204500
+      Green Drop Splash Spritesheet_47: 7684622350199690755
+      Green Drop Splash Spritesheet_20: -3009851093347913156
+      Green Drop Splash Spritesheet_15: 6723284248281747754
+      Green Drop Splash Spritesheet_36: -60506206011609160
+      Green Drop Splash Spritesheet_34: 7958023789530423289
+      Green Drop Splash Spritesheet_29: 2326317591000838318
+      Green Drop Splash Spritesheet_8: 880613854052186335
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
