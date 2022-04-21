@@ -107,10 +107,10 @@ public class Drop : LinearBullet
                         curSplit.setSprite(splitSprites[dropIdx]);
                         if (i <= 3)
                         {
-                            curSplit.setSpeed(i + 1);
+                            curSplit.setSpeed((i + 1) * 1.5f);
                         } else
                         {
-                            curSplit.setSpeed(7 - i);
+                            curSplit.setSpeed((7 - i) * 1.5f);
                         }
                     }
                     break;
