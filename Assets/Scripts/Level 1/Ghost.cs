@@ -6,6 +6,7 @@ public class Ghost : MonoBehaviour
 {
     public GameObject explosionEffect;
     public GameObject parentGhost;
+    public Vector3 explosionSize;
     private float timer = 0;
 
     void Update()
@@ -21,7 +22,7 @@ public class Ghost : MonoBehaviour
                 transform.position.z);
             GameObject explosionInstance = Instantiate(explosionEffect, explosionPosition,
                 new Quaternion(0, 0, 0, 1));
-            explosionInstance.transform.localScale = new Vector3(0.07f, 0.07f, 0.07f);
+            explosionInstance.transform.localScale = explosionSize;
             if (timer >= 0.5)
             {
                 Destroy(parentGhost);

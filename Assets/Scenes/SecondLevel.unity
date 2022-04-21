@@ -1427,6 +1427,8 @@ MonoBehaviour:
   direction: {x: -1, y: 0}
   sprites:
   - {fileID: 21300000, guid: 2b9e7fc130bb5bd4a9e1ef12223bc4e3, type: 3}
+  explosions: []
+  explosionSize: {x: 0, y: 0, z: 0}
 --- !u!212 &1149301260
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2121,7 +2123,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686268220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.53, y: -6.69, z: 0}
+  m_LocalPosition: {x: 7.53, y: -6.69, z: -0.61}
   m_LocalScale: {x: 0.05597303, y: 0.05597303, z: 0.05597303}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2407,7 +2409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2363053005422940537, guid: 6540e623947a6df4c999de0f5531563e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.91
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2363053005422940537, guid: 6540e623947a6df4c999de0f5531563e, type: 3}
       propertyPath: m_LocalRotation.w

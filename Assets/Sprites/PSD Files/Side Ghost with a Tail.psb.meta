@@ -25,7 +25,6 @@ ScriptedImporter:
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
-    ignoreMasterTextureLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -80,6 +79,7 @@ ScriptedImporter:
       width: 0
       height: 0
     spriteID: 
+    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -103,43 +103,28 @@ ScriptedImporter:
       width: 543
       height: 490
     spriteID: 776e65c091c483b4389671032ad2c211
+    internalID: 0
     spriteBone:
     - name: bone_1
-      guid: 
       position: {x: 71.29224, y: 183.22302, z: 0}
       rotation: {x: 0, y: 0, z: -0.024102012, w: 0.99970955}
       length: 174.33707
       parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 0
     - name: bone_2
-      guid: 
       position: {x: 174.33713, y: -0.00007740808, z: 0}
       rotation: {x: 0, y: 0, z: 0.099576615, w: 0.99503}
       length: 124.66653
       parentId: 0
-      color:
-        serializedVersion: 2
-        rgba: 0
     - name: bone_3
-      guid: 
       position: {x: 124.666435, y: -0.000042587122, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       length: 69.218475
       parentId: 1
-      color:
-        serializedVersion: 2
-        rgba: 0
     - name: bone_4
-      guid: 
       position: {x: 69.2185, y: -0.00003426018, z: 0}
       rotation: {x: 0, y: 0, z: -0.00000014085745, w: 1}
       length: 59.5181
       parentId: 2
-      color:
-        serializedVersion: 2
-        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 138.998, y: 0.4169922}
@@ -574,16 +559,13 @@ ScriptedImporter:
       width: 198
       height: 116
     spriteID: fbfe2e765a76cb64f8c2a7b8da7412ec
+    internalID: 0
     spriteBone:
     - name: bone_5
-      guid: 
       position: {x: 188.4552, y: 58.84012, z: 0}
       rotation: {x: 0, y: 0, z: -0.9997759, w: 0.021172805}
       length: 180.40608
       parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 184.14899, y: 0.41500092}
@@ -994,6 +976,7 @@ ScriptedImporter:
       width: 492
       height: 675
     spriteID: b1737b8f7da87734daa7fb67609c1447
+    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices:
@@ -1386,16 +1369,13 @@ ScriptedImporter:
       width: 197
       height: 116
     spriteID: d04c121591d6dfc4388b7bf35aa6b307
+    internalID: 0
     spriteBone:
     - name: bone_6
-      guid: 
       position: {x: 114.74646, y: 70.42871, z: 0}
       rotation: {x: 0, y: 0, z: -0.9945114, w: 0.10462802}
       length: 110.098915
       parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 185.49701, y: 3.024994}
@@ -1794,62 +1774,107 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 504, y: -149}
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 0
+  importHiddenLayers: 0
+  importedTextureWidth: 1024
+  importedTextureHeight: 2048
+  documentSize: {x: 1091, y: 675}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 1024
+  textureActualHeight: 2048
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Tail
+    spriteName: Tail
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 776e65c091c483b4389671032ad2c211
+    layerID: 5
+    mosaicPosition: {x: 4, y: 687}
+  - name: Right Hand
+    spriteName: Right Hand
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fbfe2e765a76cb64f8c2a7b8da7412ec
+    layerID: 4
+    mosaicPosition: {x: 504, y: 4}
+  - name: Body
+    spriteName: Body
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b1737b8f7da87734daa7fb67609c1447
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+  - name: Left Hand
+    spriteName: Left Hand
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d04c121591d6dfc4388b7bf35aa6b307
+    layerID: 2
+    mosaicPosition: {x: 504, y: 128}
   characterData:
     bones:
     - name: bone_1
-      guid: 
       position: {x: 617.29224, y: 183.223, z: 0}
       rotation: {x: 0, y: 0, z: -0.024102012, w: 0.99970955}
       length: 174.33707
       parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 0
     - name: bone_2
-      guid: 
       position: {x: 174.33713, y: -0.000028886408, z: 0}
       rotation: {x: 0, y: 0, z: 0.09957661, w: 0.9950299}
       length: 124.66652
       parentId: 0
-      color:
-        serializedVersion: 2
-        rgba: 0
     - name: bone_3
-      guid: 
       position: {x: 124.666466, y: -0.000039835057, z: 0}
       rotation: {x: 0, y: 0, z: -0, w: 1}
       length: 69.21847
       parentId: 1
-      color:
-        serializedVersion: 2
-        rgba: 0
     - name: bone_4
-      guid: 
       position: {x: 69.21849, y: -0.000027377493, z: 0}
       rotation: {x: 0, y: 0, z: -0.00000013937913, w: 1}
       length: 59.518093
       parentId: 2
-      color:
-        serializedVersion: 2
-        rgba: 0
     - name: bone_5
-      guid: 
       position: {x: 487.4552, y: 300.84012, z: 0}
       rotation: {x: 0, y: 0, z: -0.9997759, w: 0.021172805}
       length: 180.40608
       parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 0
     - name: bone_6
-      guid: 
       position: {x: 114.746445, y: 347.4287, z: 0}
       rotation: {x: 0, y: 0, z: -0.9945114, w: 0.10462802}
       length: 110.098915
       parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 0
     parts:
     - spritePosition:
         x: 546
@@ -1889,98 +1914,8 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-    boneReadOnly: 0
-  sharedRigSpriteImportData: []
-  sharedRigCharacterData:
-    bones: []
-    parts: []
-    dimension: {x: 0, y: 0}
-    characterGroups: []
-    boneReadOnly: 0
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  mosaicLayers: 1
-  characterMode: 1
-  documentPivot: {x: 0, y: 0}
-  documentAlignment: 0
-  importHiddenLayers: 0
-  layerMappingOption: 2
-  generatePhysicsShape: 0
-  paperDollMode: 0
-  keepDupilcateSpriteName: 0
-  skeletonAssetReferenceID: 
-  spriteCategoryList:
-    categories: []
-  spritePackingTag: 
-  resliceFromLayer: 0
-  mosaicPSDLayers: []
-  rigPSDLayers:
-  - name: Tail
-    spriteName: Tail
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 776e65c091c483b4389671032ad2c211
-    layerID: 5
-    mosaicPosition: {x: 4, y: 687}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Right Hand
-    spriteName: Right Hand
-    isGroup: 0
-    parentIndex: -1
-    spriteID: fbfe2e765a76cb64f8c2a7b8da7412ec
-    layerID: 4
-    mosaicPosition: {x: 504, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Body
-    spriteName: Body
-    isGroup: 0
-    parentIndex: -1
-    spriteID: b1737b8f7da87734daa7fb67609c1447
-    layerID: 3
-    mosaicPosition: {x: 4, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Left Hand
-    spriteName: Left Hand
-    isGroup: 0
-    parentIndex: -1
-    spriteID: d04c121591d6dfc4388b7bf35aa6b307
-    layerID: 2
-    mosaicPosition: {x: 504, y: 128}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  sharedRigPSDLayers: []
-  pSDLayerImportSetting: []
   generateGOHierarchy: 0
   textureAssetName: Side Ghost with a Tail Texture
   prefabAssetName: Side Ghost with a Tail Prefab
   spriteLibAssetName: Side Ghost with a Tail Sprite Lib
-  skeletonAssetName: 
   secondarySpriteTextures: []

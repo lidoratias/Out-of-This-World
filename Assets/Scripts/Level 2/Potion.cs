@@ -5,6 +5,8 @@ using UnityEngine;
 public class Potion : LinearBullet
 {
     public Sprite[] sprites;
+    public GameObject[] explosions;
+    public Vector3 explosionSize;
 
     private int potionIdx;
     private float potionEffectsLength = 40;
@@ -18,7 +20,6 @@ public class Potion : LinearBullet
     {
         string[] targets = { "Player" };
         setTargets(targets);
-        //potionIdx = Random.Range(0, sprites.Length);
         GetComponent<SpriteRenderer>().sprite = sprites[potionIdx];
 
         if (potionIdx == 1)
@@ -45,6 +46,20 @@ public class Potion : LinearBullet
             (potionIdx == 2 && transform.position.y > 4.8f) ||
             (potionIdx == 1 && transform.position.x < -10.1f) )
         {
+            Vector3 explosionPosition = new Vector3(0, 0, 0);
+            if (potionIdx == 1)
+            {
+                explosionPosition = new Vector3(-8.5f, transform.position.y, transform.position.z);
+            } else if (potionIdx == 0)
+            {
+                explosionPosition = new Vector3(transform.position.x, -3.5f, transform.position.z);
+            } else if (potionIdx == 2)
+            {
+                explosionPosition = new Vector3(transform.position.x, 3.5f, transform.position.z);
+            }
+            GameObject explosionInstance = Instantiate(explosions[potionIdx], explosionPosition, transform.rotation);
+            explosionInstance.transform.localScale = explosionSize;
+            
             switch (potionIdx)
             {
                 case 0:
@@ -64,6 +79,7 @@ public class Potion : LinearBullet
                     ds.setIsActivated(true);
                     break;
             }
+            Destroy(gameObject);
         }
     }
 
