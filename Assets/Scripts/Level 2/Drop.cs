@@ -84,7 +84,35 @@ public class Drop : LinearBullet
                 case 4:
                     HittingEnemy sinusSplitInstance = Instantiate(sinusSplitPrefab,
                         transform.position, transform.rotation);
-                    sinusSplitInstance.setSprite(splitSprites[sprites.Length - 1]);
+                    sinusSplitInstance.setSprite(splitSprites[dropIdx]);
+                    break;
+                case 5:
+                    movements = splitsMovementsByNumOfSplits(6, -1.4f, 1.4f);
+                    for (int i = 0; i < 6; i++)
+                    {
+                        curSplit = Instantiate(splitPrefab,
+                        transform.position, transform.rotation);
+                        curSplit.setDirection(movements[i]);
+                        curSplit.setSpeed(i + 1);
+                        curSplit.setSprite(splitSprites[dropIdx]);
+                    }
+                    break;
+                case 6:
+                    movements = splitsMovementsByNumOfSplits(7, -1.8f, 1.8f);
+                    for (int i = 0; i < 7; i++)
+                    {
+                        curSplit = Instantiate(splitPrefab,
+                            transform.position, transform.rotation);
+                        curSplit.setDirection(movements[i]);
+                        curSplit.setSprite(splitSprites[dropIdx]);
+                        if (i <= 3)
+                        {
+                            curSplit.setSpeed(i + 1);
+                        } else
+                        {
+                            curSplit.setSpeed(7 - i);
+                        }
+                    }
                     break;
             }
             Destroy(gameObject);

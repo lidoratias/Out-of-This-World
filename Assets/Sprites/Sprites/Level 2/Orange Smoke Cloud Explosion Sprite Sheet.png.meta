@@ -54,6 +54,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -340,6 +341,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      3: -4811318817976996837
+      8: 1503270355250675189
+      2: -4635669655240467826
+      Orange Smoke Cloud Exp4: -1245906099422116105
+      6: -100493361048669310
+      9: 2782138933300158424
+      5: 4543278978852201182
+      1: -2382970899458567525
+      7: -5216776653642706733
+      10: -5316650780737635602
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
