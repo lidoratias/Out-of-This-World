@@ -15,3 +15,15 @@ The game was fully animated by me, using 3 techniques on different objects:
 - Frame by frame animations, where I painted each and every frame digitally.
 - Transform based animations, which is based on size, location and rotation of objects.
 - Rigging based animations - some of the 2D art was rigged by me, I mapped all the bones to specific parts in the art and used them to animate objects.
+
+##Screenshots
+![alt text](https://github.com/lidoratias/Out-of-This-World/blob/main/Screenshots%20-%20Out%20of%20this%20World/Screenshot%201.png?raw=true)
+![alt text](https://github.com/lidoratias/Out-of-This-World/blob/main/Screenshots%20-%20Out%20of%20this%20World/Screenshot%202.png?raw=true)
+![alt text](https://github.com/lidoratias/Out-of-This-World/blob/main/Screenshots%20-%20Out%20of%20this%20World/Screenshot%203.png?raw=true)
+![alt text](https://github.com/lidoratias/Out-of-This-World/blob/main/Screenshots%20-%20Out%20of%20this%20World/Screenshot%204.png?raw=true)
+![alt text](https://github.com/lidoratias/Out-of-This-World/blob/main/Screenshots%20-%20Out%20of%20this%20World/Screenshot%205.png?raw=true)
+![alt text](https://github.com/lidoratias/Out-of-This-World/blob/main/Screenshots%20-%20Out%20of%20this%20World/Screenshot%206.png?raw=true)
+![alt text](https://github.com/lidoratias/Out-of-This-World/blob/main/Screenshots%20-%20Out%20of%20this%20World/Screenshot%207.png?raw=true)
+![alt text](https://github.com/lidoratias/Out-of-This-World/blob/main/Screenshots%20-%20Out%20of%20this%20World/Screenshot%208.png?raw=true)
+![alt text](https://github.com/lidoratias/Out-of-This-World/blob/main/Screenshots%20-%20Out%20of%20this%20World/Screenshot%209.png?raw=true)
+![alt text](https://github.com/lidoratias/Out-of-This-World/blob/main/Screenshots%20-%20Out%20of%20this%20World/Screenshot%2010.png?raw=true)
