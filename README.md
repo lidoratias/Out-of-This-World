@@ -16,7 +16,7 @@ The game was fully animated by me, using 3 techniques on different objects:
 - Transform based animations, which is based on size, location and rotation of objects.
 - Rigging based animations - some of the 2D art was rigged by me, I mapped all the bones to specific parts in the art and used them to animate objects.
 
-##Screenshots
+## Screenshots
 ![alt text](https://github.com/lidoratias/Out-of-This-World/blob/main/Screenshots%20-%20Out%20of%20this%20World/Screenshot%201.png?raw=true)
 ![alt text](https://github.com/lidoratias/Out-of-This-World/blob/main/Screenshots%20-%20Out%20of%20this%20World/Screenshot%202.png?raw=true)
 ![alt text](https://github.com/lidoratias/Out-of-This-World/blob/main/Screenshots%20-%20Out%20of%20this%20World/Screenshot%203.png?raw=true)
