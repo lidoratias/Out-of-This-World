@@ -5,7 +5,7 @@ using UnityEngine;
 public class SmokeCloudHandler : MonoBehaviour
 {
     public float timer = 0;
-    private float waitingTime = 0.3f;
+    public float waitingTime = 0.3f;
     // Start is called before the first frame update
     void Start()
     {

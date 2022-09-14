@@ -1,0 +1,396 @@
+fileFormatVersion: 2
+guid: dd8a820c158b9ab419bc01a6520634f0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 573
+        width: 70
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43637d6723765648977a2c6f2220ba1
+      internalID: -389412161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 544
+        width: 113
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5f9dd0886d98c459b90314d013f02e
+      internalID: -1940581518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 498
+        width: 229
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e78d279bcdef74d9ae47d3b38a835e
+      internalID: 785958810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 432
+        width: 280
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55089d752ad93194c8f7b55ef4bd471d
+      internalID: -1344784944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 425
+        width: 291
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df27cd4072c7554c9f396e356409fc5
+      internalID: 1640406953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 319
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c0233020739cc42812d39207650319
+      internalID: 176338468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1
+        width: 347
+        height: 335
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84a267eff1644048b48385961c8d871
+      internalID: -2096256961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 9
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 318
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5eac53be337f541b9c903faaa0517a
+      internalID: 1200807832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1
+        width: 315
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25c6eb07529c5749bd98f565c34ca1e
+      internalID: 853500348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 10
+        width: 296
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a57ed53870cff247b042fe099de219f
+      internalID: 1605900186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dust Cloud Explosion Sprite Sheet_14: 2058422277
+      3: 785958810
+      Dust Cloud Explosion Sprite Sheet_15: -1769351670
+      Dust Cloud Explosion Sprite Sheet_39: -167572193
+      Dust Cloud Explosion Sprite Sheet_41: -1717476973
+      Dust Cloud Explosion Sprite Sheet_42: -229774245
+      6: 176338468
+      Dust Cloud Explosion Sprite Sheet_44: -554796658
+      5: 1640406953
+      Dust Cloud Explosion Sprite Sheet_12: -2020280367
+      Dust Cloud Explosion Sprite Sheet_47: 1993518148
+      Dust Cloud Explosion Sprite Sheet_46: -1292052913
+      Dust Cloud Explosion Sprite Sheet_17: -1827023372
+      Dust Cloud Explosion Sprite Sheet_22: -1297889218
+      Dust Cloud Explosion Sprite Sheet_29: -1335790427
+      Dust Cloud Explosion Sprite Sheet_32: -1049454100
+      Dust Cloud Explosion Sprite Sheet_21: 381146114
+      Dust Cloud Explosion Sprite Sheet_27: -410628785
+      Dust Cloud Explosion Sprite Sheet_51: -1830300249
+      Dust Cloud Explosion Sprite Sheet_25: 558635596
+      Dust Cloud Explosion Sprite Sheet_18: 1255281271
+      8: 853500348
+      Dust Cloud Explosion Sprite Sheet_16: 1205064973
+      Dust Cloud Explosion Sprite Sheet_40: 1113521222
+      Dust Cloud Explosion Sprite Sheet_33: 681498561
+      Dust Cloud Explosion Sprite Sheet_36: -1549432884
+      2: -1940581518
+      Dust Cloud Explosion Sprite Sheet_31: -1093350721
+      Dust Cloud Explosion Sprite Sheet_49: -28148265
+      Dust Cloud Explosion Sprite Sheet_20: -1655817159
+      Dust Cloud Explosion Sprite Sheet_28: 1175131402
+      4: -1344784944
+      Dust Cloud Explosion Sprite Sheet_30: -633389378
+      Dust Cloud Explosion Sprite Sheet_34: 1051561120
+      Dust Cloud Explosion Sprite Sheet_38: -2114545043
+      Dust Cloud Explosion Sprite Sheet_24: -566617663
+      Dust Cloud Explosion Sprite Sheet_37: 1206971079
+      9: 1200807832
+      Dust Cloud Explosion Sprite Sheet_48: -298852818
+      Dust Cloud Explosion Sprite Sheet_7: -1878329388
+      Dust Cloud Explosion Sprite Sheet_26: 882835303
+      1: -389412161
+      7: -2096256961
+      Dust Cloud Explosion Sprite Sheet_8: 1662678174
+      Dust Cloud Explosion Sprite Sheet_19: 1314422364
+      Dust Cloud Explosion Sprite Sheet_9: -1790890092
+      Dust Cloud Explosion Sprite Sheet_43: -563541975
+      Dust Cloud Explosion Sprite Sheet_13: -24701086
+      Dust Cloud Explosion Sprite Sheet_23: 937388987
+      Dust Cloud Explosion Sprite Sheet_10: -1046326366
+      Dust Cloud Explosion Sprite Sheet_45: 727946026
+      10: 1605900186
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

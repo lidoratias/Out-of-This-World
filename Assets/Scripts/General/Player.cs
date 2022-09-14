@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    protected int health = 500;
+    protected int health = 50;
     public Animator anim;
     private ArrayList hurtingObjectsTags = new ArrayList();
     private bool isFlickering = false;
