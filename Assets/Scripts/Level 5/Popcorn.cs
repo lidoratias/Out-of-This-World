@@ -24,7 +24,7 @@ public class Popcorn : HittingEnemy
     override protected void Start()
     {
         GetComponent<SpriteRenderer>().sprite = sprites[Random.Range(0, 5)];
-        generateStartPos();
+        //generateStartPos();
         initSpeedAndForce();
         targets.Add("Player");
     }
@@ -42,13 +42,13 @@ public class Popcorn : HittingEnemy
         rb.AddForce(new Vector3(0, Random.Range(MIN_FORCE, MAX_FORCE), 0));
     }
 
-    public void generateStartPos()
+    /*public void generateStartPos()
     {
         startPos = Random.Range(0.0f, 1.0f);
         transform.position = new Vector3(MIN_X + (MAX_X - MIN_X) * startPos,
             transform.position.y, transform.position.z);
 
-    }
+    }*/
 
     // Update is called once per frame
     override protected void Update()
